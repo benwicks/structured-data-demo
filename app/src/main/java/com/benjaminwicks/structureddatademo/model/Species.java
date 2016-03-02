@@ -1,11 +1,18 @@
 package com.benjaminwicks.structureddatademo.model;
 
+import com.benjaminwicks.structureddatademo.model.protobuf.wire.SpeciesList;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public final class Species {
+
+    public static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.US);
 
     public final String kingdom;
     public final String parent;
@@ -61,5 +68,27 @@ public final class Species {
         this.parentKey = parentKey;
         this.species = species;
         this.lastCrawled = lastCrawled;
+    }
+
+    public static Species fromWireSpecies(SpeciesList.Species s) throws ParseException {
+        return new Species(
+                s.kingdom,
+                s.parent,
+                s.family,
+                s.imageURL,
+                DATE_FORMAT.parse(s.lastInterpreted),
+                s.accordingTo,
+                s.speciesKey,
+                s.canonicalName,
+                s.theClass,
+                s.order,
+                s.phylum,
+                s.scientificName,
+                s.authorship,
+                s.genus,
+                s.parentKey,
+                s.species,
+                DATE_FORMAT.parse(s.lastCrawled)
+        );
     }
 }
