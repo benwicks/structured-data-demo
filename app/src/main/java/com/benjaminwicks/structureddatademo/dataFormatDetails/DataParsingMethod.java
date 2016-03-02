@@ -4,6 +4,7 @@ import android.content.res.AssetManager;
 
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.DataParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.JacksonParser;
+import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.WireParser;
 import com.benjaminwicks.structureddatademo.model.Species;
 
 import java.io.IOException;
@@ -16,7 +17,7 @@ public enum DataParsingMethod {
     JACKSON_JSON_PARSER("FasterXML Jackson", DataFormat.JSON, JacksonParser.class),
     GSON_JSON_PARSER("Google Gson", DataFormat.JSON, null),
     GOOGLE_PROTOBUF_PARSER("Google Protobuf", DataFormat.PROTOBUF, null),
-    SQUARE_WIRE_PROTOBUF_PARSER("Square Wire", DataFormat.PROTOBUF, null);
+    SQUARE_WIRE_PROTOBUF_PARSER("Square Wire", DataFormat.PROTOBUF, WireParser.class);
 
     public final String name;
     public final DataFormat parent;
