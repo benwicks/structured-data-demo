@@ -1,0 +1,61 @@
+{
+  "species": [
+    {
+      "kingdom": "Animalia",
+      "parent": "Hydrachna",
+      "family": "Hydrachnidae",
+      "imageURL": "http:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/e0\/Mikrofoto.de-Kugelmilbe.jpg",
+      "lastInterpreted": "2014-11-03T15:22:26.302+0000",
+      "accordingTo": "Belgian Species List",
+      "speciesKey": 5774096,
+      "canonicalName": "Hydrachna globosa",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "phylum": "Arthropoda",
+      "scientificName": "Hydrachna globosa (De Geer, 1778)",
+      "authorship": " (De Geer, 1778)",
+      "genus": "Hydrachna",
+      "parentKey": 2181219,
+      "species": "Hydrachna globosa",
+      "lastCrawled": "2015-07-30T07:50:10.088+0000"
+    },
+    {
+      "kingdom": "Animalia",
+      "parent": "Hygrobates",
+      "family": "Hygrobatidae",
+      "imageURL": "http:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/00\/Hygrobates_longipalpis.JPG",
+      "lastInterpreted": "2014-11-03T15:22:26.302+0000",
+      "accordingTo": "The Catalogue of Life, 3rd January 2011",
+      "speciesKey": 5173802,
+      "canonicalName": "Hygrobates longipalpis",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "phylum": "Arthropoda",
+      "scientificName": "Hygrobates longipalpis (Hermann, 1804)",
+      "authorship": " (Hermann, 1804)",
+      "genus": "Hygrobates",
+      "parentKey": 2180436,
+      "species": "Hygrobates longipalpis",
+      "lastCrawled": "2015-07-30T07:50:10.088+0000"
+    },
+    {
+      "kingdom": "Animalia",
+      "parent": "Sperchon",
+      "family": "Sperchonidae",
+      "imageURL": "http:\/\/upload.wikimedia.org\/wikipedia\/commons\/5\/56\/Sperchon_glandulosus.jpg",
+      "lastInterpreted": "2014-11-03T15:22:26.302+0000",
+      "accordingTo": "The Catalogue of Life, 3rd January 2011",
+      "speciesKey": 2181245,
+      "canonicalName": "Sperchon glandulosus",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "phylum": "Arthropoda",
+      "scientificName": "Sperchon glandulosus Koenike, 1886",
+      "authorship": "Koenike, 1886",
+      "genus": "Sperchon",
+      "parentKey": 2181241,
+      "species": "Sperchon glandulosus",
+      "lastCrawled": "2015-07-30T07:50:10.088+0000"
+    }
+  ]
+}

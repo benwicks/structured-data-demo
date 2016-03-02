@@ -78,6 +78,12 @@
         </LinearLayout>
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        />
+
     <ListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"

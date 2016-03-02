@@ -1721,6 +1721,7 @@ containing a value of this type.
         public static final int tv_file_size=0x7f0c0058;
         public static final int tv_name=0x7f0c0057;
         public static final int tv_run_count=0x7f0c0069;
+        public static final int tv_species_name=0x7f0c006a;
         public static final int up=0x7f0c0008;
         public static final int useLogo=0x7f0c0012;
         public static final int withText=0x7f0c0020;
@@ -1773,7 +1774,8 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f040024;
         public static final int select_dialog_multichoice_material=0x7f040025;
         public static final int select_dialog_singlechoice_material=0x7f040026;
-        public static final int support_simple_spinner_dropdown_item=0x7f040027;
+        public static final int species_list_item=0x7f040027;
+        public static final int support_simple_spinner_dropdown_item=0x7f040028;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

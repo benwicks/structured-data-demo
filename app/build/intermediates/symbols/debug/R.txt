@@ -558,6 +558,7 @@ int id tv_encode_time 0x7f0c0054
 int id tv_file_size 0x7f0c0058
 int id tv_name 0x7f0c0057
 int id tv_run_count 0x7f0c0069
+int id tv_species_name 0x7f0c006a
 int id up 0x7f0c0008
 int id useLogo 0x7f0c0012
 int id withText 0x7f0c0020
@@ -606,7 +607,8 @@ int layout parsing_method_list_item 0x7f040023
 int layout select_dialog_item_material 0x7f040024
 int layout select_dialog_multichoice_material 0x7f040025
 int layout select_dialog_singlechoice_material 0x7f040026
-int layout support_simple_spinner_dropdown_item 0x7f040027
+int layout species_list_item 0x7f040027
+int layout support_simple_spinner_dropdown_item 0x7f040028
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000
 int string abc_action_bar_home_description_format 0x7f060001

@@ -9,9 +9,9 @@ import static com.benjaminwicks.structureddatademo.dataFormatDetails.DataParsing
 import static com.benjaminwicks.structureddatademo.dataFormatDetails.DataParsingMethod.XML_PULL_PARSER;
 
 public enum DataFormat {
-    XML("XML", new DataParsingMethod[]{SAX_XML_PARSER, XML_PULL_PARSER}, "3.4 MB"),
-    JSON("JSON", new DataParsingMethod[]{MOSHI_JSON_PARSER, JACKSON_JSON_PARSER, GSON_JSON_PARSER}, "2.7 MB"),
-    PROTOBUF("Protocol Buffers", new DataParsingMethod[]{GOOGLE_PROTOBUF_PARSER, SQUARE_WIRE_PROTOBUF_PARSER}, "0 MB");
+    XML("XML", new DataParsingMethod[]{SAX_XML_PARSER, XML_PULL_PARSER}, "3.42 MB"),
+    JSON("JSON", new DataParsingMethod[]{MOSHI_JSON_PARSER, JACKSON_JSON_PARSER, GSON_JSON_PARSER}, "2.87 MB"),
+    PROTOBUF("Protocol Buffers", new DataParsingMethod[]{GOOGLE_PROTOBUF_PARSER, SQUARE_WIRE_PROTOBUF_PARSER}, "1.25 MB");
 
     public final String name;
     public final DataParsingMethod[] children;

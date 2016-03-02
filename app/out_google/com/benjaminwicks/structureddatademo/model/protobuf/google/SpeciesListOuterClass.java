@@ -185,15 +185,15 @@ public final class SpeciesListOuterClass {
           getFamilyBytes();
 
       /**
-       * <code>required string imageURL = 4;</code>
+       * <code>required string imageUrl = 4;</code>
        */
       boolean hasImageURL();
       /**
-       * <code>required string imageURL = 4;</code>
+       * <code>required string imageUrl = 4;</code>
        */
       java.lang.String getImageURL();
       /**
-       * <code>required string imageURL = 4;</code>
+       * <code>required string imageUrl = 4;</code>
        */
       com.google.protobuf.ByteString
           getImageURLBytes();
@@ -691,13 +691,13 @@ public final class SpeciesListOuterClass {
       public static final int IMAGEURL_FIELD_NUMBER = 4;
       private java.lang.Object imageURL_;
       /**
-       * <code>required string imageURL = 4;</code>
+       * <code>required string imageUrl = 4;</code>
        */
       public boolean hasImageURL() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required string imageURL = 4;</code>
+       * <code>required string imageUrl = 4;</code>
        */
       public java.lang.String getImageURL() {
         java.lang.Object ref = imageURL_;
@@ -714,7 +714,7 @@ public final class SpeciesListOuterClass {
         }
       }
       /**
-       * <code>required string imageURL = 4;</code>
+       * <code>required string imageUrl = 4;</code>
        */
       public com.google.protobuf.ByteString
           getImageURLBytes() {
@@ -2119,13 +2119,13 @@ public final class SpeciesListOuterClass {
 
         private java.lang.Object imageURL_ = "";
         /**
-         * <code>required string imageURL = 4;</code>
+         * <code>required string imageUrl = 4;</code>
          */
         public boolean hasImageURL() {
           return ((bitField0_ & 0x00000008) == 0x00000008);
         }
         /**
-         * <code>required string imageURL = 4;</code>
+         * <code>required string imageUrl = 4;</code>
          */
         public java.lang.String getImageURL() {
           java.lang.Object ref = imageURL_;
@@ -2142,7 +2142,7 @@ public final class SpeciesListOuterClass {
           }
         }
         /**
-         * <code>required string imageURL = 4;</code>
+         * <code>required string imageUrl = 4;</code>
          */
         public com.google.protobuf.ByteString
             getImageURLBytes() {
@@ -2158,7 +2158,7 @@ public final class SpeciesListOuterClass {
           }
         }
         /**
-         * <code>required string imageURL = 4;</code>
+         * <code>required string imageUrl = 4;</code>
          */
         public Builder setImageURL(
             java.lang.String value) {
@@ -2171,7 +2171,7 @@ public final class SpeciesListOuterClass {
           return this;
         }
         /**
-         * <code>required string imageURL = 4;</code>
+         * <code>required string imageUrl = 4;</code>
          */
         public Builder clearImageURL() {
           bitField0_ = (bitField0_ & ~0x00000008);
@@ -2180,7 +2180,7 @@ public final class SpeciesListOuterClass {
           return this;
         }
         /**
-         * <code>required string imageURL = 4;</code>
+         * <code>required string imageUrl = 4;</code>
          */
         public Builder setImageURLBytes(
             com.google.protobuf.ByteString value) {

@@ -34,4 +34,10 @@ final class SpeciesAdapter extends BaseAdapter {
         listItemView.bind(getItem(position));
         return listItemView;
     }
+
+    void setSpeciesList(List<Species> speciesList) {
+        species.clear();
+        species.addAll(speciesList);
+        notifyDataSetInvalidated();
+    }
 }
