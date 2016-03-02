@@ -3,13 +3,15 @@ package com.benjaminwicks.structureddatademo.model;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.Date;
+
 public final class Species {
 
     public final String kingdom;
     public final String parent;
     public final String family;
     public final String imageUrl;
-    public final String lastInterpreted;
+    public final Date lastInterpreted;
     public final String accordingTo;
     public final int speciesKey;
     public final String canonicalName;
@@ -21,14 +23,14 @@ public final class Species {
     public final String genus;
     public final int parentKey;
     public final String species;
-    public final String lastCrawled;
+    public final Date lastCrawled;
 
     @JsonCreator Species(
             @JsonProperty("kingdom") String kingdom,
             @JsonProperty("parent") String parent,
             @JsonProperty("family") String family,
             @JsonProperty("imageURL") String imageUrl,
-            @JsonProperty("lastInterpreted") String lastInterpreted,
+            @JsonProperty("lastInterpreted") Date lastInterpreted,
             @JsonProperty("accordingTo") String accordingTo,
             @JsonProperty("speciesKey") int speciesKey,
             @JsonProperty("canonicalName") String canonicalName,
@@ -40,7 +42,7 @@ public final class Species {
             @JsonProperty("genus") String genus,
             @JsonProperty("parentKey") int parentKey,
             @JsonProperty("species") String species,
-            @JsonProperty("lastCrawled") String lastCrawled
+            @JsonProperty("lastCrawled") Date lastCrawled
     ) {
         this.kingdom = kingdom;
         this.parent = parent;
