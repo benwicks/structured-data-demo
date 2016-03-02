@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+package benjaminwicks.structureddatademo.model.protobuf.wire;
+
+option java_package = "com.benjaminwicks.structureddatademo.model.protobuf.wire";
+
+message SpeciesList {
+
+    repeated Species speciesList = 1;
+
+    message Species {
+        required string kingdom = 1;
+        required string parent = 2;
+        required string family = 3;
+        required string imageURL = 4;
+        required string lastInterpreted = 5;
+        required string accordingTo = 6;
+        required int32 speciesKey = 7;
+        required string canonicalName = 8;
+        required string theClass = 9;
+        required string order = 10;
+        required string phylum = 11;
+        required string scientificName = 12;
+        required string authorship = 13;
+        required string genus = 14;
+        required int32 parentKey = 15;
+        required string species = 16;
+        required string lastCrawled = 17;
+    }
+}

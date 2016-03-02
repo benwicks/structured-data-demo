@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/list_vertical_padding"
+    android:paddingEnd="@dimen/list_horizontal_padding"
+    android:paddingStart="@dimen/list_horizontal_padding"
+    android:paddingTop="@dimen/list_vertical_padding"
+    >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium_small"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="2dp"
+                android:paddingRight="2dp"
+                android:text="@string/average_decode_time"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry"
+                />
+
+            <TextView
+                android:id="@+id/tv_average_decode_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="2dp"
+                android:paddingRight="2dp"
+                android:text="@string/average_encode_time"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_average_encode_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="2dp"
+                android:paddingRight="2dp"
+                android:text="@string/number_of_runs"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_run_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

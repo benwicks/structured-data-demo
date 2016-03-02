@@ -1,0 +1,6 @@
+digraph G1 {
+  concentrate = true;
+  MainActivity -> ScreenManager;
+  MainActivity -> ScreenSwitcherState;
+  ScreenManager -> ScreenSwitcherState;
+}

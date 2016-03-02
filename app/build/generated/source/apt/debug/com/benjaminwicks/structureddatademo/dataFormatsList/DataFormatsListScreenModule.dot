@@ -1,0 +1,7 @@
+digraph G1 {
+  concentrate = true;
+  DataFormatsListView -> ScreenManager;
+  MainActivity -> ScreenManager;
+  MainActivity -> ScreenSwitcherState;
+  ScreenManager -> ScreenSwitcherState;
+}

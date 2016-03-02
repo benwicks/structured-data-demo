@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-23.2.0_b24e93e5e96f1f971e2126e0f849ea4631b2afff.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/com.squareup.wire/wire-runtime/2.1.1/8c2a03dca4f8743343dcd2c342cb094e3ec5d43a/wire-runtime-2.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8c2a03dca4f8743343dcd2c342cb094e3ec5d43a">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/wire-runtime-2.1.1_4e4c5e84ecda54140e354d6f69d86e0efd074245.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-23.2.0_3a36ba293620083d6fb1799a387d15b60c33eb6f.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-23.2.0_5ab54124d369eee77f5676b2a137d9763be68d7a.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.0-beta4/739e00dea1f0ac04fdb9b6160d667e23cc50a791/retrofit-2.0.0-beta4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="739e00dea1f0ac04fdb9b6160d667e23cc50a791">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/retrofit-2.0.0-beta4_a6f2631442daf0cd301723c4f4866908fcb9cce9.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/javax.inject-1_d9e197cca4c77dd1123dcdd227555de3a4a218aa.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/okio-1.6.0_c11165c07ec5e48a07fe62d706b036577f48afac.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/internal_impl-23.2.0_9c495438ea6714d3fde95d4cfb3cc500e4fddf40.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-23.2.0_ceea9cdb556a81dbd21c9d3f0f90df33ef911b7c.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/exploded-aar/com.jaynewstrom/concrete/0.9.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="073726b03fdf48131f30493a200f66eadd463e19">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/com.jaynewstrom-concrete-0.9.0_85dbd920bc831ebdc3ad1950ba8ab8893c6ae79d.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/butterknife-7.0.1_a3f56b046cf24b8797fef910889a8352b332f08a.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.4/27d3a9f7bbdcf72d93c9b2da7017e39551bfa9fb/jackson-core-2.6.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="27d3a9f7bbdcf72d93c9b2da7017e39551bfa9fb">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/jackson-core-2.6.4_f8f4aefae97426ded02eb4ae7086d1f1e64cd39a.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.0/support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/support-annotations-23.2.0_4e43904a04fdb912863ab80be28d7cfe53c48e9d.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/com.squareup.dagger/dagger/1.2.2/e8f912ee19ad84958510883ea191135276b091f8/dagger-1.2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e8f912ee19ad84958510883ea191135276b091f8">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/dagger-1.2.2_627142fc0cccc00e06ddcc529886c0d7bbe6fa7d.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.4/ecbd5ad4efa46c8e88522751a80841a49e81a34d/jackson-annotations-2.6.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ecbd5ad4efa46c8e88522751a80841a49e81a34d">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/jackson-annotations-2.6.4_405d59d77b00d6fcd99831cc748a48c3103f2a5a.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.0.1/b34c1f2d993044656e87f88970b6818e99e886ba/okhttp-3.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b34c1f2d993044656e87f88970b6818e99e886ba">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/okhttp-3.0.1_cd46e98fcfd609273534f89183478d933f3cbce2.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-wire/2.0.0-beta4/3387f44373ffadebb5d1ce36e21addde9b7f9c6e/converter-wire-2.0.0-beta4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3387f44373ffadebb5d1ce36e21addde9b7f9c6e">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/converter-wire-2.0.0-beta4_7204556bcd507cba1ce5cd2d40f45373c54ad7ca.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/exploded-aar/com.jaynewstrom/screen-switcher/0.9.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5faee25e1fd2dc53a212b12a42445775a3d64174">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/com.jaynewstrom-screen-switcher-0.9.1_44fa42d76bfc32a4f8743c39b27c46ffb2715fa1.jar" />
+    </item>
+    <item
+        jar="/Users/bwicks/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.4/f2abadd10891512268b16a1a1a6f81890f3e2976/jackson-databind-2.6.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f2abadd10891512268b16a1a1a6f81890f3e2976">
+        <dex dex="/Users/bwicks/Documents/Dev/git/structured-data-demo/app/build/intermediates/pre-dexed/release/jackson-databind-2.6.4_7324580a5099ebe372b7ec164d7cbbc87276e346.jar" />
+    </item>
+
+</items>
