@@ -1,7 +1,6 @@
 package com.benjaminwicks.structureddatademo.dataFormatDetails;
 
 import android.content.Context;
-import android.os.AsyncTask;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,11 +14,11 @@ import android.widget.Toast;
 import com.benjaminwicks.structureddatademo.ForApplication;
 import com.benjaminwicks.structureddatademo.R;
 import com.benjaminwicks.structureddatademo.ScreenManager;
+import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.DecodeTask;
 import com.benjaminwicks.structureddatademo.model.Species;
 import com.benjaminwicks.structureddatademo.speciesDetails.SpeciesDetailsScreen;
 import com.jaynewstrom.concrete.Concrete;
 
-import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -30,7 +29,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-final class DataFormatDetailsView extends LinearLayout {
+public final class DataFormatDetailsView extends LinearLayout {
 
     @Inject @ForApplication Context applicationContext;
     @Inject DataParsingMethod dataParsingMethod;
@@ -43,6 +42,7 @@ final class DataFormatDetailsView extends LinearLayout {
     @Bind(R.id.tv_encode_time) TextView encodeTimeTextView;
     @Bind(R.id.btn_encode) TextView encodeButton;
     @Bind(R.id.list_view) ListView listView;
+    @Bind(R.id.tv_empty_list) TextView emptyTextView;
 
     private final SpeciesAdapter speciesAdapter = new SpeciesAdapter();
 
@@ -60,6 +60,7 @@ final class DataFormatDetailsView extends LinearLayout {
     private void setupView() {
         dataFormatTextView.setText(dataParsingMethod.parent.name);
         dataParsingMethodTextView.setText(dataParsingMethod.name);
+        listView.setEmptyView(emptyTextView);
         listView.setAdapter(speciesAdapter);
         listView.setOnItemClickListener(new OnItemClickListener() {
             @Override public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -69,56 +70,52 @@ final class DataFormatDetailsView extends LinearLayout {
     }
 
     @OnClick(R.id.btn_decode) void onClickDecode() {
-        new DecodeTask().execute();
+        new DecodeTask(this, dataParsingMethod, applicationContext.getAssets()).execute();
     }
 
     @OnClick(R.id.btn_encode) void onClickEncode() {
-        Toast.makeText(getContext(), "Encode not enabled for " + dataParsingMethod.name + " yet.", Toast.LENGTH_SHORT).show();
-    }
-
-    private final class DecodeTask extends AsyncTask<Void, Void, List<Species>> {
-
-        private Exception exception;
-
-        private DecodeTask() {
-            this.exception = null;
-        }
-
-        private long startTime;
-
-        @Override protected void onPreExecute() {
-            super.onPreExecute();
-            setButtonsEnabled(false);
-            startTime = System.nanoTime();
-        }
-
-        @Override protected List<Species> doInBackground(Void... params) {
-            try {
-                return dataParsingMethod.decode(applicationContext.getAssets());
-            } catch (NullPointerException | IOException | IllegalAccessException | InstantiationException e) {
-                this.exception = e;
-            }
-            return Collections.emptyList();
-        }
-
-        @Override protected void onPostExecute(List<Species> species) {
-            super.onPostExecute(species);
-            setButtonsEnabled(true);
-            if (exception == null) {
-                Toast.makeText(getContext(), "Decoded " + species.size() + " records", Toast.LENGTH_SHORT).show();
-                speciesAdapter.setSpeciesList(species);
-                listView.invalidate();
-                long milliseconds = TimeUnit.MILLISECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
-                decodeTimeTextView.setText(TimeFormatHelper.formatMilliseconds(milliseconds));
-            } else {
-                Log.e("Failed to decode", exception.getClass().toString());
-                Toast.makeText(getContext(), "Decode not enabled for " + dataParsingMethod.name + " yet.", Toast.LENGTH_SHORT).show();
-            }
-        }
+        new EncodeTask(this, dataParsingMethod, speciesAdapter.getSpeciesList()).execute();
     }
 
     private void setButtonsEnabled(boolean enabled) {
         decodeButton.setEnabled(enabled);
         encodeButton.setEnabled(enabled);
+    }
+
+    public void onDecodePreExecute() {
+        decodeTimeTextView.setText(R.string.decoding);
+        speciesAdapter.setSpeciesList(Collections.<Species>emptyList());
+        emptyTextView.setText(R.string.decoding);
+        listView.invalidate();
+        setButtonsEnabled(false);
+    }
+
+    public void onDecodePostExecute(long startTime, List<Species> species, Exception exception) {
+        setButtonsEnabled(true);
+        if (exception == null) {
+            Toast.makeText(getContext(), "Decoded " + species.size() + " records", Toast.LENGTH_SHORT).show();
+            speciesAdapter.setSpeciesList(species);
+            listView.invalidate();
+            long milliseconds = TimeUnit.MILLISECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
+            decodeTimeTextView.setText(TimeFormatHelper.formatMilliseconds(milliseconds));
+        } else {
+            Log.e("Failed to decode", exception.getClass().toString());
+            Toast.makeText(getContext(), "Decode not enabled for " + dataParsingMethod.name + " yet.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onEncodePreExecute() {
+        setButtonsEnabled(false);
+    }
+
+    public void onEncodePostExecute(long startTime, Exception exception, Byte[] bytes) {
+        setButtonsEnabled(true);
+        if (exception == null) {
+            Toast.makeText(getContext(), "Encoded to " + bytes.length + " bytes", Toast.LENGTH_SHORT).show();
+            long milliseconds = TimeUnit.MILLISECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
+            encodeTimeTextView.setText(TimeFormatHelper.formatMilliseconds(milliseconds));
+        } else {
+            Toast.makeText(getContext(), "Encode not enabled for " + dataParsingMethod.name + " yet.", Toast.LENGTH_SHORT).show();
+        }
     }
 }

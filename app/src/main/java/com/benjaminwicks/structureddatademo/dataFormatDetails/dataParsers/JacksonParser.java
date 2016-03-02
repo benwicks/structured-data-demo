@@ -2,23 +2,19 @@ package com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers;
 
 import com.benjaminwicks.structureddatademo.model.Species;
 import com.benjaminwicks.structureddatademo.util.JacksonHelper;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
 public final class JacksonParser implements DataParser {
 
-    @Override public File encode(List<Species> speciesList) {
-        return null;
+    @Override public byte[] encode(List<Species> speciesList) throws JsonProcessingException {
+        return JacksonHelper.OBJECT_MAPPER.writerWithDefaultPrettyPrinter().writeValueAsBytes(speciesList);
     }
 
-    @Override public List<Species> decode(InputStream inputStream) {
-        try {
-            return JacksonHelper.readListValue(JacksonHelper.OBJECT_MAPPER.readTree(inputStream).get("species"), Species.class);
-        } catch (IOException e) {
-            throw new AssertionError("Invalid Json", e);
-        }
+    @Override public List<Species> decode(InputStream inputStream) throws IOException {
+        return JacksonHelper.readListValue(JacksonHelper.OBJECT_MAPPER.readTree(inputStream).get("species"), Species.class);
     }
 }

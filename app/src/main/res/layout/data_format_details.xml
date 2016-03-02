@@ -87,11 +87,26 @@
         android:background="@android:color/black"
         />
 
-    <ListView
-        android:id="@+id/list_view"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:fastScrollEnabled="true"
-        />
+        >
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollEnabled="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_empty_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/empty_list"
+            android:textSize="@dimen/text_size_medium"
+            />
+    </RelativeLayout>
 </merge>

@@ -11,4 +11,6 @@
     <string name="order_label">Order:</string>
     <string name="phylum_label">Phylum:</string>
     <string name="genus_label">Genus:</string>
+    <string name="empty_list">No records</string>
+    <string name="decoding">Decoding…</string>
 </resources>

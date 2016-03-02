@@ -21,16 +21,23 @@ public enum DataParsingMethod {
 
     public final String name;
     public final DataFormat parent;
-    private final Class<? extends DataParser> dataParserClass;
+    private DataParser dataParser;
 
     DataParsingMethod(String name, DataFormat parent, Class<? extends DataParser> dataParserClass) {
         this.name = name;
         this.parent = parent;
-        this.dataParserClass = dataParserClass;
+        try {
+            this.dataParser = dataParserClass.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    public List<Species> decode(AssetManager assetManager)
-            throws IOException, IllegalAccessException, InstantiationException, NullPointerException {
-        return dataParserClass.newInstance().decode(assetManager.open("data" + parent.fileExtension));
+    public List<Species> decode(AssetManager assetManager) throws IOException, NullPointerException {
+        return dataParser.decode(assetManager.open("data" + parent.fileExtension));
+    }
+
+    public byte[] encode(List<Species> speciesList) throws IOException {
+        return dataParser.encode(speciesList);
     }
 }

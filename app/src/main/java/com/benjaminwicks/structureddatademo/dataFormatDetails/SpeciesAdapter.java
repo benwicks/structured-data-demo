@@ -40,4 +40,8 @@ final class SpeciesAdapter extends BaseAdapter {
         species.addAll(speciesList);
         notifyDataSetInvalidated();
     }
+
+    List<Species> getSpeciesList() {
+        return species;
+    }
 }
