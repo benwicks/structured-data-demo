@@ -1,20 +1,60 @@
 package com.benjaminwicks.structureddatademo.speciesDetails;
 
 import android.content.Context;
-import android.widget.LinearLayout;
+import android.content.Intent;
+import android.net.Uri;
+import android.view.LayoutInflater;
+import android.widget.ImageView;
+import android.widget.ScrollView;
+import android.widget.TextView;
 
+import com.benjaminwicks.structureddatademo.R;
 import com.benjaminwicks.structureddatademo.model.Species;
 import com.jaynewstrom.concrete.Concrete;
+import com.squareup.picasso.Picasso;
 
 import javax.inject.Inject;
 
-final class SpeciesDetailsView extends LinearLayout {
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
+final class SpeciesDetailsView extends ScrollView {
 
     @Inject Species species;
+    @Inject Picasso picasso;
+
+    @Bind(R.id.iv_image) ImageView imageView;
+    @Bind(R.id.tv_species_name) TextView speciesTextView;
+    @Bind(R.id.tv_kingdom) TextView kingdomTextView;
+    @Bind(R.id.tv_class) TextView classTextView;
+    @Bind(R.id.tv_order) TextView orderTextView;
+    @Bind(R.id.tv_phylum) TextView phylumTextView;
+    @Bind(R.id.tv_genus) TextView genusTextView;
 
     SpeciesDetailsView(Context context) {
         super(context);
         Concrete.inject(context, this);
         setBackgroundResource(android.R.color.white);
+        LayoutInflater.from(context).inflate(R.layout.species_details, this);
+        ButterKnife.bind(this);
+        setupView();
+    }
+
+    private void setupView() {
+        picasso.load(species.imageUrl)
+               .placeholder(android.R.drawable.ic_menu_gallery)
+               .error(android.R.drawable.stat_notify_error)
+               .into(imageView);
+        speciesTextView.setText(species.species);
+        kingdomTextView.setText(species.kingdom);
+        classTextView.setText(species.theClass);
+        orderTextView.setText(species.order);
+        phylumTextView.setText(species.phylum);
+        genusTextView.setText(species.genus);
+    }
+
+    @OnClick(R.id.iv_image) void onClickImage() {
+        getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(species.imageUrl)));
     }
 }

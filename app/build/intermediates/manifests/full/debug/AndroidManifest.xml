@@ -8,6 +8,8 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="23" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="com.benjaminwicks.structureddatademo.StructuredDataDemoApplication"
         android:allowBackup="false"

@@ -2,7 +2,10 @@ digraph G1 {
   concentrate = true;
   DataFormatDetailsView -> ScreenManager;
   DataFormatDetailsView -> DataParsingMethod;
+  n2 [label="@ForApplication Context"];
+  DataFormatDetailsView -> n2;
   MainActivity -> ScreenManager;
   MainActivity -> ScreenSwitcherState;
+  Picasso -> n2;
   ScreenManager -> ScreenSwitcherState;
 }

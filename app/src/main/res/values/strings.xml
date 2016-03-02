@@ -6,4 +6,9 @@
     <string name="number_of_runs">Number of Runs:</string>
     <string name="encode">Encode</string>
     <string name="decode">Decode</string>
+    <string name="kingdom_label">Kingdom:</string>
+    <string name="class_label">Class:</string>
+    <string name="order_label">Order:</string>
+    <string name="phylum_label">Phylum:</string>
+    <string name="genus_label">Genus:</string>
 </resources>

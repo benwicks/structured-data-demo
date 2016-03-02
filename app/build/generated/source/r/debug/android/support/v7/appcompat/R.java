@@ -385,9 +385,9 @@ public final class R {
 		public static final int highlight_alpha_material_colored = 0x7f080047;
 		public static final int highlight_alpha_material_dark = 0x7f080048;
 		public static final int highlight_alpha_material_light = 0x7f080049;
-		public static final int notification_large_icon_height = 0x7f08004c;
-		public static final int notification_large_icon_width = 0x7f08004d;
-		public static final int notification_subtext_size = 0x7f08004e;
+		public static final int notification_large_icon_height = 0x7f08004d;
+		public static final int notification_large_icon_width = 0x7f08004e;
+		public static final int notification_subtext_size = 0x7f08004f;
 	}
 	public static final class drawable {
 		public static final int abc_ab_share_pack_mtrl_alpha = 0x7f020000;
@@ -606,7 +606,7 @@ public final class R {
 		public static final int select_dialog_item_material = 0x7f040024;
 		public static final int select_dialog_multichoice_material = 0x7f040025;
 		public static final int select_dialog_singlechoice_material = 0x7f040026;
-		public static final int support_simple_spinner_dropdown_item = 0x7f040028;
+		public static final int support_simple_spinner_dropdown_item = 0x7f040029;
 	}
 	public static final class string {
 		public static final int abc_action_bar_home_description = 0x7f060000;

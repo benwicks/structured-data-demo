@@ -3,5 +3,7 @@ digraph G1 {
   DataFormatsListView -> ScreenManager;
   MainActivity -> ScreenManager;
   MainActivity -> ScreenSwitcherState;
+  n2 [label="@ForApplication Context"];
+  Picasso -> n2;
   ScreenManager -> ScreenSwitcherState;
 }

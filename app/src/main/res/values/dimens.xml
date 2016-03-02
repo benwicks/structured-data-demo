@@ -7,4 +7,5 @@
     <dimen name="text_size_medium">20sp</dimen>
     <dimen name="text_size_medium_small">18sp</dimen>
     <dimen name="text_size_small">12sp</dimen>
+    <dimen name="initial_species_image_height">120dp</dimen>
 </resources>

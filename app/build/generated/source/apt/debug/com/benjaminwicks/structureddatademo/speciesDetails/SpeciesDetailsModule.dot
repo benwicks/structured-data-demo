@@ -2,6 +2,9 @@ digraph G1 {
   concentrate = true;
   MainActivity -> ScreenManager;
   MainActivity -> ScreenSwitcherState;
+  n2 [label="@ForApplication Context"];
+  Picasso -> n2;
   ScreenManager -> ScreenSwitcherState;
   SpeciesDetailsView -> Species;
+  SpeciesDetailsView -> Picasso;
 }

@@ -22,6 +22,7 @@ import java.util.Set;
 public final class SpeciesDetailsView$$InjectAdapter extends Binding<SpeciesDetailsView>
     implements MembersInjector<SpeciesDetailsView> {
   private Binding<com.benjaminwicks.structureddatademo.model.Species> species;
+  private Binding<com.squareup.picasso.Picasso> picasso;
 
   public SpeciesDetailsView$$InjectAdapter() {
     super(null, "members/com.benjaminwicks.structureddatademo.speciesDetails.SpeciesDetailsView", NOT_SINGLETON, SpeciesDetailsView.class);
@@ -35,6 +36,7 @@ public final class SpeciesDetailsView$$InjectAdapter extends Binding<SpeciesDeta
   @SuppressWarnings("unchecked")
   public void attach(Linker linker) {
     species = (Binding<com.benjaminwicks.structureddatademo.model.Species>) linker.requestBinding("com.benjaminwicks.structureddatademo.model.Species", SpeciesDetailsView.class, getClass().getClassLoader());
+    picasso = (Binding<com.squareup.picasso.Picasso>) linker.requestBinding("com.squareup.picasso.Picasso", SpeciesDetailsView.class, getClass().getClassLoader());
   }
 
   /**
@@ -44,6 +46,7 @@ public final class SpeciesDetailsView$$InjectAdapter extends Binding<SpeciesDeta
   @Override
   public void getDependencies(Set<Binding<?>> getBindings, Set<Binding<?>> injectMembersBindings) {
     injectMembersBindings.add(species);
+    injectMembersBindings.add(picasso);
   }
 
   /**
@@ -53,6 +56,7 @@ public final class SpeciesDetailsView$$InjectAdapter extends Binding<SpeciesDeta
   @Override
   public void injectMembers(SpeciesDetailsView object) {
     object.species = species.get();
+    object.picasso = picasso.get();
   }
 
 }

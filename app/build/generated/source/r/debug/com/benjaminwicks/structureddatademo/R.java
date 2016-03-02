@@ -1531,14 +1531,15 @@ containing a value of this type.
         public static final int highlight_alpha_material_colored=0x7f080047;
         public static final int highlight_alpha_material_dark=0x7f080048;
         public static final int highlight_alpha_material_light=0x7f080049;
-        public static final int list_horizontal_padding=0x7f08004a;
-        public static final int list_vertical_padding=0x7f08004b;
-        public static final int notification_large_icon_height=0x7f08004c;
-        public static final int notification_large_icon_width=0x7f08004d;
-        public static final int notification_subtext_size=0x7f08004e;
-        public static final int text_size_medium=0x7f08004f;
-        public static final int text_size_medium_small=0x7f080050;
-        public static final int text_size_small=0x7f080051;
+        public static final int initial_species_image_height=0x7f08004a;
+        public static final int list_horizontal_padding=0x7f08004b;
+        public static final int list_vertical_padding=0x7f08004c;
+        public static final int notification_large_icon_height=0x7f08004d;
+        public static final int notification_large_icon_width=0x7f08004e;
+        public static final int notification_subtext_size=0x7f08004f;
+        public static final int text_size_medium=0x7f080050;
+        public static final int text_size_medium_small=0x7f080051;
+        public static final int text_size_small=0x7f080052;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha=0x7f020000;
@@ -1662,6 +1663,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f0c001e;
         public static final int image=0x7f0c0026;
         public static final int info=0x7f0c0064;
+        public static final int iv_image=0x7f0c006a;
         public static final int line1=0x7f0c005e;
         public static final int line3=0x7f0c0062;
         public static final int listMode=0x7f0c0009;
@@ -1714,14 +1716,19 @@ containing a value of this type.
         public static final int topPanel=0x7f0c002e;
         public static final int tv_average_decode_time=0x7f0c0067;
         public static final int tv_average_encode_time=0x7f0c0068;
+        public static final int tv_class=0x7f0c006d;
         public static final int tv_data_format=0x7f0c0050;
         public static final int tv_data_parsing_method=0x7f0c0051;
         public static final int tv_decode_time=0x7f0c0052;
         public static final int tv_encode_time=0x7f0c0054;
         public static final int tv_file_size=0x7f0c0058;
+        public static final int tv_genus=0x7f0c0070;
+        public static final int tv_kingdom=0x7f0c006c;
         public static final int tv_name=0x7f0c0057;
+        public static final int tv_order=0x7f0c006e;
+        public static final int tv_phylum=0x7f0c006f;
         public static final int tv_run_count=0x7f0c0069;
-        public static final int tv_species_name=0x7f0c006a;
+        public static final int tv_species_name=0x7f0c006b;
         public static final int up=0x7f0c0008;
         public static final int useLogo=0x7f0c0012;
         public static final int withText=0x7f0c0020;
@@ -1774,8 +1781,9 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f040024;
         public static final int select_dialog_multichoice_material=0x7f040025;
         public static final int select_dialog_singlechoice_material=0x7f040026;
-        public static final int species_list_item=0x7f040027;
-        public static final int support_simple_spinner_dropdown_item=0x7f040028;
+        public static final int species_details=0x7f040027;
+        public static final int species_list_item=0x7f040028;
+        public static final int support_simple_spinner_dropdown_item=0x7f040029;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -1803,10 +1811,15 @@ containing a value of this type.
         public static final int app_name=0x7f060014;
         public static final int average_decode_time=0x7f060015;
         public static final int average_encode_time=0x7f060016;
-        public static final int decode=0x7f060017;
-        public static final int encode=0x7f060018;
-        public static final int file_size_format=0x7f060019;
-        public static final int number_of_runs=0x7f06001a;
+        public static final int class_label=0x7f060017;
+        public static final int decode=0x7f060018;
+        public static final int encode=0x7f060019;
+        public static final int file_size_format=0x7f06001a;
+        public static final int genus_label=0x7f06001b;
+        public static final int kingdom_label=0x7f06001c;
+        public static final int number_of_runs=0x7f06001d;
+        public static final int order_label=0x7f06001e;
+        public static final int phylum_label=0x7f06001f;
         public static final int status_bar_notification_info_overflow=0x7f060013;
     }
     public static final class style {

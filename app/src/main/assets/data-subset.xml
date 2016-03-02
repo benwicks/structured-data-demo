@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <item>
+        <kingdom>Animalia</kingdom>
+        <parent>Hydrachna</parent>
+        <family>Hydrachnidae</family>
+        <imageURL>http://upload.wikimedia.org/wikipedia/commons/e/e0/Mikrofoto.de-Kugelmilbe.jpg</imageURL>
+        <lastInterpreted>2014-11-03T15:22:26.302+0000</lastInterpreted>
+        <accordingTo>Belgian Species List</accordingTo>
+        <speciesKey>5774096</speciesKey>
+        <canonicalName>Hydrachna globosa</canonicalName>
+        <order>Trombidiformes</order>
+        <phylum>Arthropoda</phylum>
+        <scientificName>Hydrachna globosa (De Geer, 1778)</scientificName>
+        <species>Hydrachna globosa</species>
+        <authorship>(De Geer, 1778)</authorship>
+        <genus>Hydrachna</genus>
+        <parentKey>2181219</parentKey>
+        <class>Arachnida</class>
+        <lastCrawled>2015-07-30T07:50:10.088+0000</lastCrawled>
+    </item>
+    <item>
+        <kingdom>Animalia</kingdom>
+        <parent>Hygrobates</parent>
+        <family>Hygrobatidae</family>
+        <imageURL>http://upload.wikimedia.org/wikipedia/commons/0/00/Hygrobates_longipalpis.JPG</imageURL>
+        <lastInterpreted>2014-11-03T15:22:26.302+0000</lastInterpreted>
+        <accordingTo>The Catalogue of Life, 3rd January 2011</accordingTo>
+        <speciesKey>5173802</speciesKey>
+        <canonicalName>Hygrobates longipalpis</canonicalName>
+        <order>Trombidiformes</order>
+        <phylum>Arthropoda</phylum>
+        <scientificName>Hygrobates longipalpis (Hermann, 1804)</scientificName>
+        <species>Hygrobates longipalpis</species>
+        <authorship>(Hermann, 1804)</authorship>
+        <genus>Hygrobates</genus>
+        <parentKey>2180436</parentKey>
+        <class>Arachnida</class>
+        <lastCrawled>2015-07-30T07:50:10.088+0000</lastCrawled>
+    </item>
+    <item>
+        <kingdom>Animalia</kingdom>
+        <parent>Sperchon</parent>
+        <family>Sperchonidae</family>
+        <imageURL>http://upload.wikimedia.org/wikipedia/commons/5/56/Sperchon_glandulosus.jpg</imageURL>
+        <lastInterpreted>2014-11-03T15:22:26.302+0000</lastInterpreted>
+        <accordingTo>The Catalogue of Life, 3rd January 2011</accordingTo>
+        <speciesKey>2181245</speciesKey>
+        <canonicalName>Sperchon glandulosus</canonicalName>
+        <order>Trombidiformes</order>
+        <phylum>Arthropoda</phylum>
+        <scientificName>Sperchon glandulosus Koenike, 1886</scientificName>
+        <species>Sperchon glandulosus</species>
+        <authorship>Koenike, 1886</authorship>
+        <genus>Sperchon</genus>
+        <parentKey>2181241</parentKey>
+        <class>Arachnida</class>
+        <lastCrawled>2015-07-30T07:50:10.088+0000</lastCrawled>
+    </item>
+</root>

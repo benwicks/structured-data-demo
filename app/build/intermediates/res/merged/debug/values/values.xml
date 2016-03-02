@@ -176,6 +176,7 @@
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
+    <dimen name="initial_species_image_height">120dp</dimen>
     <dimen name="list_horizontal_padding">12dp</dimen>
     <dimen name="list_vertical_padding">16dp</dimen>
     <dimen name="notification_large_icon_height">64dp</dimen>
@@ -221,10 +222,15 @@
     <string name="app_name">Structured Data Demo</string>
     <string name="average_decode_time">Avg. Decode Time:</string>
     <string name="average_encode_time">Avg. Encode Time:</string>
+    <string name="class_label">Class:</string>
     <string name="decode">Decode</string>
     <string name="encode">Encode</string>
     <string name="file_size_format">(File size: %1$s)</string>
+    <string name="genus_label">Genus:</string>
+    <string name="kingdom_label">Kingdom:</string>
     <string name="number_of_runs">Number of Runs:</string>
+    <string name="order_label">Order:</string>
+    <string name="phylum_label">Phylum:</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
