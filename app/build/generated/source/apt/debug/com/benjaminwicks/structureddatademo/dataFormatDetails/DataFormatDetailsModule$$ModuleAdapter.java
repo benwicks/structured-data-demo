@@ -25,35 +25,7 @@ public final class DataFormatDetailsModule$$ModuleAdapter extends ModuleAdapter<
    */
   @Override
   public void getBindings(BindingsGroup bindings, DataFormatDetailsModule module) {
-    bindings.contributeProvidesBinding("com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormat", new ProvideDataFormatProvidesAdapter(module));
     bindings.contributeProvidesBinding("com.benjaminwicks.structureddatademo.dataFormatDetails.DataParsingMethod", new ProvideDataParsingMethodProvidesAdapter(module));
-  }
-
-  /**
-   * A {@code Binding<com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormat>} implementation which satisfies
-   * Dagger's infrastructure requirements including:
-   *
-   * Being a {@code Provider<com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormat>} and handling creation and
-   * preparation of object instances.
-   */
-  public static final class ProvideDataFormatProvidesAdapter extends ProvidesBinding<DataFormat>
-      implements Provider<DataFormat> {
-    private final DataFormatDetailsModule module;
-
-    public ProvideDataFormatProvidesAdapter(DataFormatDetailsModule module) {
-      super("com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormat", IS_SINGLETON, "com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormatDetailsModule", "provideDataFormat");
-      this.module = module;
-      setLibrary(false);
-    }
-
-    /**
-     * Returns the fully provisioned instance satisfying the contract for
-     * {@code Provider<com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormat>}.
-     */
-    @Override
-    public DataFormat get() {
-      return module.provideDataFormat();
-    }
   }
 
   /**

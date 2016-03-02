@@ -22,10 +22,7 @@ final class DataFormatsListView extends ExpandableListView {
         setAdapter(dataFormatsAdapter);
         setOnChildClickListener(new OnChildClickListener() {
             @Override public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                screenManager.push(new DataFormatDetailsScreen(
-                        dataFormatsAdapter.getGroup(groupPosition),
-                        dataFormatsAdapter.getChild(groupPosition, childPosition)
-                ));
+                screenManager.push(new DataFormatDetailsScreen(dataFormatsAdapter.getChild(groupPosition, childPosition)));
                 return true;
             }
         });

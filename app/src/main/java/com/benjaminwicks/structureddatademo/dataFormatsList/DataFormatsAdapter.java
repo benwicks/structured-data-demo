@@ -14,7 +14,7 @@ final class DataFormatsAdapter extends BaseExpandableListAdapter {
     }
 
     @Override public int getChildrenCount(int groupPosition) {
-        return getGroup(groupPosition).children.length;
+        return getGroup(groupPosition).getChildren().size();
     }
 
     @Override public DataFormat getGroup(int groupPosition) {
@@ -22,7 +22,7 @@ final class DataFormatsAdapter extends BaseExpandableListAdapter {
     }
 
     @Override public DataParsingMethod getChild(int groupPosition, int childPosition) {
-        return getGroup(groupPosition).children[childPosition];
+        return getGroup(groupPosition).getChildren().get(childPosition);
     }
 
     @Override public long getGroupId(int groupPosition) {
@@ -30,7 +30,7 @@ final class DataFormatsAdapter extends BaseExpandableListAdapter {
     }
 
     @Override public long getChildId(int groupPosition, int childPosition) {
-        return DataFormat.values()[groupPosition].children[childPosition].hashCode();
+        return DataFormat.values()[groupPosition].getChildren().get(childPosition).hashCode();
     }
 
     @Override public boolean hasStableIds() {

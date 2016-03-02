@@ -1,7 +1,6 @@
 digraph G1 {
   concentrate = true;
   DataFormatDetailsView -> ScreenManager;
-  DataFormatDetailsView -> DataFormat;
   DataFormatDetailsView -> DataParsingMethod;
   MainActivity -> ScreenManager;
   MainActivity -> ScreenSwitcherState;

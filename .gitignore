@@ -24,8 +24,8 @@ signingConfigs.gradle
 .gradle
 out
 /*/local.properties
-/*/out
-/*/*/build
+/*/build
+/build
 /*/*/production
 *.iml
 *.iws

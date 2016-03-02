@@ -10,11 +10,9 @@ import com.jaynewstrom.screenswitcher.ScreenTransition;
 
 public final class DataFormatDetailsScreen extends BaseScreen {
 
-    private final DataFormat group;
     private final DataParsingMethod child;
 
-    public DataFormatDetailsScreen(DataFormat group, DataParsingMethod child) {
-        this.group = group;
+    public DataFormatDetailsScreen(DataParsingMethod child) {
         this.child = child;
     }
 
@@ -27,7 +25,7 @@ public final class DataFormatDetailsScreen extends BaseScreen {
     }
 
     @Override public Object daggerModule() {
-        return new DataFormatDetailsModule(group, child);
+        return new DataFormatDetailsModule(child);
     }
 
     @Override public ScreenTransition transition() {

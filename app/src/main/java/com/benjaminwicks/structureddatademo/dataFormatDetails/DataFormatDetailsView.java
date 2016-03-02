@@ -22,10 +22,9 @@ import butterknife.OnClick;
 
 final class DataFormatDetailsView extends LinearLayout {
 
-    private final SpeciesAdapter speciesAdapter = new SpeciesAdapter();
-    @Inject DataFormat dataFormat;
     @Inject DataParsingMethod dataParsingMethod;
     @Inject ScreenManager screenManager;
+
     @Bind(R.id.tv_data_format) TextView dataFormatTextView;
     @Bind(R.id.tv_data_parsing_method) TextView dataParsingMethodTextView;
     @Bind(R.id.tv_decode_time) TextView decodeTimeTextView;
@@ -34,10 +33,13 @@ final class DataFormatDetailsView extends LinearLayout {
     @Bind(R.id.btn_encode) TextView encodeButton;
     @Bind(R.id.list_view) ListView listView;
 
+    private final SpeciesAdapter speciesAdapter = new SpeciesAdapter();
+
     DataFormatDetailsView(Context context) {
         super(context);
         Concrete.inject(context, this);
         LayoutInflater.from(context).inflate(R.layout.data_format_details, this, true);
+
         setOrientation(VERTICAL);
         setBackgroundResource(android.R.color.white);
         ButterKnife.bind(this);
@@ -45,7 +47,7 @@ final class DataFormatDetailsView extends LinearLayout {
     }
 
     private void setupView() {
-        dataFormatTextView.setText(dataFormat.name);
+        dataFormatTextView.setText(dataParsingMethod.parent.name);
         dataParsingMethodTextView.setText(dataParsingMethod.name);
         listView.setAdapter(speciesAdapter);
         listView.setOnItemClickListener(new OnItemClickListener() {

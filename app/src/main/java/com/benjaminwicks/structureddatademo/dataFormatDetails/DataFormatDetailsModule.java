@@ -15,16 +15,10 @@ import dagger.Provides;
 )
 final class DataFormatDetailsModule {
 
-    private final DataFormat dataFormat;
     private final DataParsingMethod dataParsingMethod;
 
-    DataFormatDetailsModule(DataFormat dataFormat, DataParsingMethod dataParsingMethod) {
-        this.dataFormat = dataFormat;
+    DataFormatDetailsModule(DataParsingMethod dataParsingMethod) {
         this.dataParsingMethod = dataParsingMethod;
-    }
-
-    @Provides @Singleton DataFormat provideDataFormat() {
-        return dataFormat;
     }
 
     @Provides @Singleton DataParsingMethod provideDataParsingMethod() {

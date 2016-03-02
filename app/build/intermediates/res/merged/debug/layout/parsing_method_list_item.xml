@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<merge
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/list_vertical_padding"
-    android:paddingEnd="@dimen/list_horizontal_padding"
-    android:paddingStart="@dimen/list_horizontal_padding"
-    android:paddingTop="@dimen/list_vertical_padding"
     >
 
     <TextView
@@ -47,7 +39,6 @@
                 android:text="@string/average_decode_time"
                 android:textSize="@dimen/text_size_small"
                 android:textStyle="bold"
-                tools:ignore="RtlSymmetry"
                 />
 
             <TextView
@@ -104,4 +95,4 @@
                 />
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</merge>

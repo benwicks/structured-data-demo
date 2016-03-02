@@ -21,7 +21,6 @@ import java.util.Set;
  */
 public final class DataFormatDetailsView$$InjectAdapter extends Binding<DataFormatDetailsView>
     implements MembersInjector<DataFormatDetailsView> {
-  private Binding<DataFormat> dataFormat;
   private Binding<DataParsingMethod> dataParsingMethod;
   private Binding<com.benjaminwicks.structureddatademo.ScreenManager> screenManager;
 
@@ -36,7 +35,6 @@ public final class DataFormatDetailsView$$InjectAdapter extends Binding<DataForm
   @Override
   @SuppressWarnings("unchecked")
   public void attach(Linker linker) {
-    dataFormat = (Binding<DataFormat>) linker.requestBinding("com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormat", DataFormatDetailsView.class, getClass().getClassLoader());
     dataParsingMethod = (Binding<DataParsingMethod>) linker.requestBinding("com.benjaminwicks.structureddatademo.dataFormatDetails.DataParsingMethod", DataFormatDetailsView.class, getClass().getClassLoader());
     screenManager = (Binding<com.benjaminwicks.structureddatademo.ScreenManager>) linker.requestBinding("com.benjaminwicks.structureddatademo.ScreenManager", DataFormatDetailsView.class, getClass().getClassLoader());
   }
@@ -47,7 +45,6 @@ public final class DataFormatDetailsView$$InjectAdapter extends Binding<DataForm
    */
   @Override
   public void getDependencies(Set<Binding<?>> getBindings, Set<Binding<?>> injectMembersBindings) {
-    injectMembersBindings.add(dataFormat);
     injectMembersBindings.add(dataParsingMethod);
     injectMembersBindings.add(screenManager);
   }
@@ -58,7 +55,6 @@ public final class DataFormatDetailsView$$InjectAdapter extends Binding<DataForm
    */
   @Override
   public void injectMembers(DataFormatDetailsView object) {
-    object.dataFormat = dataFormat.get();
     object.dataParsingMethod = dataParsingMethod.get();
     object.screenManager = screenManager.get();
   }
