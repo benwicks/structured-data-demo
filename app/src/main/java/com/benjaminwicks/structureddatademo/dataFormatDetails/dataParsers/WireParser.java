@@ -12,7 +12,12 @@ import java.util.List;
 public final class WireParser implements DataParser {
 
     @Override public byte[] encode(List<Species> speciesList) {
-        return null;
+        List<SpeciesList.Species> wireSpeciesList = new ArrayList<>(speciesList.size());
+        for (Species s : speciesList) {
+            wireSpeciesList.add(s.toWireSpecies());
+        }
+        SpeciesList wireSpeciesListWrapper = new SpeciesList.Builder().speciesList(wireSpeciesList).build();
+        return SpeciesList.ADAPTER.encode(wireSpeciesListWrapper);
     }
 
     @Override public List<Species> decode(InputStream inputStream) throws IOException {
@@ -24,7 +29,7 @@ public final class WireParser implements DataParser {
             }
             return speciesList;
         } catch (ParseException e) {
-            throw new AssertionError("Invalid date format", e);
+            throw new Error("Invalid date format", e);
         }
     }
 }

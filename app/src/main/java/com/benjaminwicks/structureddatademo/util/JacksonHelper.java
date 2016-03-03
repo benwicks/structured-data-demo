@@ -26,7 +26,7 @@ public final class JacksonHelper {
         // no instances
     }
 
-    public static <T> T readValue(JsonNode jsonNode, TypeBase type) throws IOException {
+    private static <T> T readValue(JsonNode jsonNode, TypeBase type) throws IOException {
         ObjectReader reader = OBJECT_MAPPER.readerFor(type);
         return reader.readValue(jsonNode);
     }
@@ -35,7 +35,7 @@ public final class JacksonHelper {
         return readValue(jsonNode, constructListType(clazz));
     }
 
-    public static CollectionType constructListType(Class<?> elementType) {
+    private static CollectionType constructListType(Class<?> elementType) {
         return OBJECT_MAPPER.getTypeFactory().constructCollectionType(List.class, elementType);
     }
 }

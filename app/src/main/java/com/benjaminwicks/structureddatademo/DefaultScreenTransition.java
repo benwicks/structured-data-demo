@@ -11,7 +11,7 @@ public final class DefaultScreenTransition implements ScreenTransition {
 
     public static final DefaultScreenTransition INSTANCE = new DefaultScreenTransition();
 
-    public DefaultScreenTransition() {
+    private DefaultScreenTransition() {
     }
 
     @Override public void transitionIn(@NonNull View foregroundView, @NonNull View backgroundView,

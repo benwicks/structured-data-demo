@@ -10,7 +10,7 @@ import com.jaynewstrom.screenswitcher.ScreenTransition;
 
 public final class DataFormatsListScreen extends BaseScreen {
 
-    @Override public View createViewWithConcreteContext(@NonNull Context context) {
+    @Override protected View createViewWithConcreteContext(@NonNull Context context) {
         return new DataFormatsListView(context);
     }
 

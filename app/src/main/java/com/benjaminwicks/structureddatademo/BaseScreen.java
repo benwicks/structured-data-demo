@@ -15,7 +15,7 @@ public abstract class BaseScreen implements Screen, ConcreteBlock {
         return createViewWithConcreteContext(childContext);
     }
 
-    public abstract View createViewWithConcreteContext(@NonNull Context context);
+    protected abstract View createViewWithConcreteContext(@NonNull Context context);
 
     @Override public void destroyScreen(@NonNull View viewToDestroy) {
         Concrete.findWall(viewToDestroy.getContext()).destroy();
