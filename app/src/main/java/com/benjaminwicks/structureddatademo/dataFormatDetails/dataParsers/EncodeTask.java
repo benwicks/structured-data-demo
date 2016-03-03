@@ -1,10 +1,11 @@
-package com.benjaminwicks.structureddatademo.dataFormatDetails;
+package com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers;
 
 import android.os.AsyncTask;
 
+import com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormatDetailsView;
+import com.benjaminwicks.structureddatademo.dataFormatDetails.DataParsingMethod;
 import com.benjaminwicks.structureddatademo.model.Species;
 
-import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
@@ -43,7 +44,7 @@ public final class EncodeTask extends AsyncTask<Void, Void, Byte[]> {
                 bytesWrapper[i++] = b;
             }
             return bytesWrapper;
-        } catch (IOException e) {
+        } catch (Exception e) {
             exception = e;
         }
         return new Byte[]{};

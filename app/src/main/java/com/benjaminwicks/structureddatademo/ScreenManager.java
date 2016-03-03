@@ -17,7 +17,7 @@ public final class ScreenManager {
         this.screenSwitcherState = screenSwitcherState;
     }
 
-    boolean isSameImplementation(ScreenSwitcher screenSwitcher) {
+    private boolean isSameImplementation(ScreenSwitcher screenSwitcher) {
         return this.screenSwitcher == screenSwitcher;
     }
 
@@ -35,7 +35,7 @@ public final class ScreenManager {
         screenSwitcherState.registerPopListener(screen, popListener);
     }
 
-    public void pop(@IntRange(from = 1) int numberToPop) {
+    private void pop(@IntRange(from = 1) int numberToPop) {
         if (screenSwitcher != null) {
             screenSwitcher.pop(numberToPop);
         }

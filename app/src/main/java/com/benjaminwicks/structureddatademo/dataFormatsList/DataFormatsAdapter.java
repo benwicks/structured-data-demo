@@ -1,13 +1,24 @@
 package com.benjaminwicks.structureddatademo.dataFormatsList;
 
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 
+import com.benjaminwicks.structureddatademo.ScreenManager;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormat;
+import com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormatDetailsScreen;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.DataParsingMethod;
 
+import javax.inject.Inject;
+
 final class DataFormatsAdapter extends BaseExpandableListAdapter {
+
+    private final ScreenManager screenManager;
+
+    @Inject DataFormatsAdapter(ScreenManager screenManager) {
+        this.screenManager = screenManager;
+    }
 
     @Override public int getGroupCount() {
         return DataFormat.values().length;
@@ -43,9 +54,15 @@ final class DataFormatsAdapter extends BaseExpandableListAdapter {
         return listItemView;
     }
 
-    @Override public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        DataParsingMethodListItemView listItemView = new DataParsingMethodListItemView(parent.getContext());
+    @Override public View getChildView(
+            final int groupPosition, final int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+        final DataParsingMethodListItemView listItemView = new DataParsingMethodListItemView(parent.getContext());
         listItemView.bind(getChild(groupPosition, childPosition));
+        listItemView.setOnClickListener(new OnClickListener() {
+            @Override public void onClick(View v) {
+                screenManager.push(new DataFormatDetailsScreen(listItemView, getChild(groupPosition, childPosition)));
+            }
+        });
         return listItemView;
     }
 

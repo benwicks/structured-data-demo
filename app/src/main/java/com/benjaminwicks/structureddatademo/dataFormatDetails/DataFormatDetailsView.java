@@ -1,6 +1,7 @@
 package com.benjaminwicks.structureddatademo.dataFormatDetails;
 
 import android.content.Context;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,8 @@ import com.benjaminwicks.structureddatademo.ForApplication;
 import com.benjaminwicks.structureddatademo.R;
 import com.benjaminwicks.structureddatademo.ScreenManager;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.DecodeTask;
+import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.EncodeTask;
+import com.benjaminwicks.structureddatademo.dataFormatsList.DataParsingMethodListItemView;
 import com.benjaminwicks.structureddatademo.model.Species;
 import com.benjaminwicks.structureddatademo.speciesDetails.SpeciesDetailsScreen;
 import com.jaynewstrom.concrete.Concrete;
@@ -44,22 +47,29 @@ public final class DataFormatDetailsView extends LinearLayout {
     @Bind(R.id.list_view) ListView listView;
     @Bind(R.id.tv_empty_list) TextView emptyTextView;
 
+    private final DataParsingMethodListItemView dataParsingMethodListItemView;
     private final SpeciesAdapter speciesAdapter = new SpeciesAdapter();
 
-    DataFormatDetailsView(Context context) {
+    DataFormatDetailsView(Context context, DataParsingMethodListItemView dataParsingMethodListItemView) {
         super(context);
+        this.dataParsingMethodListItemView = dataParsingMethodListItemView;
         Concrete.inject(context, this);
         LayoutInflater.from(context).inflate(R.layout.data_format_details, this, true);
-
         setOrientation(VERTICAL);
         setBackgroundResource(android.R.color.white);
         ButterKnife.bind(this);
         setupView();
     }
 
+    DataFormatDetailsView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        this.dataParsingMethodListItemView = null;
+    }
+
     private void setupView() {
         dataFormatTextView.setText(dataParsingMethod.parent.name);
         dataParsingMethodTextView.setText(dataParsingMethod.name);
+        encodeButton.setEnabled(!speciesAdapter.isEmpty());
         listView.setEmptyView(emptyTextView);
         listView.setAdapter(speciesAdapter);
         listView.setOnItemClickListener(new OnItemClickListener() {
@@ -79,7 +89,7 @@ public final class DataFormatDetailsView extends LinearLayout {
 
     private void setButtonsEnabled(boolean enabled) {
         decodeButton.setEnabled(enabled);
-        encodeButton.setEnabled(enabled);
+        encodeButton.setEnabled(enabled && !speciesAdapter.isEmpty());
     }
 
     public void onDecodePreExecute() {
@@ -91,30 +101,43 @@ public final class DataFormatDetailsView extends LinearLayout {
     }
 
     public void onDecodePostExecute(long startTime, List<Species> species, Exception exception) {
-        setButtonsEnabled(true);
         if (exception == null) {
+            long milliseconds = TimeUnit.MILLISECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
             Toast.makeText(getContext(), "Decoded " + species.size() + " records", Toast.LENGTH_SHORT).show();
             speciesAdapter.setSpeciesList(species);
             listView.invalidate();
-            long milliseconds = TimeUnit.MILLISECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
+            dataParsingMethod.recordDecodeTime(getContext(), milliseconds);
+            if (dataParsingMethodListItemView != null) {
+                dataParsingMethodListItemView.runStatsLoaderTask();
+            }
             decodeTimeTextView.setText(TimeFormatHelper.formatMilliseconds(milliseconds));
         } else {
-            Log.e("Failed to decode", exception.getClass().toString());
+            decodeTimeTextView.setText(R.string.decode_failed);
+            emptyTextView.setText(R.string.empty_list);
+            Log.e("Decode exception", exception.getClass().toString());
             Toast.makeText(getContext(), "Decode not enabled for " + dataParsingMethod.name + " yet.", Toast.LENGTH_SHORT).show();
         }
+        setButtonsEnabled(true);
     }
 
     public void onEncodePreExecute() {
+        encodeTimeTextView.setText(R.string.encoding);
         setButtonsEnabled(false);
     }
 
     public void onEncodePostExecute(long startTime, Exception exception, Byte[] bytes) {
         setButtonsEnabled(true);
         if (exception == null) {
-            Toast.makeText(getContext(), "Encoded to " + bytes.length + " bytes", Toast.LENGTH_SHORT).show();
             long milliseconds = TimeUnit.MILLISECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
+            Toast.makeText(getContext(), "Encoded to " + BytesFormatHelper.formatBytes(bytes.length), Toast.LENGTH_SHORT).show();
+            dataParsingMethod.recordEncodeTime(getContext(), milliseconds);
+            if (dataParsingMethodListItemView != null) {
+                dataParsingMethodListItemView.runStatsLoaderTask();
+            }
             encodeTimeTextView.setText(TimeFormatHelper.formatMilliseconds(milliseconds));
         } else {
+            encodeTimeTextView.setText(R.string.encode_failed);
+            Log.e("Encode exception", exception.getClass().toString());
             Toast.makeText(getContext(), "Encode not enabled for " + dataParsingMethod.name + " yet.", Toast.LENGTH_SHORT).show();
         }
     }

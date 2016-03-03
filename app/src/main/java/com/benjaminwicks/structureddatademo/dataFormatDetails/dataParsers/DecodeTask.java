@@ -7,7 +7,6 @@ import com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormatDetailsV
 import com.benjaminwicks.structureddatademo.dataFormatDetails.DataParsingMethod;
 import com.benjaminwicks.structureddatademo.model.Species;
 
-import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.Collections;
 import java.util.List;
@@ -37,7 +36,7 @@ public final class DecodeTask extends AsyncTask<Void, Void, List<Species>> {
     @Override protected List<Species> doInBackground(Void... params) {
         try {
             return dataParsingMethod.decode(assets);
-        } catch (NullPointerException | IOException e) {
+        } catch (Exception e) {
             this.exception = e;
         }
         return Collections.emptyList();

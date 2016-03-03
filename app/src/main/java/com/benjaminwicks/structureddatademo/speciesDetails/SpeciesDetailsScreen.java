@@ -17,7 +17,7 @@ public final class SpeciesDetailsScreen extends BaseScreen {
         this.species = species;
     }
 
-    @Override public View createViewWithConcreteContext(@NonNull Context context) {
+    @Override protected View createViewWithConcreteContext(@NonNull Context context) {
         return new SpeciesDetailsView(context);
     }
 

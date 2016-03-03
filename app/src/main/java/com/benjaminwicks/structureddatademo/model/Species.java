@@ -1,6 +1,7 @@
 package com.benjaminwicks.structureddatademo.model;
 
 import com.benjaminwicks.structureddatademo.model.protobuf.wire.SpeciesList;
+import com.benjaminwicks.structureddatademo.model.protobuf.wire.SpeciesList.Species.Builder;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -12,7 +13,7 @@ import java.util.Locale;
 
 public final class Species {
 
-    public static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.US);
+    public static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ", Locale.US);
 
     public final String kingdom;
     public final String parent;
@@ -90,5 +91,27 @@ public final class Species {
                 s.species,
                 DATE_FORMAT.parse(s.lastCrawled)
         );
+    }
+
+    public SpeciesList.Species toWireSpecies() {
+        return new Builder()
+                .kingdom(kingdom)
+                .parent(parent)
+                .family(family)
+                .imageURL(imageUrl)
+                .lastInterpreted(DATE_FORMAT.format(lastInterpreted))
+                .accordingTo(accordingTo)
+                .speciesKey(speciesKey)
+                .canonicalName(canonicalName)
+                .theClass(theClass)
+                .order(order)
+                .phylum(phylum)
+                .scientificName(scientificName)
+                .authorship(authorship)
+                .genus(genus)
+                .parentKey(parentKey)
+                .species(species)
+                .lastCrawled(DATE_FORMAT.format(lastCrawled))
+                .build();
     }
 }

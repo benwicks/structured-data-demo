@@ -6,18 +6,21 @@ import android.view.View;
 
 import com.benjaminwicks.structureddatademo.BaseScreen;
 import com.benjaminwicks.structureddatademo.DefaultScreenTransition;
+import com.benjaminwicks.structureddatademo.dataFormatsList.DataParsingMethodListItemView;
 import com.jaynewstrom.screenswitcher.ScreenTransition;
 
 public final class DataFormatDetailsScreen extends BaseScreen {
 
+    private final DataParsingMethodListItemView listItemView;
     private final DataParsingMethod child;
 
-    public DataFormatDetailsScreen(DataParsingMethod child) {
+    public DataFormatDetailsScreen(DataParsingMethodListItemView listItemView, DataParsingMethod child) {
+        this.listItemView = listItemView;
         this.child = child;
     }
 
-    @Override public View createViewWithConcreteContext(@NonNull Context context) {
-        return new DataFormatDetailsView(context);
+    @Override protected View createViewWithConcreteContext(@NonNull Context context) {
+        return new DataFormatDetailsView(context, listItemView);
     }
 
     @Override public String name() {
