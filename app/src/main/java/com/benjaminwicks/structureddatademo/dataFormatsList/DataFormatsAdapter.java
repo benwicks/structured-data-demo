@@ -56,7 +56,12 @@ final class DataFormatsAdapter extends BaseExpandableListAdapter {
 
     @Override public View getChildView(
             final int groupPosition, final int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        final DataParsingMethodListItemView listItemView = new DataParsingMethodListItemView(parent.getContext());
+        final DataParsingMethodListItemView listItemView;
+        if (convertView == null) {
+            listItemView = new DataParsingMethodListItemView(parent.getContext());
+        } else {
+            listItemView = (DataParsingMethodListItemView) convertView;
+        }
         listItemView.bind(getChild(groupPosition, childPosition));
         listItemView.setOnClickListener(new OnClickListener() {
             @Override public void onClick(View v) {

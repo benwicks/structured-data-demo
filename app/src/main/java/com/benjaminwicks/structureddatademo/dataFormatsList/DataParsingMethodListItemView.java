@@ -27,11 +27,20 @@ public final class DataParsingMethodListItemView extends LinearLayout {
         super(context);
         LayoutInflater.from(context).inflate(R.layout.parsing_method_list_item, this);
         setOrientation(VERTICAL);
+        setBackgroundResource(R.drawable.image_click_selector);
         ButterKnife.bind(this);
         Resources resources = context.getResources();
         int horizontalPadding = resources.getDimensionPixelSize(R.dimen.list_horizontal_padding);
         int verticalPadding = resources.getDimensionPixelSize(R.dimen.list_vertical_padding);
         setPadding(horizontalPadding, verticalPadding, horizontalPadding, verticalPadding);
+    }
+
+    static void setupTextView(TextView averageTimeTextView, long averageTime) {
+        if (averageTime == DataParsingMethod.NO_TIME_RECORDED) {
+            averageTimeTextView.setText(R.string.no_data_yet);
+        } else {
+            averageTimeTextView.setText(TimeFormatHelper.formatMilliseconds(averageTime));
+        }
     }
 
     void bind(DataParsingMethod parsingMethod) {
@@ -42,13 +51,5 @@ public final class DataParsingMethodListItemView extends LinearLayout {
 
     public void runStatsLoaderTask() {
         new DataParsingMethodStatsLoaderTask(this, parsingMethod).execute();
-    }
-
-    static void setupTextView(TextView averageTimeTextView, long averageTime) {
-        if (averageTime == DataParsingMethod.NO_TIME_RECORDED) {
-            averageTimeTextView.setText(R.string.no_data_yet);
-        } else {
-            averageTimeTextView.setText(TimeFormatHelper.formatMilliseconds(averageTime));
-        }
     }
 }
