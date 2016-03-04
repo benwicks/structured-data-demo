@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Structured Data Demo</string>
-    <string name="file_size_format">(File size: %1$s)</string>
+    <string name="file_size_format">(%1$s / %2$s compressed)</string>
     <string name="average_decode_time">Avg. Decode Time:</string>
     <string name="average_encode_time">Avg. Encode Time:</string>
     <string name="number_of_decodes">Number of Decode runs:</string>

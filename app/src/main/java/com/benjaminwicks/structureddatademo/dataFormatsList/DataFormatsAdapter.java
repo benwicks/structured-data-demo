@@ -49,7 +49,12 @@ final class DataFormatsAdapter extends BaseExpandableListAdapter {
     }
 
     @Override public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
-        DataFormatListItemView listItemView = new DataFormatListItemView(parent.getContext());
+        DataFormatListItemView listItemView;
+        if (convertView == null) {
+            listItemView = new DataFormatListItemView(parent.getContext());
+        } else {
+            listItemView = (DataFormatListItemView) convertView;
+        }
         listItemView.bind(getGroup(groupPosition));
         return listItemView;
     }
