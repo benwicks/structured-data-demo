@@ -6,7 +6,7 @@
     android:orientation="vertical"
     >
 
-    <include layout="@layout/top_bar"/>
+    <include layout="@layout/toolbar"/>
 
     <ExpandableListView
         android:id="@+id/list_view"

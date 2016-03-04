@@ -19,4 +19,12 @@
     <string name="decode_failed">Decode failed</string>
     <string name="encode_failed">Encode failed</string>
     <string name="species_image_content_description">Species image</string>
+    <string name="stats">Stats</string>
+    <string name="statistics">Statistics</string>
+    <string name="delete_stats">Delete all stats</string>
+    <string name="no_stats_yet">No stats yet. Run some decodes/encodes to view stats.</string>
+    <plurals name="num_deleted_format">
+        <item quantity="one">Deleted stats for %1$d parsing method.</item>
+        <item quantity="other">Deleted stats for %1$d parsing methods.</item>
+    </plurals>
 </resources>

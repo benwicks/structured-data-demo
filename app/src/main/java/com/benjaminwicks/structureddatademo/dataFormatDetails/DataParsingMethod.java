@@ -10,6 +10,7 @@ import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.WirePa
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.XmlSaxParser;
 import com.benjaminwicks.structureddatademo.model.Species;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -113,5 +114,20 @@ public enum DataParsingMethod {
     public boolean hasStats(Context context) {
         return context.getFileStreamPath(name() + DECODE_FILE_SUFFIX).exists() ||
                 context.getFileStreamPath(name() + ENCODE_FILE_SUFFIX).exists();
+    }
+
+    public boolean deleteStats(Context context) {
+        File decodeStatsFile = context.getFileStreamPath(name() + DECODE_FILE_SUFFIX);
+        File encodeStatsFile = context.getFileStreamPath(name() + ENCODE_FILE_SUFFIX);
+        return (decodeStatsFile.exists() && decodeStatsFile.delete()) || (encodeStatsFile.exists() && encodeStatsFile.delete());
+    }
+
+    public static boolean hasAnyStats(Context context) {
+        for (DataParsingMethod method : values()) {
+            if (method.hasStats(context)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
