@@ -1,7 +1,6 @@
 package com.benjaminwicks.structureddatademo.model;
 
 import com.benjaminwicks.structureddatademo.model.protobuf.wire.SpeciesList;
-import com.benjaminwicks.structureddatademo.model.protobuf.wire.SpeciesList.Species.Builder;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -12,6 +11,25 @@ import java.util.Date;
 import java.util.Locale;
 
 public final class Species {
+
+    public static final String ITEM_TAG = "item";
+    public static final String KINGDOM_TAG = "kingdom";
+    public static final String PARENT_TAG = "parent";
+    public static final String FAMILY_TAG = "family";
+    public static final String IMAGE_URL_TAG = "imageURL";
+    public static final String LAST_INTERPRETED_TAG = "lastInterpreted";
+    public static final String ACCORDING_TO_TAG = "accordingTo";
+    public static final String SPECIES_KEY_TAG = "speciesKey";
+    public static final String CANONICAL_NAME_TAG = "canonicalName";
+    public static final String ORDER_TAG = "order";
+    public static final String PHYLUM_TAG = "phylum";
+    public static final String SCIENTIFIC_NAME_TAG = "scientificName";
+    public static final String SPECIES_TAG = "species";
+    public static final String AUTHORSHIP_TAG = "authorship";
+    public static final String GENUS_TAG = "genus";
+    public static final String PARENT_KEY_TAG = "parentKey";
+    public static final String CLASS_TAG = "class";
+    public static final String LAST_CRAWLED_TAG = "lastCrawled";
 
     public static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ", Locale.US);
 
@@ -94,7 +112,7 @@ public final class Species {
     }
 
     public SpeciesList.Species toWireSpecies() {
-        return new Builder()
+        return new SpeciesList.Species.Builder()
                 .kingdom(kingdom)
                 .parent(parent)
                 .family(family)
@@ -113,5 +131,116 @@ public final class Species {
                 .species(species)
                 .lastCrawled(DATE_FORMAT.format(lastCrawled))
                 .build();
+    }
+
+    public static final class Builder {
+
+        private String kingdom;
+        private String parent;
+        private String family;
+        private String imageUrl;
+        private Date lastInterpreted;
+        private String accordingTo;
+        private int speciesKey;
+        private String canonicalName;
+        private String theClass;
+        private String order;
+        private String phylum;
+        private String scientificName;
+        private String authorship;
+        private String genus;
+        private int parentKey;
+        private String species;
+        private Date lastCrawled;
+
+        public void setKingdom(String kingdom) {
+            this.kingdom = kingdom;
+        }
+
+        public void setParent(String parent) {
+            this.parent = parent;
+        }
+
+        public void setFamily(String family) {
+            this.family = family;
+        }
+
+        public void setImageUrl(String imageUrl) {
+            this.imageUrl = imageUrl;
+        }
+
+        public void setLastInterpreted(Date lastInterpreted) {
+            this.lastInterpreted = lastInterpreted;
+        }
+
+        public void setAccordingTo(String accordingTo) {
+            this.accordingTo = accordingTo;
+        }
+
+        public void setSpeciesKey(int speciesKey) {
+            this.speciesKey = speciesKey;
+        }
+
+        public void setCanonicalName(String canonicalName) {
+            this.canonicalName = canonicalName;
+        }
+
+        public void setTheClass(String theClass) {
+            this.theClass = theClass;
+        }
+
+        public void setOrder(String order) {
+            this.order = order;
+        }
+
+        public void setPhylum(String phylum) {
+            this.phylum = phylum;
+        }
+
+        public void setScientificName(String scientificName) {
+            this.scientificName = scientificName;
+        }
+
+        public void setAuthorship(String authorship) {
+            this.authorship = authorship;
+        }
+
+        public void setGenus(String genus) {
+            this.genus = genus;
+        }
+
+        public void setParentKey(int parentKey) {
+            this.parentKey = parentKey;
+        }
+
+        public void setSpecies(String species) {
+            this.species = species;
+        }
+
+        public void setLastCrawled(Date lastCrawled) {
+            this.lastCrawled = lastCrawled;
+        }
+
+        public Species build() {
+            return new Species(
+                    kingdom,
+                    parent,
+                    family,
+                    imageUrl,
+                    lastInterpreted,
+                    accordingTo,
+                    speciesKey,
+                    canonicalName,
+                    theClass,
+                    order,
+                    phylum,
+                    scientificName,
+                    authorship,
+                    genus,
+                    parentKey,
+                    species,
+                    lastCrawled
+            );
+        }
     }
 }
