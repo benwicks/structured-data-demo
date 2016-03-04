@@ -1,6 +1,7 @@
 package com.benjaminwicks.structureddatademo.dataFormatDetails;
 
 import android.content.Context;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,8 +39,7 @@ public final class DataFormatDetailsView extends LinearLayout {
     @Inject ScreenManager screenManager;
     @Inject DataParsingMethodDetailsStateHolder stateHolder;
 
-    @Bind(R.id.tv_data_format) TextView dataFormatTextView;
-    @Bind(R.id.tv_data_parsing_method) TextView dataParsingMethodTextView;
+    @Bind(R.id.toolbar) Toolbar toolbar;
     @Bind(R.id.tv_decode_time) TextView decodeTimeTextView;
     @Bind(R.id.btn_decode) TextView decodeButton;
     @Bind(R.id.tv_encode_time) TextView encodeTimeTextView;
@@ -65,8 +65,8 @@ public final class DataFormatDetailsView extends LinearLayout {
     }
 
     private void setupView() {
-        dataFormatTextView.setText(dataParsingMethod.parent.name);
-        dataParsingMethodTextView.setText(dataParsingMethod.name);
+        toolbar.setTitle(dataParsingMethod.parent.name);
+        toolbar.setSubtitle(dataParsingMethod.name);
         decodeTimeTextView.setText(stateHolder.getLastDecodeTimeText());
         encodeTimeTextView.setText(stateHolder.getLastEncodeTimeText());
         encodeButton.setEnabled(stateHolder.isEncodeEnabled());

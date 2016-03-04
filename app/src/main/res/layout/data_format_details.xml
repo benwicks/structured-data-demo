@@ -3,81 +3,61 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
+    <include layout="@layout/top_bar"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:baselineAligned="false"
         android:padding="@dimen/activity_horizontal_margin"
         >
 
-        <TextView
-            android:id="@+id/tv_data_format"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size_medium"
-            android:textStyle="bold"
-            />
-
-        <TextView
-            android:id="@+id/tv_data_parsing_method"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size_medium"
-            />
-
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:baselineAligned="false"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="5dp"
             >
 
-            <LinearLayout
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/tv_decode_time"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingRight="5dp"
-                >
+                android:layout_gravity="end"
+                />
 
-                <TextView
-                    android:id="@+id/tv_decode_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    />
-
-                <Button
-                    android:id="@+id/btn_decode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:text="@string/decode"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
+            <Button
+                android:id="@+id/btn_decode"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingLeft="5dp"
-                >
+                android:layout_gravity="end"
+                android:text="@string/decode"
+                />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/tv_encode_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            >
 
-                <Button
-                    android:id="@+id/btn_encode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:text="@string/encode"
-                    />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_encode_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                />
+
+            <Button
+                android:id="@+id/btn_encode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/encode"
+                />
         </LinearLayout>
     </LinearLayout>
 

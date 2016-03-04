@@ -3,6 +3,7 @@ package com.benjaminwicks.structureddatademo.speciesDetails;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.ScrollView;
@@ -24,6 +25,7 @@ final class SpeciesDetailsView extends ScrollView {
     @Inject Species species;
     @Inject Picasso picasso;
 
+    @Bind(R.id.toolbar) Toolbar toolbar;
     @Bind(R.id.iv_image) ImageView imageView;
     @Bind(R.id.tv_species_name) TextView speciesTextView;
     @Bind(R.id.tv_kingdom) TextView kingdomTextView;
@@ -42,6 +44,7 @@ final class SpeciesDetailsView extends ScrollView {
     }
 
     private void setupView() {
+        toolbar.setTitle(species.canonicalName);
         picasso.load(species.imageUrl)
                .placeholder(android.R.drawable.ic_menu_gallery)
                .error(android.R.drawable.stat_notify_error)
