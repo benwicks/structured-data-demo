@@ -1,8 +1,8 @@
 # structured-data-demo
-An Android application to demonstrate decoding/encoding data using a few different formats.
+An Android application that demonstrates decoding/encoding data with XML, JSON, and protocol buffers.
 
 # Download the sample Android app .apk
-- Go to [this link](http://benjaminwicks.com/projects/structured-data-demo/structured-data-demo.apk) on your phone
+- Go [here](https://play.google.com/store/apps/details?id=com.benjaminwicks.structureddatademo) to download the demo app
 
 # How-to generate protobuf model from .proto message
 ## Using Square's Wire library
