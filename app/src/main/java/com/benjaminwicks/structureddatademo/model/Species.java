@@ -4,8 +4,8 @@ import com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOut
 import com.benjaminwicks.structureddatademo.model.protobuf.wire.SpeciesList;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -32,11 +32,12 @@ public final class Species {
     public static final String CLASS_TAG = "class";
     public static final String LAST_CRAWLED_TAG = "lastCrawled";
 
-    public static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ", Locale.US);
+    public static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ", Locale.US);
 
     public final String kingdom;
     public final String parent;
     public final String family;
+    @SerializedName("imageURL")
     public final String imageUrl;
     public final Date lastInterpreted;
     public final String accordingTo;

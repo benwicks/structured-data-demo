@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.AssetManager;
 
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.DataParser;
+import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.GsonParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.JacksonParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.ProtobufParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.PullParser;
@@ -23,7 +24,7 @@ public enum DataParsingMethod {
     XML_PULL_PARSER("Pull (org.xmlpull.v1.XmlPullParser)", DataFormat.XML, PullParser.class),
     MOSHI_JSON_PARSER("Square Moshi", DataFormat.JSON, null),
     JACKSON_JSON_PARSER("FasterXML Jackson", DataFormat.JSON, JacksonParser.class),
-    GSON_JSON_PARSER("Google Gson", DataFormat.JSON, null),
+    GSON_JSON_PARSER("Google Gson", DataFormat.JSON, GsonParser.class),
     GOOGLE_PROTOBUF_PARSER("Google Protobuf", DataFormat.PROTOBUF, ProtobufParser.class),
     SQUARE_WIRE_PROTOBUF_PARSER("Square Wire", DataFormat.PROTOBUF, WireParser.class);
 

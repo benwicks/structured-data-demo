@@ -6,7 +6,7 @@ import android.net.Uri;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
-import android.widget.ScrollView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.benjaminwicks.structureddatademo.R;
@@ -20,7 +20,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-final class SpeciesDetailsView extends ScrollView {
+final class SpeciesDetailsView extends LinearLayout {
 
     @Inject Species species;
     @Inject Picasso picasso;
@@ -39,6 +39,7 @@ final class SpeciesDetailsView extends ScrollView {
         Concrete.inject(context, this);
         setBackgroundResource(android.R.color.white);
         LayoutInflater.from(context).inflate(R.layout.species_details, this);
+        setOrientation(VERTICAL);
         ButterKnife.bind(this);
         setupView();
     }
