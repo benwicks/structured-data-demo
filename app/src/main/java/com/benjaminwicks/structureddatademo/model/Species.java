@@ -1,5 +1,6 @@
 package com.benjaminwicks.structureddatademo.model;
 
+import com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass;
 import com.benjaminwicks.structureddatademo.model.protobuf.wire.SpeciesList;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -111,6 +112,28 @@ public final class Species {
         );
     }
 
+    public static Species fromGoogleSpecies(SpeciesListOuterClass.SpeciesList.Species s) throws ParseException {
+        return new Species(
+                s.getKingdom(),
+                s.getParent(),
+                s.getFamily(),
+                s.getImageURL(),
+                DATE_FORMAT.parse(s.getLastInterpreted()),
+                s.getAccordingTo(),
+                s.getSpeciesKey(),
+                s.getCanonicalName(),
+                s.getTheClass(),
+                s.getOrder(),
+                s.getPhylum(),
+                s.getScientificName(),
+                s.getAuthorship(),
+                s.getGenus(),
+                s.getParentKey(),
+                s.getSpecies(),
+                DATE_FORMAT.parse(s.getLastCrawled())
+        );
+    }
+
     public SpeciesList.Species toWireSpecies() {
         return new SpeciesList.Species.Builder()
                 .kingdom(kingdom)
@@ -131,6 +154,28 @@ public final class Species {
                 .species(species)
                 .lastCrawled(DATE_FORMAT.format(lastCrawled))
                 .build();
+    }
+
+    public SpeciesListOuterClass.SpeciesList.Species toGoogleSpecies() {
+        return SpeciesListOuterClass.SpeciesList.Species.newBuilder()
+                                                        .setKingdom(kingdom)
+                                                        .setParent(parent)
+                                                        .setFamily(family)
+                                                        .setImageURL(imageUrl)
+                                                        .setLastInterpreted(DATE_FORMAT.format(lastInterpreted))
+                                                        .setAccordingTo(accordingTo)
+                                                        .setSpeciesKey(speciesKey)
+                                                        .setCanonicalName(canonicalName)
+                                                        .setTheClass(theClass)
+                                                        .setOrder(order)
+                                                        .setPhylum(phylum)
+                                                        .setScientificName(scientificName)
+                                                        .setAuthorship(authorship)
+                                                        .setGenus(genus)
+                                                        .setParentKey(parentKey)
+                                                        .setSpecies(species)
+                                                        .setLastCrawled(DATE_FORMAT.format(lastCrawled))
+                                                        .build();
     }
 
     public static final class Builder {

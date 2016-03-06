@@ -5,6 +5,7 @@ import android.content.res.AssetManager;
 
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.DataParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.JacksonParser;
+import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.ProtobufParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.PullParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.WireParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.XmlSaxParser;
@@ -23,7 +24,7 @@ public enum DataParsingMethod {
     MOSHI_JSON_PARSER("Square Moshi", DataFormat.JSON, null),
     JACKSON_JSON_PARSER("FasterXML Jackson", DataFormat.JSON, JacksonParser.class),
     GSON_JSON_PARSER("Google Gson", DataFormat.JSON, null),
-    GOOGLE_PROTOBUF_PARSER("Google Protobuf", DataFormat.PROTOBUF, null),
+    GOOGLE_PROTOBUF_PARSER("Google Protobuf", DataFormat.PROTOBUF, ProtobufParser.class),
     SQUARE_WIRE_PROTOBUF_PARSER("Square Wire", DataFormat.PROTOBUF, WireParser.class);
 
     public static final long NO_TIME_RECORDED = -1;
@@ -44,6 +45,15 @@ public enum DataParsingMethod {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static boolean hasAnyStats(Context context) {
+        for (DataParsingMethod method : values()) {
+            if (method.hasStats(context)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public List<Species> decode(AssetManager assetManager) throws IOException, NullPointerException {
@@ -120,14 +130,5 @@ public enum DataParsingMethod {
         File decodeStatsFile = context.getFileStreamPath(name() + DECODE_FILE_SUFFIX);
         File encodeStatsFile = context.getFileStreamPath(name() + ENCODE_FILE_SUFFIX);
         return (decodeStatsFile.exists() && decodeStatsFile.delete()) || (encodeStatsFile.exists() && encodeStatsFile.delete());
-    }
-
-    public static boolean hasAnyStats(Context context) {
-        for (DataParsingMethod method : values()) {
-            if (method.hasStats(context)) {
-                return true;
-            }
-        }
-        return false;
     }
 }

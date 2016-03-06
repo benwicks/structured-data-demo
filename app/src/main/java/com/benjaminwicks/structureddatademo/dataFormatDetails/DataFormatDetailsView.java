@@ -100,7 +100,6 @@ public final class DataFormatDetailsView extends LinearLayout {
     }
 
     public void onDecodePostExecute(long startTime, List<Species> species, Exception exception) {
-        setIsCurrentlyTranscoding(false);
         if (exception == null) {
             long milliseconds = TimeUnit.MILLISECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
             Toast.makeText(getContext(), "Decoded " + species.size() + " records", Toast.LENGTH_SHORT).show();
@@ -116,6 +115,7 @@ public final class DataFormatDetailsView extends LinearLayout {
             Log.e("Decode exception", exception.getClass().toString());
             Toast.makeText(getContext(), "Decode not enabled for " + dataParsingMethod.name + " yet.", Toast.LENGTH_SHORT).show();
         }
+        setIsCurrentlyTranscoding(false);
     }
 
     public void onEncodePreExecute() {

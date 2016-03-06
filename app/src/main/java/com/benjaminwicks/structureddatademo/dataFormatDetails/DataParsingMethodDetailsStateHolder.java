@@ -50,6 +50,9 @@ final class DataParsingMethodDetailsStateHolder {
 
     void setLastEncodeTimeText(String lastEncodeTimeText) {
         this.lastEncodeTimeText = lastEncodeTimeText;
+        if (viewReference != null) {
+            viewReference.encodeTimeTextView.setText(lastEncodeTimeText);
+        }
     }
 
     String getLastEmptyText() {
