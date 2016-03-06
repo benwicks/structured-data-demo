@@ -5,6 +5,7 @@ import com.benjaminwicks.structureddatademo.model.protobuf.wire.SpeciesList;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
+import com.squareup.moshi.Json;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -37,12 +38,15 @@ public final class Species {
     public final String kingdom;
     public final String parent;
     public final String family;
-    @SerializedName("imageURL")
+    @Json(name = IMAGE_URL_TAG)
+    @SerializedName(IMAGE_URL_TAG)
     public final String imageUrl;
     public final Date lastInterpreted;
     public final String accordingTo;
     public final int speciesKey;
     public final String canonicalName;
+    @Json(name = CLASS_TAG)
+    @SerializedName(CLASS_TAG)
     public final String theClass;
     public final String order;
     public final String phylum;
@@ -54,23 +58,23 @@ public final class Species {
     public final Date lastCrawled;
 
     @JsonCreator Species(
-            @JsonProperty("kingdom") String kingdom,
-            @JsonProperty("parent") String parent,
-            @JsonProperty("family") String family,
-            @JsonProperty("imageURL") String imageUrl,
-            @JsonProperty("lastInterpreted") Date lastInterpreted,
-            @JsonProperty("accordingTo") String accordingTo,
-            @JsonProperty("speciesKey") int speciesKey,
-            @JsonProperty("canonicalName") String canonicalName,
-            @JsonProperty("class") String theClass,
-            @JsonProperty("order") String order,
-            @JsonProperty("phylum") String phylum,
-            @JsonProperty("scientificName") String scientificName,
-            @JsonProperty("authorship") String authorship,
-            @JsonProperty("genus") String genus,
-            @JsonProperty("parentKey") int parentKey,
-            @JsonProperty("species") String species,
-            @JsonProperty("lastCrawled") Date lastCrawled
+            @JsonProperty(KINGDOM_TAG) String kingdom,
+            @JsonProperty(PARENT_TAG) String parent,
+            @JsonProperty(FAMILY_TAG) String family,
+            @JsonProperty(IMAGE_URL_TAG) String imageUrl,
+            @JsonProperty(LAST_INTERPRETED_TAG) Date lastInterpreted,
+            @JsonProperty(ACCORDING_TO_TAG) String accordingTo,
+            @JsonProperty(SPECIES_KEY_TAG) int speciesKey,
+            @JsonProperty(CANONICAL_NAME_TAG) String canonicalName,
+            @JsonProperty(CLASS_TAG) String theClass,
+            @JsonProperty(ORDER_TAG) String order,
+            @JsonProperty(PHYLUM_TAG) String phylum,
+            @JsonProperty(SCIENTIFIC_NAME_TAG) String scientificName,
+            @JsonProperty(AUTHORSHIP_TAG) String authorship,
+            @JsonProperty(GENUS_TAG) String genus,
+            @JsonProperty(PARENT_KEY_TAG) int parentKey,
+            @JsonProperty(SPECIES_TAG) String species,
+            @JsonProperty(LAST_CRAWLED_TAG) Date lastCrawled
     ) {
         this.kingdom = kingdom;
         this.parent = parent;

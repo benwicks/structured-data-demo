@@ -45,6 +45,7 @@ dependencies {
     compile('com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2') {
         transitive false
     }
+    compile 'com.squareup.moshi:moshi:1.1.0'
     compile 'com.squareup.dagger:dagger:1.2.2'
     apt 'com.squareup.dagger:dagger-compiler:1.2.2'
     compile 'com.squareup.retrofit2:converter-wire:2.0.0-beta4'

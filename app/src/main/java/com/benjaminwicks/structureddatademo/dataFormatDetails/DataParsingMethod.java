@@ -6,6 +6,7 @@ import android.content.res.AssetManager;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.DataParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.GsonParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.JacksonParser;
+import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.MoshiParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.ProtobufParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.PullParser;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.dataParsers.WireParser;
@@ -22,7 +23,7 @@ import java.util.List;
 public enum DataParsingMethod {
     SAX_XML_PARSER("SAX (javax.xml.parsers.SAXParser)", DataFormat.XML, XmlSaxParser.class),
     XML_PULL_PARSER("Pull (org.xmlpull.v1.XmlPullParser)", DataFormat.XML, PullParser.class),
-    MOSHI_JSON_PARSER("Square Moshi", DataFormat.JSON, null),
+    MOSHI_JSON_PARSER("Square Moshi", DataFormat.JSON, MoshiParser.class),
     JACKSON_JSON_PARSER("FasterXML Jackson", DataFormat.JSON, JacksonParser.class),
     GSON_JSON_PARSER("Google Gson", DataFormat.JSON, GsonParser.class),
     GOOGLE_PROTOBUF_PARSER("Google Protobuf", DataFormat.PROTOBUF, ProtobufParser.class),
