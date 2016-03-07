@@ -29,21 +29,10 @@ final class StatisticsView extends LinearLayout {
     @Bind(R.id.progress_bar) View progressBarView;
     @Bind(R.id.ll_stats) LinearLayout statsLayout;
 
-    private final OnMenuItemClickListener onMenuItemClickListener = new OnMenuItemClickListener() {
-        @Override public boolean onMenuItemClick(MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.action_delete:
-                    onDeleteClicked();
-                    return true;
-            }
-            return false;
-        }
-    };
-
     StatisticsView(Context context) {
         super(context);
         Concrete.inject(context, this);
-        LayoutInflater.from(context).inflate(R.layout.stats_pager, this);
+        LayoutInflater.from(context).inflate(R.layout.statistics, this);
         ButterKnife.bind(this);
         setOrientation(VERTICAL);
         setupView();
@@ -58,19 +47,21 @@ final class StatisticsView extends LinearLayout {
                 return true;
             }
         });
-        statsLayout.addView(new AverageTimesGraphView(getContext()));
-        statsLayout.addView(new FileSizesGraphView(getContext()));
+        statsLayout.addView(new AverageTimesGraphView(getContext()), 1);
+        statsLayout.addView(new FileSizesGraphView(getContext()), 4);
+        statsLayout.invalidate();
     }
 
-    @Override protected void onAttachedToWindow() {
-        super.onAttachedToWindow();
-        stateHolder.setViewReference(this);
-    }
-
-    @Override protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        stateHolder.dropViewReference();
-    }
+    private final OnMenuItemClickListener onMenuItemClickListener = new OnMenuItemClickListener() {
+        @Override public boolean onMenuItemClick(MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.action_delete:
+                    onDeleteClicked();
+                    return true;
+            }
+            return false;
+        }
+    };
 
     private void onDeleteClicked() {
         toolbar.dismissPopupMenus();
@@ -83,5 +74,15 @@ final class StatisticsView extends LinearLayout {
 
     void onPostDelete() {
         progressBarView.setVisibility(View.GONE);
+    }
+
+    @Override protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        stateHolder.setViewReference(this);
+    }
+
+    @Override protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        stateHolder.dropViewReference();
     }
 }

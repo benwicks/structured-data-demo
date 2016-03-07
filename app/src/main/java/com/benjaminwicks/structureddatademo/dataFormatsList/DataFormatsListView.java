@@ -39,7 +39,7 @@ final class DataFormatsListView extends LinearLayout {
 
     private void setupView() {
         toolbar.setTitle(R.string.app_name);
-        toolbar.inflateMenu(R.menu.data_formats_screen);
+//        toolbar.inflateMenu(R.menu.data_formats_screen); // un-comment if I get to the StatisticsView
         toolbar.setOnMenuItemClickListener(oneMenuItemClickListener);
         listView.setAdapter(dataFormatsAdapter);
     }

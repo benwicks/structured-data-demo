@@ -23,6 +23,8 @@
     <string name="statistics">Statistics</string>
     <string name="delete_stats">Delete all stats</string>
     <string name="no_stats_yet">No stats yet. Run some decodes/encodes to view stats.</string>
+    <string name="average_times_graph">Decode/Encode Average Times</string>
+    <string name="file_sizes_graph">File Sizes</string>
     <plurals name="num_deleted_format">
         <item quantity="one">Deleted stats for %1$d parsing method.</item>
         <item quantity="other">Deleted stats for %1$d parsing methods.</item>

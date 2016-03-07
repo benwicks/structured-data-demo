@@ -9,4 +9,6 @@
     <dimen name="text_size_small">12sp</dimen>
     <dimen name="initial_species_image_height">200dp</dimen>
     <dimen name="list_parent_left_padding">30dp</dimen>
+    <dimen name="graph_min_height">400dp</dimen>
+    <dimen name="graph_margin">5dp</dimen>
 </resources>
