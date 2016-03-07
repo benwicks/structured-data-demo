@@ -1,7 +1,6 @@
 package com.benjaminwicks.structureddatademo.stats;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.Toolbar.OnMenuItemClickListener;
 import android.view.LayoutInflater;
@@ -27,6 +26,9 @@ final class StatisticsView extends LinearLayout {
     @Inject StatisticsStateHolder stateHolder;
 
     @Bind(R.id.toolbar) Toolbar toolbar;
+    @Bind(R.id.progress_bar) View progressBarView;
+    @Bind(R.id.ll_stats) LinearLayout statsLayout;
+
     private final OnMenuItemClickListener onMenuItemClickListener = new OnMenuItemClickListener() {
         @Override public boolean onMenuItemClick(MenuItem item) {
             switch (item.getItemId()) {
@@ -37,8 +39,6 @@ final class StatisticsView extends LinearLayout {
             return false;
         }
     };
-    @Bind(R.id.progress_bar) View progressBarView;
-    @Bind(R.id.view_pager) ViewPager viewPager;
 
     StatisticsView(Context context) {
         super(context);
@@ -58,8 +58,8 @@ final class StatisticsView extends LinearLayout {
                 return true;
             }
         });
-        viewPager.addView(new AverageTimesGraphView(getContext()));
-        viewPager.addView(new FileSizesGraphView(getContext()));
+        statsLayout.addView(new AverageTimesGraphView(getContext()));
+        statsLayout.addView(new FileSizesGraphView(getContext()));
     }
 
     @Override protected void onAttachedToWindow() {

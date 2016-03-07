@@ -7,6 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.benjaminwicks.structureddatademo.R;
+import com.benjaminwicks.structureddatademo.dataFormatDetails.BytesFormatHelper;
 import com.benjaminwicks.structureddatademo.dataFormatDetails.DataFormat;
 
 import butterknife.Bind;
@@ -32,6 +33,11 @@ final class DataFormatListItemView extends LinearLayout {
 
     void bind(DataFormat dataFormat) {
         nameTextView.setText(dataFormat.name);
-        fileSizeTextView.setText(getContext().getString(R.string.file_size_format, dataFormat.fileSize, dataFormat.gZippedFileSize));
+        String text = getContext().getString(
+                R.string.file_size_format,
+                BytesFormatHelper.formatBytes(dataFormat.fileSizeBytes),
+                BytesFormatHelper.formatBytes(dataFormat.gZippedFileSizeBytes)
+        );
+        fileSizeTextView.setText(text);
     }
 }

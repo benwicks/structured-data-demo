@@ -1,14 +1,16 @@
 package com.benjaminwicks.structureddatademo.stats;
 
 import android.content.Context;
-import android.widget.ScrollView;
+import android.graphics.Canvas;
+import android.view.View;
 
-import com.benjaminwicks.structureddatademo.R;
-
-final class FileSizesGraphView extends ScrollView {
+final class FileSizesGraphView extends View {
 
     FileSizesGraphView(Context context) {
         super(context);
-        setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
+    }
+
+    @Override protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
     }
 }
