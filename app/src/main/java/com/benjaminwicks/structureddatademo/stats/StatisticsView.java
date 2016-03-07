@@ -27,6 +27,16 @@ final class StatisticsView extends LinearLayout {
     @Inject StatisticsStateHolder stateHolder;
 
     @Bind(R.id.toolbar) Toolbar toolbar;
+    private final OnMenuItemClickListener onMenuItemClickListener = new OnMenuItemClickListener() {
+        @Override public boolean onMenuItemClick(MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.action_delete:
+                    onDeleteClicked();
+                    return true;
+            }
+            return false;
+        }
+    };
     @Bind(R.id.progress_bar) View progressBarView;
     @Bind(R.id.view_pager) ViewPager viewPager;
 
@@ -48,6 +58,8 @@ final class StatisticsView extends LinearLayout {
                 return true;
             }
         });
+        viewPager.addView(new AverageTimesGraphView(getContext()));
+        viewPager.addView(new FileSizesGraphView(getContext()));
     }
 
     @Override protected void onAttachedToWindow() {
@@ -59,17 +71,6 @@ final class StatisticsView extends LinearLayout {
         super.onDetachedFromWindow();
         stateHolder.dropViewReference();
     }
-
-    private final OnMenuItemClickListener onMenuItemClickListener = new OnMenuItemClickListener() {
-        @Override public boolean onMenuItemClick(MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.action_delete:
-                    onDeleteClicked();
-                    return true;
-            }
-            return false;
-        }
-    };
 
     private void onDeleteClicked() {
         toolbar.dismissPopupMenus();
