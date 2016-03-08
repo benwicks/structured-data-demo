@@ -11,7 +11,7 @@ import java.util.List;
 public final class JacksonParser implements DataParser {
 
     @Override public byte[] encode(List<Species> speciesList) throws JsonProcessingException {
-        return JacksonHelper.OBJECT_MAPPER.writerWithDefaultPrettyPrinter().writeValueAsBytes(speciesList);
+        return JacksonHelper.OBJECT_MAPPER.writer().writeValueAsBytes(speciesList);
     }
 
     @Override public List<Species> decode(InputStream inputStream) throws IOException {

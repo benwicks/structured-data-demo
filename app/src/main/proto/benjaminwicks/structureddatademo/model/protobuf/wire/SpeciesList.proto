@@ -9,22 +9,22 @@ message SpeciesList {
     repeated Species speciesList = 1;
 
     message Species {
-        required string kingdom = 1;
-        required string parent = 2;
-        required string family = 3;
-        required string imageURL = 4;
-        required string lastInterpreted = 5;
-        required string accordingTo = 6;
-        required int32 speciesKey = 7;
-        required string canonicalName = 8;
-        required string theClass = 9;
-        required string order = 10;
-        required string phylum = 11;
-        required string scientificName = 12;
-        required string authorship = 13;
-        required string genus = 14;
-        required int32 parentKey = 15;
-        required string species = 16;
-        required string lastCrawled = 17;
+        optional string kingdom = 1;
+        optional string parent = 2;
+        optional string family = 3;
+        optional string imageURL = 4;
+        optional string lastInterpreted = 5;
+        optional string accordingTo = 6;
+        optional int32 speciesKey = 7;
+        optional string canonicalName = 8;
+        optional string theClass = 9;
+        optional string order = 10;
+        optional string phylum = 11;
+        optional string scientificName = 12;
+        optional string authorship = 13;
+        optional string genus = 14;
+        optional int32 parentKey = 15;
+        optional string species = 16;
+        optional string lastCrawled = 17;
     }
 }

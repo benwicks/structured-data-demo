@@ -9,13 +9,10 @@ import com.squareup.wire.ProtoReader;
 import com.squareup.wire.ProtoWriter;
 import com.squareup.wire.WireField;
 import com.squareup.wire.internal.Internal;
+
 import java.io.IOException;
-import java.lang.Integer;
-import java.lang.Object;
-import java.lang.Override;
-import java.lang.String;
-import java.lang.StringBuilder;
 import java.util.List;
+
 import okio.ByteString;
 
 public final class SpeciesList extends Message<SpeciesList, SpeciesList.Builder> {
@@ -134,120 +131,103 @@ public final class SpeciesList extends Message<SpeciesList, SpeciesList.Builder>
 
     @WireField(
         tag = 1,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String kingdom;
 
     @WireField(
         tag = 2,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String parent;
 
     @WireField(
         tag = 3,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String family;
 
     @WireField(
         tag = 4,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String imageURL;
 
     @WireField(
         tag = 5,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String lastInterpreted;
 
     @WireField(
         tag = 6,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String accordingTo;
 
     @WireField(
         tag = 7,
-        adapter = "com.squareup.wire.ProtoAdapter#INT32",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#INT32"
     )
     public final Integer speciesKey;
 
     @WireField(
         tag = 8,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String canonicalName;
 
     @WireField(
         tag = 9,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String theClass;
 
     @WireField(
         tag = 10,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String order;
 
     @WireField(
         tag = 11,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String phylum;
 
     @WireField(
         tag = 12,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String scientificName;
 
     @WireField(
         tag = 13,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String authorship;
 
     @WireField(
         tag = 14,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String genus;
 
     @WireField(
         tag = 15,
-        adapter = "com.squareup.wire.ProtoAdapter#INT32",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#INT32"
     )
     public final Integer parentKey;
 
     @WireField(
         tag = 16,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String species;
 
     @WireField(
         tag = 17,
-        adapter = "com.squareup.wire.ProtoAdapter#STRING",
-        label = WireField.Label.REQUIRED
+        adapter = "com.squareup.wire.ProtoAdapter#STRING"
     )
     public final String lastCrawled;
 
@@ -500,41 +480,6 @@ public final class SpeciesList extends Message<SpeciesList, SpeciesList.Builder>
 
       @Override
       public Species build() {
-        if (kingdom == null
-            || parent == null
-            || family == null
-            || imageURL == null
-            || lastInterpreted == null
-            || accordingTo == null
-            || speciesKey == null
-            || canonicalName == null
-            || theClass == null
-            || order == null
-            || phylum == null
-            || scientificName == null
-            || authorship == null
-            || genus == null
-            || parentKey == null
-            || species == null
-            || lastCrawled == null) {
-          throw Internal.missingRequiredFields(kingdom, "kingdom",
-              parent, "parent",
-              family, "family",
-              imageURL, "imageURL",
-              lastInterpreted, "lastInterpreted",
-              accordingTo, "accordingTo",
-              speciesKey, "speciesKey",
-              canonicalName, "canonicalName",
-              theClass, "theClass",
-              order, "order",
-              phylum, "phylum",
-              scientificName, "scientificName",
-              authorship, "authorship",
-              genus, "genus",
-              parentKey, "parentKey",
-              species, "species",
-              lastCrawled, "lastCrawled");
-        }
         return new Species(kingdom, parent, family, imageURL, lastInterpreted, accordingTo, speciesKey, canonicalName, theClass, order, phylum, scientificName, authorship, genus, parentKey, species, lastCrawled, buildUnknownFields());
       }
     }
@@ -546,45 +491,45 @@ public final class SpeciesList extends Message<SpeciesList, SpeciesList.Builder>
 
       @Override
       public int encodedSize(Species value) {
-        return ProtoAdapter.STRING.encodedSizeWithTag(1, value.kingdom)
-            + ProtoAdapter.STRING.encodedSizeWithTag(2, value.parent)
-            + ProtoAdapter.STRING.encodedSizeWithTag(3, value.family)
-            + ProtoAdapter.STRING.encodedSizeWithTag(4, value.imageURL)
-            + ProtoAdapter.STRING.encodedSizeWithTag(5, value.lastInterpreted)
-            + ProtoAdapter.STRING.encodedSizeWithTag(6, value.accordingTo)
-            + ProtoAdapter.INT32.encodedSizeWithTag(7, value.speciesKey)
-            + ProtoAdapter.STRING.encodedSizeWithTag(8, value.canonicalName)
-            + ProtoAdapter.STRING.encodedSizeWithTag(9, value.theClass)
-            + ProtoAdapter.STRING.encodedSizeWithTag(10, value.order)
-            + ProtoAdapter.STRING.encodedSizeWithTag(11, value.phylum)
-            + ProtoAdapter.STRING.encodedSizeWithTag(12, value.scientificName)
-            + ProtoAdapter.STRING.encodedSizeWithTag(13, value.authorship)
-            + ProtoAdapter.STRING.encodedSizeWithTag(14, value.genus)
-            + ProtoAdapter.INT32.encodedSizeWithTag(15, value.parentKey)
-            + ProtoAdapter.STRING.encodedSizeWithTag(16, value.species)
-            + ProtoAdapter.STRING.encodedSizeWithTag(17, value.lastCrawled)
+        return (value.kingdom != null ? ProtoAdapter.STRING.encodedSizeWithTag(1, value.kingdom) : 0)
+            + (value.parent != null ? ProtoAdapter.STRING.encodedSizeWithTag(2, value.parent) : 0)
+            + (value.family != null ? ProtoAdapter.STRING.encodedSizeWithTag(3, value.family) : 0)
+            + (value.imageURL != null ? ProtoAdapter.STRING.encodedSizeWithTag(4, value.imageURL) : 0)
+            + (value.lastInterpreted != null ? ProtoAdapter.STRING.encodedSizeWithTag(5, value.lastInterpreted) : 0)
+            + (value.accordingTo != null ? ProtoAdapter.STRING.encodedSizeWithTag(6, value.accordingTo) : 0)
+            + (value.speciesKey != null ? ProtoAdapter.INT32.encodedSizeWithTag(7, value.speciesKey) : 0)
+            + (value.canonicalName != null ? ProtoAdapter.STRING.encodedSizeWithTag(8, value.canonicalName) : 0)
+            + (value.theClass != null ? ProtoAdapter.STRING.encodedSizeWithTag(9, value.theClass) : 0)
+            + (value.order != null ? ProtoAdapter.STRING.encodedSizeWithTag(10, value.order) : 0)
+            + (value.phylum != null ? ProtoAdapter.STRING.encodedSizeWithTag(11, value.phylum) : 0)
+            + (value.scientificName != null ? ProtoAdapter.STRING.encodedSizeWithTag(12, value.scientificName) : 0)
+            + (value.authorship != null ? ProtoAdapter.STRING.encodedSizeWithTag(13, value.authorship) : 0)
+            + (value.genus != null ? ProtoAdapter.STRING.encodedSizeWithTag(14, value.genus) : 0)
+            + (value.parentKey != null ? ProtoAdapter.INT32.encodedSizeWithTag(15, value.parentKey) : 0)
+            + (value.species != null ? ProtoAdapter.STRING.encodedSizeWithTag(16, value.species) : 0)
+            + (value.lastCrawled != null ? ProtoAdapter.STRING.encodedSizeWithTag(17, value.lastCrawled) : 0)
             + value.unknownFields().size();
       }
 
       @Override
       public void encode(ProtoWriter writer, Species value) throws IOException {
-        ProtoAdapter.STRING.encodeWithTag(writer, 1, value.kingdom);
-        ProtoAdapter.STRING.encodeWithTag(writer, 2, value.parent);
-        ProtoAdapter.STRING.encodeWithTag(writer, 3, value.family);
-        ProtoAdapter.STRING.encodeWithTag(writer, 4, value.imageURL);
-        ProtoAdapter.STRING.encodeWithTag(writer, 5, value.lastInterpreted);
-        ProtoAdapter.STRING.encodeWithTag(writer, 6, value.accordingTo);
-        ProtoAdapter.INT32.encodeWithTag(writer, 7, value.speciesKey);
-        ProtoAdapter.STRING.encodeWithTag(writer, 8, value.canonicalName);
-        ProtoAdapter.STRING.encodeWithTag(writer, 9, value.theClass);
-        ProtoAdapter.STRING.encodeWithTag(writer, 10, value.order);
-        ProtoAdapter.STRING.encodeWithTag(writer, 11, value.phylum);
-        ProtoAdapter.STRING.encodeWithTag(writer, 12, value.scientificName);
-        ProtoAdapter.STRING.encodeWithTag(writer, 13, value.authorship);
-        ProtoAdapter.STRING.encodeWithTag(writer, 14, value.genus);
-        ProtoAdapter.INT32.encodeWithTag(writer, 15, value.parentKey);
-        ProtoAdapter.STRING.encodeWithTag(writer, 16, value.species);
-        ProtoAdapter.STRING.encodeWithTag(writer, 17, value.lastCrawled);
+        if (value.kingdom != null) ProtoAdapter.STRING.encodeWithTag(writer, 1, value.kingdom);
+        if (value.parent != null) ProtoAdapter.STRING.encodeWithTag(writer, 2, value.parent);
+        if (value.family != null) ProtoAdapter.STRING.encodeWithTag(writer, 3, value.family);
+        if (value.imageURL != null) ProtoAdapter.STRING.encodeWithTag(writer, 4, value.imageURL);
+        if (value.lastInterpreted != null) ProtoAdapter.STRING.encodeWithTag(writer, 5, value.lastInterpreted);
+        if (value.accordingTo != null) ProtoAdapter.STRING.encodeWithTag(writer, 6, value.accordingTo);
+        if (value.speciesKey != null) ProtoAdapter.INT32.encodeWithTag(writer, 7, value.speciesKey);
+        if (value.canonicalName != null) ProtoAdapter.STRING.encodeWithTag(writer, 8, value.canonicalName);
+        if (value.theClass != null) ProtoAdapter.STRING.encodeWithTag(writer, 9, value.theClass);
+        if (value.order != null) ProtoAdapter.STRING.encodeWithTag(writer, 10, value.order);
+        if (value.phylum != null) ProtoAdapter.STRING.encodeWithTag(writer, 11, value.phylum);
+        if (value.scientificName != null) ProtoAdapter.STRING.encodeWithTag(writer, 12, value.scientificName);
+        if (value.authorship != null) ProtoAdapter.STRING.encodeWithTag(writer, 13, value.authorship);
+        if (value.genus != null) ProtoAdapter.STRING.encodeWithTag(writer, 14, value.genus);
+        if (value.parentKey != null) ProtoAdapter.INT32.encodeWithTag(writer, 15, value.parentKey);
+        if (value.species != null) ProtoAdapter.STRING.encodeWithTag(writer, 16, value.species);
+        if (value.lastCrawled != null) ProtoAdapter.STRING.encodeWithTag(writer, 17, value.lastCrawled);
         writer.writeBytes(value.unknownFields());
       }
 

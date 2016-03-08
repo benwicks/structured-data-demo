@@ -4,72 +4,9 @@
 package com.benjaminwicks.structureddatademo.model.protobuf.google;
 
 public final class SpeciesListOuterClass {
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_fieldAccessorTable;
-  private static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-
-  static {
-    String[] descriptorData = {
-      "\nHbenjaminwicks/structureddatademo/model" +
-      "/protobuf/google/SpeciesList.proto\0226benj" +
-      "aminwicks.structureddatademo.model.proto" +
-      "buf.google\"\274\003\n\013SpeciesList\022`\n\013speciesLis" +
-      "t\030\001 \003(\0132K.benjaminwicks.structureddatade" +
-      "mo.model.protobuf.google.SpeciesList.Spe" +
-      "cies\032\312\002\n\007Species\022\017\n\007kingdom\030\001 \002(\t\022\016\n\006par" +
-      "ent\030\002 \002(\t\022\016\n\006family\030\003 \002(\t\022\020\n\010imageURL\030\004 " +
-      "\002(\t\022\027\n\017lastInterpreted\030\005 \002(\t\022\023\n\013accordin" +
-      "gTo\030\006 \002(\t\022\022\n\nspeciesKey\030\007 \002(\005\022\025\n\rcanonic",
-      "alName\030\010 \002(\t\022\020\n\010theClass\030\t \002(\t\022\r\n\005order\030" +
-      "\n \002(\t\022\016\n\006phylum\030\013 \002(\t\022\026\n\016scientificName\030" +
-      "\014 \002(\t\022\022\n\nauthorship\030\r \002(\t\022\r\n\005genus\030\016 \002(\t" +
-      "\022\021\n\tparentKey\030\017 \002(\005\022\017\n\007species\030\020 \002(\t\022\023\n\013" +
-      "lastCrawled\030\021 \002(\tB<\n:com.benjaminwicks.s" +
-      "tructureddatademo.model.protobuf.google"
-    };
-    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
-          public com.google.protobuf.ExtensionRegistry assignDescriptors(
-              com.google.protobuf.Descriptors.FileDescriptor root) {
-            descriptor = root;
-            return null;
-          }
-        };
-    com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-        }, assigner);
-    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor,
-        new String[] { "SpeciesList", });
-    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor =
-      internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor.getNestedTypes().get(0);
-    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor,
-        new String[] { "Kingdom", "Parent", "Family", "ImageURL", "LastInterpreted", "AccordingTo", "SpeciesKey", "CanonicalName", "TheClass", "Order", "Phylum", "ScientificName", "Authorship", "Genus", "ParentKey", "Species", "LastCrawled", });
-  }
   private SpeciesListOuterClass() {}
-
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
-  }
-
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
   }
   public interface SpeciesListOrBuilder extends
       // @@protoc_insertion_point(interface_extends:benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList)
@@ -78,12 +15,12 @@ public final class SpeciesListOuterClass {
     /**
      * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
      */
-    java.util.List<SpeciesList.Species>
+    java.util.List<com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species> 
         getSpeciesListList();
     /**
      * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
      */
-    SpeciesList.Species getSpeciesList(int index);
+    com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species getSpeciesList(int index);
     /**
      * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
      */
@@ -91,15 +28,14 @@ public final class SpeciesListOuterClass {
     /**
      * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
      */
-    java.util.List<? extends SpeciesList.SpeciesOrBuilder>
+    java.util.List<? extends com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.SpeciesOrBuilder> 
         getSpeciesListOrBuilderList();
     /**
      * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
      */
-    SpeciesList.SpeciesOrBuilder getSpeciesListOrBuilder(
-            int index);
+    com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.SpeciesOrBuilder getSpeciesListOrBuilder(
+        int index);
   }
-
   /**
    * Protobuf type {@code benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList}
    */
@@ -107,37 +43,28 @@ public final class SpeciesListOuterClass {
       com.google.protobuf.GeneratedMessage implements
       // @@protoc_insertion_point(message_implements:benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList)
       SpeciesListOrBuilder {
-    public static final int SPECIESLIST_FIELD_NUMBER = 1;
-    private static final SpeciesList defaultInstance;
-    private static final long serialVersionUID = 0L;
-    public static com.google.protobuf.Parser<SpeciesList> PARSER =
-        new com.google.protobuf.AbstractParser<SpeciesList>() {
-      public SpeciesList parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SpeciesList(input, extensionRegistry);
-      }
-    };
-
-    static {
-      defaultInstance = new SpeciesList(true);
-      defaultInstance.initFields();
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    private java.util.List<Species> speciesList_;
-    private byte memoizedIsInitialized = -1;
-    private int memoizedSerializedSize = -1;
-
     // Use SpeciesList.newBuilder() to construct.
     private SpeciesList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-
     private SpeciesList(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
+    private static final SpeciesList defaultInstance;
+    public static SpeciesList getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public SpeciesList getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
     private SpeciesList(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -163,10 +90,10 @@ public final class SpeciesListOuterClass {
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                speciesList_ = new java.util.ArrayList<Species>();
+                speciesList_ = new java.util.ArrayList<com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              speciesList_.add(input.readMessage(Species.PARSER, extensionRegistry));
+              speciesList_.add(input.readMessage(com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.PARSER, extensionRegistry));
               break;
             }
           }
@@ -184,200 +111,31 @@ public final class SpeciesListOuterClass {
         makeExtensionsImmutable();
       }
     }
-
-    public static SpeciesList getDefaultInstance() {
-      return defaultInstance;
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor;
+      return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor;
     }
 
-    public static SpeciesList parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static SpeciesList parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static SpeciesList parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static SpeciesList parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static SpeciesList parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-
-    public static SpeciesList parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static SpeciesList parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
-    }
-
-    public static SpeciesList parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
-    }
-
-    public static SpeciesList parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input);
-    }
-
-    public static SpeciesList parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() { return Builder.create(); }
-
-    public static Builder newBuilder(SpeciesList prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-
-    public SpeciesList getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    @Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-
-    protected FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_fieldAccessorTable
+      return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              SpeciesList.class, Builder.class);
+              com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.class, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Builder.class);
     }
 
-    @Override
+    public static com.google.protobuf.Parser<SpeciesList> PARSER =
+        new com.google.protobuf.AbstractParser<SpeciesList>() {
+      public SpeciesList parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SpeciesList(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
     public com.google.protobuf.Parser<SpeciesList> getParserForType() {
       return PARSER;
-    }
-
-    /**
-     * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
-     */
-    public java.util.List<Species> getSpeciesListList() {
-      return speciesList_;
-    }
-
-    /**
-     * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
-     */
-    public java.util.List<? extends SpeciesOrBuilder>
-        getSpeciesListOrBuilderList() {
-      return speciesList_;
-    }
-
-    /**
-     * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
-     */
-    public int getSpeciesListCount() {
-      return speciesList_.size();
-    }
-
-    /**
-     * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
-     */
-    public Species getSpeciesList(int index) {
-      return speciesList_.get(index);
-    }
-
-    /**
-     * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
-     */
-    public SpeciesOrBuilder getSpeciesListOrBuilder(
-        int index) {
-      return speciesList_.get(index);
-    }
-
-    private void initFields() {
-      speciesList_ = java.util.Collections.emptyList();
-    }
-
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      for (int i = 0; i < getSpeciesListCount(); i++) {
-        if (!getSpeciesList(i).isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      for (int i = 0; i < speciesList_.size(); i++) {
-        output.writeMessage(1, speciesList_.get(i));
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      for (int i = 0; i < speciesList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, speciesList_.get(i));
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-
-    @Override
-    protected Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
-    }
-
-    public Builder newBuilderForType() { return newBuilder(); }
-
-    public Builder toBuilder() { return newBuilder(this); }
-
-    @Override
-    protected Builder newBuilderForType(
-        BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
     }
 
     public interface SpeciesOrBuilder extends
@@ -385,234 +143,233 @@ public final class SpeciesListOuterClass {
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>required string kingdom = 1;</code>
+       * <code>optional string kingdom = 1;</code>
        */
       boolean hasKingdom();
       /**
-       * <code>required string kingdom = 1;</code>
+       * <code>optional string kingdom = 1;</code>
        */
-      String getKingdom();
+      java.lang.String getKingdom();
       /**
-       * <code>required string kingdom = 1;</code>
+       * <code>optional string kingdom = 1;</code>
        */
       com.google.protobuf.ByteString
           getKingdomBytes();
 
       /**
-       * <code>required string parent = 2;</code>
+       * <code>optional string parent = 2;</code>
        */
       boolean hasParent();
       /**
-       * <code>required string parent = 2;</code>
+       * <code>optional string parent = 2;</code>
        */
-      String getParent();
+      java.lang.String getParent();
       /**
-       * <code>required string parent = 2;</code>
+       * <code>optional string parent = 2;</code>
        */
       com.google.protobuf.ByteString
           getParentBytes();
 
       /**
-       * <code>required string family = 3;</code>
+       * <code>optional string family = 3;</code>
        */
       boolean hasFamily();
       /**
-       * <code>required string family = 3;</code>
+       * <code>optional string family = 3;</code>
        */
-      String getFamily();
+      java.lang.String getFamily();
       /**
-       * <code>required string family = 3;</code>
+       * <code>optional string family = 3;</code>
        */
       com.google.protobuf.ByteString
           getFamilyBytes();
 
       /**
-       * <code>required string imageUrl = 4;</code>
+       * <code>optional string imageURL = 4;</code>
        */
       boolean hasImageURL();
       /**
-       * <code>required string imageUrl = 4;</code>
+       * <code>optional string imageURL = 4;</code>
        */
-      String getImageURL();
+      java.lang.String getImageURL();
       /**
-       * <code>required string imageUrl = 4;</code>
+       * <code>optional string imageURL = 4;</code>
        */
       com.google.protobuf.ByteString
           getImageURLBytes();
 
       /**
-       * <code>required string lastInterpreted = 5;</code>
+       * <code>optional string lastInterpreted = 5;</code>
        */
       boolean hasLastInterpreted();
       /**
-       * <code>required string lastInterpreted = 5;</code>
+       * <code>optional string lastInterpreted = 5;</code>
        */
-      String getLastInterpreted();
+      java.lang.String getLastInterpreted();
       /**
-       * <code>required string lastInterpreted = 5;</code>
+       * <code>optional string lastInterpreted = 5;</code>
        */
       com.google.protobuf.ByteString
           getLastInterpretedBytes();
 
       /**
-       * <code>required string accordingTo = 6;</code>
+       * <code>optional string accordingTo = 6;</code>
        */
       boolean hasAccordingTo();
       /**
-       * <code>required string accordingTo = 6;</code>
+       * <code>optional string accordingTo = 6;</code>
        */
-      String getAccordingTo();
+      java.lang.String getAccordingTo();
       /**
-       * <code>required string accordingTo = 6;</code>
+       * <code>optional string accordingTo = 6;</code>
        */
       com.google.protobuf.ByteString
           getAccordingToBytes();
 
       /**
-       * <code>required int32 speciesKey = 7;</code>
+       * <code>optional int32 speciesKey = 7;</code>
        */
       boolean hasSpeciesKey();
       /**
-       * <code>required int32 speciesKey = 7;</code>
+       * <code>optional int32 speciesKey = 7;</code>
        */
       int getSpeciesKey();
 
       /**
-       * <code>required string canonicalName = 8;</code>
+       * <code>optional string canonicalName = 8;</code>
        */
       boolean hasCanonicalName();
       /**
-       * <code>required string canonicalName = 8;</code>
+       * <code>optional string canonicalName = 8;</code>
        */
-      String getCanonicalName();
+      java.lang.String getCanonicalName();
       /**
-       * <code>required string canonicalName = 8;</code>
+       * <code>optional string canonicalName = 8;</code>
        */
       com.google.protobuf.ByteString
           getCanonicalNameBytes();
 
       /**
-       * <code>required string theClass = 9;</code>
+       * <code>optional string theClass = 9;</code>
        */
       boolean hasTheClass();
       /**
-       * <code>required string theClass = 9;</code>
+       * <code>optional string theClass = 9;</code>
        */
-      String getTheClass();
+      java.lang.String getTheClass();
       /**
-       * <code>required string theClass = 9;</code>
+       * <code>optional string theClass = 9;</code>
        */
       com.google.protobuf.ByteString
           getTheClassBytes();
 
       /**
-       * <code>required string order = 10;</code>
+       * <code>optional string order = 10;</code>
        */
       boolean hasOrder();
       /**
-       * <code>required string order = 10;</code>
+       * <code>optional string order = 10;</code>
        */
-      String getOrder();
+      java.lang.String getOrder();
       /**
-       * <code>required string order = 10;</code>
+       * <code>optional string order = 10;</code>
        */
       com.google.protobuf.ByteString
           getOrderBytes();
 
       /**
-       * <code>required string phylum = 11;</code>
+       * <code>optional string phylum = 11;</code>
        */
       boolean hasPhylum();
       /**
-       * <code>required string phylum = 11;</code>
+       * <code>optional string phylum = 11;</code>
        */
-      String getPhylum();
+      java.lang.String getPhylum();
       /**
-       * <code>required string phylum = 11;</code>
+       * <code>optional string phylum = 11;</code>
        */
       com.google.protobuf.ByteString
           getPhylumBytes();
 
       /**
-       * <code>required string scientificName = 12;</code>
+       * <code>optional string scientificName = 12;</code>
        */
       boolean hasScientificName();
       /**
-       * <code>required string scientificName = 12;</code>
+       * <code>optional string scientificName = 12;</code>
        */
-      String getScientificName();
+      java.lang.String getScientificName();
       /**
-       * <code>required string scientificName = 12;</code>
+       * <code>optional string scientificName = 12;</code>
        */
       com.google.protobuf.ByteString
           getScientificNameBytes();
 
       /**
-       * <code>required string authorship = 13;</code>
+       * <code>optional string authorship = 13;</code>
        */
       boolean hasAuthorship();
       /**
-       * <code>required string authorship = 13;</code>
+       * <code>optional string authorship = 13;</code>
        */
-      String getAuthorship();
+      java.lang.String getAuthorship();
       /**
-       * <code>required string authorship = 13;</code>
+       * <code>optional string authorship = 13;</code>
        */
       com.google.protobuf.ByteString
           getAuthorshipBytes();
 
       /**
-       * <code>required string genus = 14;</code>
+       * <code>optional string genus = 14;</code>
        */
       boolean hasGenus();
       /**
-       * <code>required string genus = 14;</code>
+       * <code>optional string genus = 14;</code>
        */
-      String getGenus();
+      java.lang.String getGenus();
       /**
-       * <code>required string genus = 14;</code>
+       * <code>optional string genus = 14;</code>
        */
       com.google.protobuf.ByteString
           getGenusBytes();
 
       /**
-       * <code>required int32 parentKey = 15;</code>
+       * <code>optional int32 parentKey = 15;</code>
        */
       boolean hasParentKey();
       /**
-       * <code>required int32 parentKey = 15;</code>
+       * <code>optional int32 parentKey = 15;</code>
        */
       int getParentKey();
 
       /**
-       * <code>required string species = 16;</code>
+       * <code>optional string species = 16;</code>
        */
       boolean hasSpecies();
       /**
-       * <code>required string species = 16;</code>
+       * <code>optional string species = 16;</code>
        */
-      String getSpecies();
+      java.lang.String getSpecies();
       /**
-       * <code>required string species = 16;</code>
+       * <code>optional string species = 16;</code>
        */
       com.google.protobuf.ByteString
           getSpeciesBytes();
 
       /**
-       * <code>required string lastCrawled = 17;</code>
+       * <code>optional string lastCrawled = 17;</code>
        */
       boolean hasLastCrawled();
       /**
-       * <code>required string lastCrawled = 17;</code>
+       * <code>optional string lastCrawled = 17;</code>
        */
-      String getLastCrawled();
+      java.lang.String getLastCrawled();
       /**
-       * <code>required string lastCrawled = 17;</code>
+       * <code>optional string lastCrawled = 17;</code>
        */
       com.google.protobuf.ByteString
           getLastCrawledBytes();
     }
-
     /**
      * Protobuf type {@code benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species}
      */
@@ -620,68 +377,28 @@ public final class SpeciesListOuterClass {
         com.google.protobuf.GeneratedMessage implements
         // @@protoc_insertion_point(message_implements:benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species)
         SpeciesOrBuilder {
-      public static final int KINGDOM_FIELD_NUMBER = 1;
-      public static final int PARENT_FIELD_NUMBER = 2;
-      public static final int FAMILY_FIELD_NUMBER = 3;
-      public static final int IMAGEURL_FIELD_NUMBER = 4;
-      public static final int LASTINTERPRETED_FIELD_NUMBER = 5;
-      public static final int ACCORDINGTO_FIELD_NUMBER = 6;
-      public static final int SPECIESKEY_FIELD_NUMBER = 7;
-      public static final int CANONICALNAME_FIELD_NUMBER = 8;
-      public static final int THECLASS_FIELD_NUMBER = 9;
-      public static final int ORDER_FIELD_NUMBER = 10;
-      public static final int PHYLUM_FIELD_NUMBER = 11;
-      public static final int SCIENTIFICNAME_FIELD_NUMBER = 12;
-      public static final int AUTHORSHIP_FIELD_NUMBER = 13;
-      public static final int GENUS_FIELD_NUMBER = 14;
-      public static final int PARENTKEY_FIELD_NUMBER = 15;
-      public static final int SPECIES_FIELD_NUMBER = 16;
-      public static final int LASTCRAWLED_FIELD_NUMBER = 17;
-      private static final Species defaultInstance;
-      private static final long serialVersionUID = 0L;
-      public static com.google.protobuf.Parser<Species> PARSER =
-          new com.google.protobuf.AbstractParser<Species>() {
-        public Species parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Species(input, extensionRegistry);
-        }
-      };
-
-      static {
-        defaultInstance = new Species(true);
-        defaultInstance.initFields();
-      }
-
-      private final com.google.protobuf.UnknownFieldSet unknownFields;
-      private int bitField0_;
-      private Object kingdom_;
-      private Object parent_;
-      private Object family_;
-      private Object imageURL_;
-      private Object lastInterpreted_;
-      private Object accordingTo_;
-      private int speciesKey_;
-      private Object canonicalName_;
-      private Object theClass_;
-      private Object order_;
-      private Object phylum_;
-      private Object scientificName_;
-      private Object authorship_;
-      private Object genus_;
-      private int parentKey_;
-      private Object species_;
-      private Object lastCrawled_;
-      private byte memoizedIsInitialized = -1;
-      private int memoizedSerializedSize = -1;
       // Use Species.newBuilder() to construct.
       private Species(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
         super(builder);
         this.unknownFields = builder.getUnknownFields();
       }
-
       private Species(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+      private static final Species defaultInstance;
+      public static Species getDefaultInstance() {
+        return defaultInstance;
+      }
+
+      public Species getDefaultInstanceForType() {
+        return defaultInstance;
+      }
+
+      private final com.google.protobuf.UnknownFieldSet unknownFields;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+          getUnknownFields() {
+        return this.unknownFields;
+      }
       private Species(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -817,141 +534,69 @@ public final class SpeciesListOuterClass {
           makeExtensionsImmutable();
         }
       }
-
-      public static Species getDefaultInstance() {
-        return defaultInstance;
-      }
-
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor;
+        return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor;
       }
 
-      public static Species parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-
-      public static Species parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-
-      public static Species parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-      }
-
-      public static Species parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data, extensionRegistry);
-      }
-
-      public static Species parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input);
-      }
-
-      public static Species parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input, extensionRegistry);
-      }
-
-      public static Species parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
-        return PARSER.parseDelimitedFrom(input);
-      }
-
-      public static Species parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseDelimitedFrom(input, extensionRegistry);
-      }
-
-      public static Species parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input);
-      }
-
-      public static Species parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        return PARSER.parseFrom(input, extensionRegistry);
-      }
-
-      public static Builder newBuilder() { return Builder.create(); }
-
-      public static Builder newBuilder(Species prototype) {
-        return newBuilder().mergeFrom(prototype);
-      }
-
-      public Species getDefaultInstanceForType() {
-        return defaultInstance;
-      }
-
-      @Override
-      public final com.google.protobuf.UnknownFieldSet
-          getUnknownFields() {
-        return this.unknownFields;
-      }
-
-      protected FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_fieldAccessorTable
+        return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Species.class, Builder.class);
+                com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.class, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder.class);
       }
 
-      @Override
+      public static com.google.protobuf.Parser<Species> PARSER =
+          new com.google.protobuf.AbstractParser<Species>() {
+        public Species parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new Species(input, extensionRegistry);
+        }
+      };
+
+      @java.lang.Override
       public com.google.protobuf.Parser<Species> getParserForType() {
         return PARSER;
       }
 
+      private int bitField0_;
+      public static final int KINGDOM_FIELD_NUMBER = 1;
+      private java.lang.Object kingdom_;
       /**
-       * <code>required string kingdom = 1;</code>
+       * <code>optional string kingdom = 1;</code>
        */
       public boolean hasKingdom() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-
       /**
-       * <code>required string kingdom = 1;</code>
+       * <code>optional string kingdom = 1;</code>
        */
-      public String getKingdom() {
-        Object ref = kingdom_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getKingdom() {
+        java.lang.Object ref = kingdom_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             kingdom_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string kingdom = 1;</code>
+       * <code>optional string kingdom = 1;</code>
        */
       public com.google.protobuf.ByteString
           getKingdomBytes() {
-        Object ref = kingdom_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = kingdom_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           kingdom_ = b;
           return b;
         } else {
@@ -959,41 +604,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int PARENT_FIELD_NUMBER = 2;
+      private java.lang.Object parent_;
       /**
-       * <code>required string parent = 2;</code>
+       * <code>optional string parent = 2;</code>
        */
       public boolean hasParent() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-
       /**
-       * <code>required string parent = 2;</code>
+       * <code>optional string parent = 2;</code>
        */
-      public String getParent() {
-        Object ref = parent_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getParent() {
+        java.lang.Object ref = parent_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             parent_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string parent = 2;</code>
+       * <code>optional string parent = 2;</code>
        */
       public com.google.protobuf.ByteString
           getParentBytes() {
-        Object ref = parent_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = parent_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           parent_ = b;
           return b;
         } else {
@@ -1001,41 +646,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int FAMILY_FIELD_NUMBER = 3;
+      private java.lang.Object family_;
       /**
-       * <code>required string family = 3;</code>
+       * <code>optional string family = 3;</code>
        */
       public boolean hasFamily() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-
       /**
-       * <code>required string family = 3;</code>
+       * <code>optional string family = 3;</code>
        */
-      public String getFamily() {
-        Object ref = family_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getFamily() {
+        java.lang.Object ref = family_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             family_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string family = 3;</code>
+       * <code>optional string family = 3;</code>
        */
       public com.google.protobuf.ByteString
           getFamilyBytes() {
-        Object ref = family_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = family_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           family_ = b;
           return b;
         } else {
@@ -1043,41 +688,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int IMAGEURL_FIELD_NUMBER = 4;
+      private java.lang.Object imageURL_;
       /**
-       * <code>required string imageUrl = 4;</code>
+       * <code>optional string imageURL = 4;</code>
        */
       public boolean hasImageURL() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
-
       /**
-       * <code>required string imageUrl = 4;</code>
+       * <code>optional string imageURL = 4;</code>
        */
-      public String getImageURL() {
-        Object ref = imageURL_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getImageURL() {
+        java.lang.Object ref = imageURL_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             imageURL_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string imageUrl = 4;</code>
+       * <code>optional string imageURL = 4;</code>
        */
       public com.google.protobuf.ByteString
           getImageURLBytes() {
-        Object ref = imageURL_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = imageURL_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           imageURL_ = b;
           return b;
         } else {
@@ -1085,41 +730,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int LASTINTERPRETED_FIELD_NUMBER = 5;
+      private java.lang.Object lastInterpreted_;
       /**
-       * <code>required string lastInterpreted = 5;</code>
+       * <code>optional string lastInterpreted = 5;</code>
        */
       public boolean hasLastInterpreted() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
-
       /**
-       * <code>required string lastInterpreted = 5;</code>
+       * <code>optional string lastInterpreted = 5;</code>
        */
-      public String getLastInterpreted() {
-        Object ref = lastInterpreted_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getLastInterpreted() {
+        java.lang.Object ref = lastInterpreted_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             lastInterpreted_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string lastInterpreted = 5;</code>
+       * <code>optional string lastInterpreted = 5;</code>
        */
       public com.google.protobuf.ByteString
           getLastInterpretedBytes() {
-        Object ref = lastInterpreted_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = lastInterpreted_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           lastInterpreted_ = b;
           return b;
         } else {
@@ -1127,41 +772,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int ACCORDINGTO_FIELD_NUMBER = 6;
+      private java.lang.Object accordingTo_;
       /**
-       * <code>required string accordingTo = 6;</code>
+       * <code>optional string accordingTo = 6;</code>
        */
       public boolean hasAccordingTo() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
-
       /**
-       * <code>required string accordingTo = 6;</code>
+       * <code>optional string accordingTo = 6;</code>
        */
-      public String getAccordingTo() {
-        Object ref = accordingTo_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getAccordingTo() {
+        java.lang.Object ref = accordingTo_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             accordingTo_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string accordingTo = 6;</code>
+       * <code>optional string accordingTo = 6;</code>
        */
       public com.google.protobuf.ByteString
           getAccordingToBytes() {
-        Object ref = accordingTo_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = accordingTo_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           accordingTo_ = b;
           return b;
         } else {
@@ -1169,55 +814,56 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int SPECIESKEY_FIELD_NUMBER = 7;
+      private int speciesKey_;
       /**
-       * <code>required int32 speciesKey = 7;</code>
+       * <code>optional int32 speciesKey = 7;</code>
        */
       public boolean hasSpeciesKey() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
-
       /**
-       * <code>required int32 speciesKey = 7;</code>
+       * <code>optional int32 speciesKey = 7;</code>
        */
       public int getSpeciesKey() {
         return speciesKey_;
       }
 
+      public static final int CANONICALNAME_FIELD_NUMBER = 8;
+      private java.lang.Object canonicalName_;
       /**
-       * <code>required string canonicalName = 8;</code>
+       * <code>optional string canonicalName = 8;</code>
        */
       public boolean hasCanonicalName() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
-
       /**
-       * <code>required string canonicalName = 8;</code>
+       * <code>optional string canonicalName = 8;</code>
        */
-      public String getCanonicalName() {
-        Object ref = canonicalName_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getCanonicalName() {
+        java.lang.Object ref = canonicalName_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             canonicalName_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string canonicalName = 8;</code>
+       * <code>optional string canonicalName = 8;</code>
        */
       public com.google.protobuf.ByteString
           getCanonicalNameBytes() {
-        Object ref = canonicalName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = canonicalName_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           canonicalName_ = b;
           return b;
         } else {
@@ -1225,41 +871,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int THECLASS_FIELD_NUMBER = 9;
+      private java.lang.Object theClass_;
       /**
-       * <code>required string theClass = 9;</code>
+       * <code>optional string theClass = 9;</code>
        */
       public boolean hasTheClass() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
-
       /**
-       * <code>required string theClass = 9;</code>
+       * <code>optional string theClass = 9;</code>
        */
-      public String getTheClass() {
-        Object ref = theClass_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getTheClass() {
+        java.lang.Object ref = theClass_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             theClass_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string theClass = 9;</code>
+       * <code>optional string theClass = 9;</code>
        */
       public com.google.protobuf.ByteString
           getTheClassBytes() {
-        Object ref = theClass_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = theClass_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           theClass_ = b;
           return b;
         } else {
@@ -1267,41 +913,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int ORDER_FIELD_NUMBER = 10;
+      private java.lang.Object order_;
       /**
-       * <code>required string order = 10;</code>
+       * <code>optional string order = 10;</code>
        */
       public boolean hasOrder() {
         return ((bitField0_ & 0x00000200) == 0x00000200);
       }
-
       /**
-       * <code>required string order = 10;</code>
+       * <code>optional string order = 10;</code>
        */
-      public String getOrder() {
-        Object ref = order_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getOrder() {
+        java.lang.Object ref = order_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             order_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string order = 10;</code>
+       * <code>optional string order = 10;</code>
        */
       public com.google.protobuf.ByteString
           getOrderBytes() {
-        Object ref = order_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = order_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           order_ = b;
           return b;
         } else {
@@ -1309,41 +955,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int PHYLUM_FIELD_NUMBER = 11;
+      private java.lang.Object phylum_;
       /**
-       * <code>required string phylum = 11;</code>
+       * <code>optional string phylum = 11;</code>
        */
       public boolean hasPhylum() {
         return ((bitField0_ & 0x00000400) == 0x00000400);
       }
-
       /**
-       * <code>required string phylum = 11;</code>
+       * <code>optional string phylum = 11;</code>
        */
-      public String getPhylum() {
-        Object ref = phylum_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getPhylum() {
+        java.lang.Object ref = phylum_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             phylum_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string phylum = 11;</code>
+       * <code>optional string phylum = 11;</code>
        */
       public com.google.protobuf.ByteString
           getPhylumBytes() {
-        Object ref = phylum_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = phylum_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           phylum_ = b;
           return b;
         } else {
@@ -1351,41 +997,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int SCIENTIFICNAME_FIELD_NUMBER = 12;
+      private java.lang.Object scientificName_;
       /**
-       * <code>required string scientificName = 12;</code>
+       * <code>optional string scientificName = 12;</code>
        */
       public boolean hasScientificName() {
         return ((bitField0_ & 0x00000800) == 0x00000800);
       }
-
       /**
-       * <code>required string scientificName = 12;</code>
+       * <code>optional string scientificName = 12;</code>
        */
-      public String getScientificName() {
-        Object ref = scientificName_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getScientificName() {
+        java.lang.Object ref = scientificName_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             scientificName_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string scientificName = 12;</code>
+       * <code>optional string scientificName = 12;</code>
        */
       public com.google.protobuf.ByteString
           getScientificNameBytes() {
-        Object ref = scientificName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = scientificName_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           scientificName_ = b;
           return b;
         } else {
@@ -1393,41 +1039,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int AUTHORSHIP_FIELD_NUMBER = 13;
+      private java.lang.Object authorship_;
       /**
-       * <code>required string authorship = 13;</code>
+       * <code>optional string authorship = 13;</code>
        */
       public boolean hasAuthorship() {
         return ((bitField0_ & 0x00001000) == 0x00001000);
       }
-
       /**
-       * <code>required string authorship = 13;</code>
+       * <code>optional string authorship = 13;</code>
        */
-      public String getAuthorship() {
-        Object ref = authorship_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getAuthorship() {
+        java.lang.Object ref = authorship_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             authorship_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string authorship = 13;</code>
+       * <code>optional string authorship = 13;</code>
        */
       public com.google.protobuf.ByteString
           getAuthorshipBytes() {
-        Object ref = authorship_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = authorship_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           authorship_ = b;
           return b;
         } else {
@@ -1435,41 +1081,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int GENUS_FIELD_NUMBER = 14;
+      private java.lang.Object genus_;
       /**
-       * <code>required string genus = 14;</code>
+       * <code>optional string genus = 14;</code>
        */
       public boolean hasGenus() {
         return ((bitField0_ & 0x00002000) == 0x00002000);
       }
-
       /**
-       * <code>required string genus = 14;</code>
+       * <code>optional string genus = 14;</code>
        */
-      public String getGenus() {
-        Object ref = genus_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getGenus() {
+        java.lang.Object ref = genus_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             genus_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string genus = 14;</code>
+       * <code>optional string genus = 14;</code>
        */
       public com.google.protobuf.ByteString
           getGenusBytes() {
-        Object ref = genus_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = genus_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           genus_ = b;
           return b;
         } else {
@@ -1477,55 +1123,56 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int PARENTKEY_FIELD_NUMBER = 15;
+      private int parentKey_;
       /**
-       * <code>required int32 parentKey = 15;</code>
+       * <code>optional int32 parentKey = 15;</code>
        */
       public boolean hasParentKey() {
         return ((bitField0_ & 0x00004000) == 0x00004000);
       }
-
       /**
-       * <code>required int32 parentKey = 15;</code>
+       * <code>optional int32 parentKey = 15;</code>
        */
       public int getParentKey() {
         return parentKey_;
       }
 
+      public static final int SPECIES_FIELD_NUMBER = 16;
+      private java.lang.Object species_;
       /**
-       * <code>required string species = 16;</code>
+       * <code>optional string species = 16;</code>
        */
       public boolean hasSpecies() {
         return ((bitField0_ & 0x00008000) == 0x00008000);
       }
-
       /**
-       * <code>required string species = 16;</code>
+       * <code>optional string species = 16;</code>
        */
-      public String getSpecies() {
-        Object ref = species_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getSpecies() {
+        java.lang.Object ref = species_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             species_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string species = 16;</code>
+       * <code>optional string species = 16;</code>
        */
       public com.google.protobuf.ByteString
           getSpeciesBytes() {
-        Object ref = species_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = species_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           species_ = b;
           return b;
         } else {
@@ -1533,41 +1180,41 @@ public final class SpeciesListOuterClass {
         }
       }
 
+      public static final int LASTCRAWLED_FIELD_NUMBER = 17;
+      private java.lang.Object lastCrawled_;
       /**
-       * <code>required string lastCrawled = 17;</code>
+       * <code>optional string lastCrawled = 17;</code>
        */
       public boolean hasLastCrawled() {
         return ((bitField0_ & 0x00010000) == 0x00010000);
       }
-
       /**
-       * <code>required string lastCrawled = 17;</code>
+       * <code>optional string lastCrawled = 17;</code>
        */
-      public String getLastCrawled() {
-        Object ref = lastCrawled_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getLastCrawled() {
+        java.lang.Object ref = lastCrawled_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs =
+          com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             lastCrawled_ = s;
           }
           return s;
         }
       }
-
       /**
-       * <code>required string lastCrawled = 17;</code>
+       * <code>optional string lastCrawled = 17;</code>
        */
       public com.google.protobuf.ByteString
           getLastCrawledBytes() {
-        Object ref = lastCrawled_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+        java.lang.Object ref = lastCrawled_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           lastCrawled_ = b;
           return b;
         } else {
@@ -1594,80 +1241,12 @@ public final class SpeciesListOuterClass {
         species_ = "";
         lastCrawled_ = "";
       }
-
+      private byte memoizedIsInitialized = -1;
       public final boolean isInitialized() {
         byte isInitialized = memoizedIsInitialized;
         if (isInitialized == 1) return true;
         if (isInitialized == 0) return false;
 
-        if (!hasKingdom()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasParent()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasFamily()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasImageURL()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasLastInterpreted()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasAccordingTo()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasSpeciesKey()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasCanonicalName()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasTheClass()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasOrder()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasPhylum()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasScientificName()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasAuthorship()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasGenus()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasParentKey()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasSpecies()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasLastCrawled()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
         memoizedIsInitialized = 1;
         return true;
       }
@@ -1729,6 +1308,7 @@ public final class SpeciesListOuterClass {
         getUnknownFields().writeTo(output);
       }
 
+      private int memoizedSerializedSize = -1;
       public int getSerializedSize() {
         int size = memoizedSerializedSize;
         if (size != -1) return size;
@@ -1807,77 +1387,114 @@ public final class SpeciesListOuterClass {
         return size;
       }
 
-      @Override
-      protected Object writeReplace()
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      protected java.lang.Object writeReplace()
           throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
 
-      public Builder newBuilderForType() { return newBuilder(); }
+      public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
+      public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input);
+      }
+      public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      }
+      public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input);
+      }
+      public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return PARSER.parseFrom(input, extensionRegistry);
+      }
 
+      public static Builder newBuilder() { return Builder.create(); }
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder(com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species prototype) {
+        return newBuilder().mergeFrom(prototype);
+      }
       public Builder toBuilder() { return newBuilder(this); }
 
-      @Override
+      @java.lang.Override
       protected Builder newBuilderForType(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
-
       /**
        * Protobuf type {@code benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessage.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species)
-          SpeciesOrBuilder {
-        private int bitField0_;
-        private Object kingdom_ = "";
-        private Object parent_ = "";
-        private Object family_ = "";
-        private Object imageURL_ = "";
-        private Object lastInterpreted_ = "";
-        private Object accordingTo_ = "";
-        private int speciesKey_ ;
-        private Object canonicalName_ = "";
-        private Object theClass_ = "";
-        private Object order_ = "";
-        private Object phylum_ = "";
-        private Object scientificName_ = "";
-        private Object authorship_ = "";
-        private Object genus_ = "";
-        private int parentKey_ ;
-        private Object species_ = "";
-        private Object lastCrawled_ = "";
+          com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.SpeciesOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.class, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder.class);
+        }
+
         // Construct using com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.newBuilder()
         private Builder() {
           maybeForceBuilderInitialization();
         }
+
         private Builder(
-            BuilderParent parent) {
+            com.google.protobuf.GeneratedMessage.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
-
-        public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-          return SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor;
-        }
-
-        private static Builder create() {
-          return new Builder();
-        }
-
-        protected FieldAccessorTable
-            internalGetFieldAccessorTable() {
-          return SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                  Species.class, Builder.class);
-        }
-
         private void maybeForceBuilderInitialization() {
           if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
           }
+        }
+        private static Builder create() {
+          return new Builder();
         }
 
         public Builder clear() {
@@ -1925,23 +1542,23 @@ public final class SpeciesListOuterClass {
 
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor;
+          return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor;
         }
 
-        public Species getDefaultInstanceForType() {
-          return Species.getDefaultInstance();
+        public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species getDefaultInstanceForType() {
+          return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.getDefaultInstance();
         }
 
-        public Species build() {
-          Species result = buildPartial();
+        public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species build() {
+          com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        public Species buildPartial() {
-          Species result = new Species(this);
+        public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species buildPartial() {
+          com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species result = new com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species(this);
           int from_bitField0_ = bitField0_;
           int to_bitField0_ = 0;
           if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2018,16 +1635,16 @@ public final class SpeciesListOuterClass {
         }
 
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof Species) {
-            return mergeFrom((Species)other);
+          if (other instanceof com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species) {
+            return mergeFrom((com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(Species other) {
-          if (other == Species.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species other) {
+          if (other == com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.getDefaultInstance()) return this;
           if (other.hasKingdom()) {
             bitField0_ |= 0x00000001;
             kingdom_ = other.kingdom_;
@@ -2114,82 +1731,18 @@ public final class SpeciesListOuterClass {
         }
 
         public final boolean isInitialized() {
-          if (!hasKingdom()) {
-
-            return false;
-          }
-          if (!hasParent()) {
-
-            return false;
-          }
-          if (!hasFamily()) {
-
-            return false;
-          }
-          if (!hasImageURL()) {
-
-            return false;
-          }
-          if (!hasLastInterpreted()) {
-
-            return false;
-          }
-          if (!hasAccordingTo()) {
-
-            return false;
-          }
-          if (!hasSpeciesKey()) {
-
-            return false;
-          }
-          if (!hasCanonicalName()) {
-
-            return false;
-          }
-          if (!hasTheClass()) {
-
-            return false;
-          }
-          if (!hasOrder()) {
-
-            return false;
-          }
-          if (!hasPhylum()) {
-
-            return false;
-          }
-          if (!hasScientificName()) {
-
-            return false;
-          }
-          if (!hasAuthorship()) {
-
-            return false;
-          }
-          if (!hasGenus()) {
-
-            return false;
-          }
-          if (!hasParentKey()) {
-
-            return false;
-          }
-          if (!hasSpecies()) {
-
-            return false;
-          }
-          return hasLastCrawled();
+          return true;
         }
 
         public Builder mergeFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          Species parsedMessage = null;
+          com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (Species) e.getUnfinishedMessage();
+            parsedMessage = (com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species) e.getUnfinishedMessage();
             throw e;
           } finally {
             if (parsedMessage != null) {
@@ -2198,37 +1751,53 @@ public final class SpeciesListOuterClass {
           }
           return this;
         }
+        private int bitField0_;
 
+        private java.lang.Object kingdom_ = "";
         /**
-         * <code>required string kingdom = 1;</code>
+         * <code>optional string kingdom = 1;</code>
          */
         public boolean hasKingdom() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
-
         /**
-         * <code>required string kingdom = 1;</code>
+         * <code>optional string kingdom = 1;</code>
          */
-        public String getKingdom() {
-          Object ref = kingdom_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getKingdom() {
+          java.lang.Object ref = kingdom_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               kingdom_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string kingdom = 1;</code>
+         * <code>optional string kingdom = 1;</code>
+         */
+        public com.google.protobuf.ByteString
+            getKingdomBytes() {
+          java.lang.Object ref = kingdom_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            kingdom_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string kingdom = 1;</code>
          */
         public Builder setKingdom(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2237,26 +1806,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string kingdom = 1;</code>
+         * <code>optional string kingdom = 1;</code>
          */
-        public com.google.protobuf.ByteString
-            getKingdomBytes() {
-          Object ref = kingdom_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            kingdom_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearKingdom() {
+          bitField0_ = (bitField0_ & ~0x00000001);
+          kingdom_ = getDefaultInstance().getKingdom();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string kingdom = 1;</code>
+         * <code>optional string kingdom = 1;</code>
          */
         public Builder setKingdomBytes(
             com.google.protobuf.ByteString value) {
@@ -2269,46 +1829,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object parent_ = "";
         /**
-         * <code>required string kingdom = 1;</code>
-         */
-        public Builder clearKingdom() {
-          bitField0_ = (bitField0_ & ~0x00000001);
-          kingdom_ = getDefaultInstance().getKingdom();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string parent = 2;</code>
+         * <code>optional string parent = 2;</code>
          */
         public boolean hasParent() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
-
         /**
-         * <code>required string parent = 2;</code>
+         * <code>optional string parent = 2;</code>
          */
-        public String getParent() {
-          Object ref = parent_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getParent() {
+          java.lang.Object ref = parent_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               parent_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string parent = 2;</code>
+         * <code>optional string parent = 2;</code>
+         */
+        public com.google.protobuf.ByteString
+            getParentBytes() {
+          java.lang.Object ref = parent_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            parent_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string parent = 2;</code>
          */
         public Builder setParent(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2317,26 +1882,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string parent = 2;</code>
+         * <code>optional string parent = 2;</code>
          */
-        public com.google.protobuf.ByteString
-            getParentBytes() {
-          Object ref = parent_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            parent_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearParent() {
+          bitField0_ = (bitField0_ & ~0x00000002);
+          parent_ = getDefaultInstance().getParent();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string parent = 2;</code>
+         * <code>optional string parent = 2;</code>
          */
         public Builder setParentBytes(
             com.google.protobuf.ByteString value) {
@@ -2349,46 +1905,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object family_ = "";
         /**
-         * <code>required string parent = 2;</code>
-         */
-        public Builder clearParent() {
-          bitField0_ = (bitField0_ & ~0x00000002);
-          parent_ = getDefaultInstance().getParent();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string family = 3;</code>
+         * <code>optional string family = 3;</code>
          */
         public boolean hasFamily() {
           return ((bitField0_ & 0x00000004) == 0x00000004);
         }
-
         /**
-         * <code>required string family = 3;</code>
+         * <code>optional string family = 3;</code>
          */
-        public String getFamily() {
-          Object ref = family_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getFamily() {
+          java.lang.Object ref = family_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               family_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string family = 3;</code>
+         * <code>optional string family = 3;</code>
+         */
+        public com.google.protobuf.ByteString
+            getFamilyBytes() {
+          java.lang.Object ref = family_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            family_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string family = 3;</code>
          */
         public Builder setFamily(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2397,26 +1958,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string family = 3;</code>
+         * <code>optional string family = 3;</code>
          */
-        public com.google.protobuf.ByteString
-            getFamilyBytes() {
-          Object ref = family_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            family_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearFamily() {
+          bitField0_ = (bitField0_ & ~0x00000004);
+          family_ = getDefaultInstance().getFamily();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string family = 3;</code>
+         * <code>optional string family = 3;</code>
          */
         public Builder setFamilyBytes(
             com.google.protobuf.ByteString value) {
@@ -2429,46 +1981,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object imageURL_ = "";
         /**
-         * <code>required string family = 3;</code>
-         */
-        public Builder clearFamily() {
-          bitField0_ = (bitField0_ & ~0x00000004);
-          family_ = getDefaultInstance().getFamily();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string imageUrl = 4;</code>
+         * <code>optional string imageURL = 4;</code>
          */
         public boolean hasImageURL() {
           return ((bitField0_ & 0x00000008) == 0x00000008);
         }
-
         /**
-         * <code>required string imageUrl = 4;</code>
+         * <code>optional string imageURL = 4;</code>
          */
-        public String getImageURL() {
-          Object ref = imageURL_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getImageURL() {
+          java.lang.Object ref = imageURL_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               imageURL_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string imageUrl = 4;</code>
+         * <code>optional string imageURL = 4;</code>
+         */
+        public com.google.protobuf.ByteString
+            getImageURLBytes() {
+          java.lang.Object ref = imageURL_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            imageURL_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string imageURL = 4;</code>
          */
         public Builder setImageURL(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2477,26 +2034,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string imageUrl = 4;</code>
+         * <code>optional string imageURL = 4;</code>
          */
-        public com.google.protobuf.ByteString
-            getImageURLBytes() {
-          Object ref = imageURL_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            imageURL_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearImageURL() {
+          bitField0_ = (bitField0_ & ~0x00000008);
+          imageURL_ = getDefaultInstance().getImageURL();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string imageUrl = 4;</code>
+         * <code>optional string imageURL = 4;</code>
          */
         public Builder setImageURLBytes(
             com.google.protobuf.ByteString value) {
@@ -2509,46 +2057,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object lastInterpreted_ = "";
         /**
-         * <code>required string imageUrl = 4;</code>
-         */
-        public Builder clearImageURL() {
-          bitField0_ = (bitField0_ & ~0x00000008);
-          imageURL_ = getDefaultInstance().getImageURL();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string lastInterpreted = 5;</code>
+         * <code>optional string lastInterpreted = 5;</code>
          */
         public boolean hasLastInterpreted() {
           return ((bitField0_ & 0x00000010) == 0x00000010);
         }
-
         /**
-         * <code>required string lastInterpreted = 5;</code>
+         * <code>optional string lastInterpreted = 5;</code>
          */
-        public String getLastInterpreted() {
-          Object ref = lastInterpreted_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getLastInterpreted() {
+          java.lang.Object ref = lastInterpreted_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               lastInterpreted_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string lastInterpreted = 5;</code>
+         * <code>optional string lastInterpreted = 5;</code>
+         */
+        public com.google.protobuf.ByteString
+            getLastInterpretedBytes() {
+          java.lang.Object ref = lastInterpreted_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            lastInterpreted_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string lastInterpreted = 5;</code>
          */
         public Builder setLastInterpreted(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2557,26 +2110,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string lastInterpreted = 5;</code>
+         * <code>optional string lastInterpreted = 5;</code>
          */
-        public com.google.protobuf.ByteString
-            getLastInterpretedBytes() {
-          Object ref = lastInterpreted_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            lastInterpreted_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearLastInterpreted() {
+          bitField0_ = (bitField0_ & ~0x00000010);
+          lastInterpreted_ = getDefaultInstance().getLastInterpreted();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string lastInterpreted = 5;</code>
+         * <code>optional string lastInterpreted = 5;</code>
          */
         public Builder setLastInterpretedBytes(
             com.google.protobuf.ByteString value) {
@@ -2589,46 +2133,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object accordingTo_ = "";
         /**
-         * <code>required string lastInterpreted = 5;</code>
-         */
-        public Builder clearLastInterpreted() {
-          bitField0_ = (bitField0_ & ~0x00000010);
-          lastInterpreted_ = getDefaultInstance().getLastInterpreted();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string accordingTo = 6;</code>
+         * <code>optional string accordingTo = 6;</code>
          */
         public boolean hasAccordingTo() {
           return ((bitField0_ & 0x00000020) == 0x00000020);
         }
-
         /**
-         * <code>required string accordingTo = 6;</code>
+         * <code>optional string accordingTo = 6;</code>
          */
-        public String getAccordingTo() {
-          Object ref = accordingTo_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getAccordingTo() {
+          java.lang.Object ref = accordingTo_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               accordingTo_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string accordingTo = 6;</code>
+         * <code>optional string accordingTo = 6;</code>
+         */
+        public com.google.protobuf.ByteString
+            getAccordingToBytes() {
+          java.lang.Object ref = accordingTo_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            accordingTo_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string accordingTo = 6;</code>
          */
         public Builder setAccordingTo(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2637,26 +2186,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string accordingTo = 6;</code>
+         * <code>optional string accordingTo = 6;</code>
          */
-        public com.google.protobuf.ByteString
-            getAccordingToBytes() {
-          Object ref = accordingTo_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            accordingTo_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearAccordingTo() {
+          bitField0_ = (bitField0_ & ~0x00000020);
+          accordingTo_ = getDefaultInstance().getAccordingTo();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string accordingTo = 6;</code>
+         * <code>optional string accordingTo = 6;</code>
          */
         public Builder setAccordingToBytes(
             com.google.protobuf.ByteString value) {
@@ -2669,32 +2209,21 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private int speciesKey_ ;
         /**
-         * <code>required string accordingTo = 6;</code>
-         */
-        public Builder clearAccordingTo() {
-          bitField0_ = (bitField0_ & ~0x00000020);
-          accordingTo_ = getDefaultInstance().getAccordingTo();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required int32 speciesKey = 7;</code>
+         * <code>optional int32 speciesKey = 7;</code>
          */
         public boolean hasSpeciesKey() {
           return ((bitField0_ & 0x00000040) == 0x00000040);
         }
-
         /**
-         * <code>required int32 speciesKey = 7;</code>
+         * <code>optional int32 speciesKey = 7;</code>
          */
         public int getSpeciesKey() {
           return speciesKey_;
         }
-
         /**
-         * <code>required int32 speciesKey = 7;</code>
+         * <code>optional int32 speciesKey = 7;</code>
          */
         public Builder setSpeciesKey(int value) {
           bitField0_ |= 0x00000040;
@@ -2702,9 +2231,8 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required int32 speciesKey = 7;</code>
+         * <code>optional int32 speciesKey = 7;</code>
          */
         public Builder clearSpeciesKey() {
           bitField0_ = (bitField0_ & ~0x00000040);
@@ -2713,36 +2241,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object canonicalName_ = "";
         /**
-         * <code>required string canonicalName = 8;</code>
+         * <code>optional string canonicalName = 8;</code>
          */
         public boolean hasCanonicalName() {
           return ((bitField0_ & 0x00000080) == 0x00000080);
         }
-
         /**
-         * <code>required string canonicalName = 8;</code>
+         * <code>optional string canonicalName = 8;</code>
          */
-        public String getCanonicalName() {
-          Object ref = canonicalName_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getCanonicalName() {
+          java.lang.Object ref = canonicalName_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               canonicalName_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string canonicalName = 8;</code>
+         * <code>optional string canonicalName = 8;</code>
+         */
+        public com.google.protobuf.ByteString
+            getCanonicalNameBytes() {
+          java.lang.Object ref = canonicalName_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            canonicalName_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string canonicalName = 8;</code>
          */
         public Builder setCanonicalName(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2751,26 +2294,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string canonicalName = 8;</code>
+         * <code>optional string canonicalName = 8;</code>
          */
-        public com.google.protobuf.ByteString
-            getCanonicalNameBytes() {
-          Object ref = canonicalName_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            canonicalName_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearCanonicalName() {
+          bitField0_ = (bitField0_ & ~0x00000080);
+          canonicalName_ = getDefaultInstance().getCanonicalName();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string canonicalName = 8;</code>
+         * <code>optional string canonicalName = 8;</code>
          */
         public Builder setCanonicalNameBytes(
             com.google.protobuf.ByteString value) {
@@ -2783,46 +2317,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object theClass_ = "";
         /**
-         * <code>required string canonicalName = 8;</code>
-         */
-        public Builder clearCanonicalName() {
-          bitField0_ = (bitField0_ & ~0x00000080);
-          canonicalName_ = getDefaultInstance().getCanonicalName();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string theClass = 9;</code>
+         * <code>optional string theClass = 9;</code>
          */
         public boolean hasTheClass() {
           return ((bitField0_ & 0x00000100) == 0x00000100);
         }
-
         /**
-         * <code>required string theClass = 9;</code>
+         * <code>optional string theClass = 9;</code>
          */
-        public String getTheClass() {
-          Object ref = theClass_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getTheClass() {
+          java.lang.Object ref = theClass_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               theClass_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string theClass = 9;</code>
+         * <code>optional string theClass = 9;</code>
+         */
+        public com.google.protobuf.ByteString
+            getTheClassBytes() {
+          java.lang.Object ref = theClass_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            theClass_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string theClass = 9;</code>
          */
         public Builder setTheClass(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2831,26 +2370,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string theClass = 9;</code>
+         * <code>optional string theClass = 9;</code>
          */
-        public com.google.protobuf.ByteString
-            getTheClassBytes() {
-          Object ref = theClass_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            theClass_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearTheClass() {
+          bitField0_ = (bitField0_ & ~0x00000100);
+          theClass_ = getDefaultInstance().getTheClass();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string theClass = 9;</code>
+         * <code>optional string theClass = 9;</code>
          */
         public Builder setTheClassBytes(
             com.google.protobuf.ByteString value) {
@@ -2863,46 +2393,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object order_ = "";
         /**
-         * <code>required string theClass = 9;</code>
-         */
-        public Builder clearTheClass() {
-          bitField0_ = (bitField0_ & ~0x00000100);
-          theClass_ = getDefaultInstance().getTheClass();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string order = 10;</code>
+         * <code>optional string order = 10;</code>
          */
         public boolean hasOrder() {
           return ((bitField0_ & 0x00000200) == 0x00000200);
         }
-
         /**
-         * <code>required string order = 10;</code>
+         * <code>optional string order = 10;</code>
          */
-        public String getOrder() {
-          Object ref = order_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getOrder() {
+          java.lang.Object ref = order_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               order_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string order = 10;</code>
+         * <code>optional string order = 10;</code>
+         */
+        public com.google.protobuf.ByteString
+            getOrderBytes() {
+          java.lang.Object ref = order_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            order_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string order = 10;</code>
          */
         public Builder setOrder(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2911,26 +2446,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string order = 10;</code>
+         * <code>optional string order = 10;</code>
          */
-        public com.google.protobuf.ByteString
-            getOrderBytes() {
-          Object ref = order_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            order_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearOrder() {
+          bitField0_ = (bitField0_ & ~0x00000200);
+          order_ = getDefaultInstance().getOrder();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string order = 10;</code>
+         * <code>optional string order = 10;</code>
          */
         public Builder setOrderBytes(
             com.google.protobuf.ByteString value) {
@@ -2943,46 +2469,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object phylum_ = "";
         /**
-         * <code>required string order = 10;</code>
-         */
-        public Builder clearOrder() {
-          bitField0_ = (bitField0_ & ~0x00000200);
-          order_ = getDefaultInstance().getOrder();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string phylum = 11;</code>
+         * <code>optional string phylum = 11;</code>
          */
         public boolean hasPhylum() {
           return ((bitField0_ & 0x00000400) == 0x00000400);
         }
-
         /**
-         * <code>required string phylum = 11;</code>
+         * <code>optional string phylum = 11;</code>
          */
-        public String getPhylum() {
-          Object ref = phylum_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getPhylum() {
+          java.lang.Object ref = phylum_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               phylum_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string phylum = 11;</code>
+         * <code>optional string phylum = 11;</code>
+         */
+        public com.google.protobuf.ByteString
+            getPhylumBytes() {
+          java.lang.Object ref = phylum_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            phylum_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string phylum = 11;</code>
          */
         public Builder setPhylum(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -2991,26 +2522,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string phylum = 11;</code>
+         * <code>optional string phylum = 11;</code>
          */
-        public com.google.protobuf.ByteString
-            getPhylumBytes() {
-          Object ref = phylum_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            phylum_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearPhylum() {
+          bitField0_ = (bitField0_ & ~0x00000400);
+          phylum_ = getDefaultInstance().getPhylum();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string phylum = 11;</code>
+         * <code>optional string phylum = 11;</code>
          */
         public Builder setPhylumBytes(
             com.google.protobuf.ByteString value) {
@@ -3023,46 +2545,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object scientificName_ = "";
         /**
-         * <code>required string phylum = 11;</code>
-         */
-        public Builder clearPhylum() {
-          bitField0_ = (bitField0_ & ~0x00000400);
-          phylum_ = getDefaultInstance().getPhylum();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string scientificName = 12;</code>
+         * <code>optional string scientificName = 12;</code>
          */
         public boolean hasScientificName() {
           return ((bitField0_ & 0x00000800) == 0x00000800);
         }
-
         /**
-         * <code>required string scientificName = 12;</code>
+         * <code>optional string scientificName = 12;</code>
          */
-        public String getScientificName() {
-          Object ref = scientificName_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getScientificName() {
+          java.lang.Object ref = scientificName_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               scientificName_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string scientificName = 12;</code>
+         * <code>optional string scientificName = 12;</code>
+         */
+        public com.google.protobuf.ByteString
+            getScientificNameBytes() {
+          java.lang.Object ref = scientificName_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            scientificName_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string scientificName = 12;</code>
          */
         public Builder setScientificName(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -3071,26 +2598,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string scientificName = 12;</code>
+         * <code>optional string scientificName = 12;</code>
          */
-        public com.google.protobuf.ByteString
-            getScientificNameBytes() {
-          Object ref = scientificName_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            scientificName_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearScientificName() {
+          bitField0_ = (bitField0_ & ~0x00000800);
+          scientificName_ = getDefaultInstance().getScientificName();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string scientificName = 12;</code>
+         * <code>optional string scientificName = 12;</code>
          */
         public Builder setScientificNameBytes(
             com.google.protobuf.ByteString value) {
@@ -3103,46 +2621,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object authorship_ = "";
         /**
-         * <code>required string scientificName = 12;</code>
-         */
-        public Builder clearScientificName() {
-          bitField0_ = (bitField0_ & ~0x00000800);
-          scientificName_ = getDefaultInstance().getScientificName();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string authorship = 13;</code>
+         * <code>optional string authorship = 13;</code>
          */
         public boolean hasAuthorship() {
           return ((bitField0_ & 0x00001000) == 0x00001000);
         }
-
         /**
-         * <code>required string authorship = 13;</code>
+         * <code>optional string authorship = 13;</code>
          */
-        public String getAuthorship() {
-          Object ref = authorship_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getAuthorship() {
+          java.lang.Object ref = authorship_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               authorship_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string authorship = 13;</code>
+         * <code>optional string authorship = 13;</code>
+         */
+        public com.google.protobuf.ByteString
+            getAuthorshipBytes() {
+          java.lang.Object ref = authorship_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            authorship_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string authorship = 13;</code>
          */
         public Builder setAuthorship(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -3151,26 +2674,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string authorship = 13;</code>
+         * <code>optional string authorship = 13;</code>
          */
-        public com.google.protobuf.ByteString
-            getAuthorshipBytes() {
-          Object ref = authorship_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            authorship_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearAuthorship() {
+          bitField0_ = (bitField0_ & ~0x00001000);
+          authorship_ = getDefaultInstance().getAuthorship();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string authorship = 13;</code>
+         * <code>optional string authorship = 13;</code>
          */
         public Builder setAuthorshipBytes(
             com.google.protobuf.ByteString value) {
@@ -3183,46 +2697,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object genus_ = "";
         /**
-         * <code>required string authorship = 13;</code>
-         */
-        public Builder clearAuthorship() {
-          bitField0_ = (bitField0_ & ~0x00001000);
-          authorship_ = getDefaultInstance().getAuthorship();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string genus = 14;</code>
+         * <code>optional string genus = 14;</code>
          */
         public boolean hasGenus() {
           return ((bitField0_ & 0x00002000) == 0x00002000);
         }
-
         /**
-         * <code>required string genus = 14;</code>
+         * <code>optional string genus = 14;</code>
          */
-        public String getGenus() {
-          Object ref = genus_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getGenus() {
+          java.lang.Object ref = genus_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               genus_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string genus = 14;</code>
+         * <code>optional string genus = 14;</code>
+         */
+        public com.google.protobuf.ByteString
+            getGenusBytes() {
+          java.lang.Object ref = genus_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            genus_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string genus = 14;</code>
          */
         public Builder setGenus(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -3231,26 +2750,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string genus = 14;</code>
+         * <code>optional string genus = 14;</code>
          */
-        public com.google.protobuf.ByteString
-            getGenusBytes() {
-          Object ref = genus_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            genus_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearGenus() {
+          bitField0_ = (bitField0_ & ~0x00002000);
+          genus_ = getDefaultInstance().getGenus();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string genus = 14;</code>
+         * <code>optional string genus = 14;</code>
          */
         public Builder setGenusBytes(
             com.google.protobuf.ByteString value) {
@@ -3263,32 +2773,21 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private int parentKey_ ;
         /**
-         * <code>required string genus = 14;</code>
-         */
-        public Builder clearGenus() {
-          bitField0_ = (bitField0_ & ~0x00002000);
-          genus_ = getDefaultInstance().getGenus();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required int32 parentKey = 15;</code>
+         * <code>optional int32 parentKey = 15;</code>
          */
         public boolean hasParentKey() {
           return ((bitField0_ & 0x00004000) == 0x00004000);
         }
-
         /**
-         * <code>required int32 parentKey = 15;</code>
+         * <code>optional int32 parentKey = 15;</code>
          */
         public int getParentKey() {
           return parentKey_;
         }
-
         /**
-         * <code>required int32 parentKey = 15;</code>
+         * <code>optional int32 parentKey = 15;</code>
          */
         public Builder setParentKey(int value) {
           bitField0_ |= 0x00004000;
@@ -3296,9 +2795,8 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required int32 parentKey = 15;</code>
+         * <code>optional int32 parentKey = 15;</code>
          */
         public Builder clearParentKey() {
           bitField0_ = (bitField0_ & ~0x00004000);
@@ -3307,36 +2805,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object species_ = "";
         /**
-         * <code>required string species = 16;</code>
+         * <code>optional string species = 16;</code>
          */
         public boolean hasSpecies() {
           return ((bitField0_ & 0x00008000) == 0x00008000);
         }
-
         /**
-         * <code>required string species = 16;</code>
+         * <code>optional string species = 16;</code>
          */
-        public String getSpecies() {
-          Object ref = species_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getSpecies() {
+          java.lang.Object ref = species_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               species_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string species = 16;</code>
+         * <code>optional string species = 16;</code>
+         */
+        public com.google.protobuf.ByteString
+            getSpeciesBytes() {
+          java.lang.Object ref = species_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            species_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string species = 16;</code>
          */
         public Builder setSpecies(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -3345,26 +2858,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string species = 16;</code>
+         * <code>optional string species = 16;</code>
          */
-        public com.google.protobuf.ByteString
-            getSpeciesBytes() {
-          Object ref = species_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            species_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearSpecies() {
+          bitField0_ = (bitField0_ & ~0x00008000);
+          species_ = getDefaultInstance().getSpecies();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string species = 16;</code>
+         * <code>optional string species = 16;</code>
          */
         public Builder setSpeciesBytes(
             com.google.protobuf.ByteString value) {
@@ -3377,45 +2881,51 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
+        private java.lang.Object lastCrawled_ = "";
         /**
-         * <code>required string species = 16;</code>
-         */
-        public Builder clearSpecies() {
-          bitField0_ = (bitField0_ & ~0x00008000);
-          species_ = getDefaultInstance().getSpecies();
-          onChanged();
-          return this;
-        }
-
-        /**
-         * <code>required string lastCrawled = 17;</code>
+         * <code>optional string lastCrawled = 17;</code>
          */
         public boolean hasLastCrawled() {
           return ((bitField0_ & 0x00010000) == 0x00010000);
         }
         /**
-         * <code>required string lastCrawled = 17;</code>
+         * <code>optional string lastCrawled = 17;</code>
          */
-        public String getLastCrawled() {
-          Object ref = lastCrawled_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getLastCrawled() {
+          java.lang.Object ref = lastCrawled_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               lastCrawled_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
-
         /**
-         * <code>required string lastCrawled = 17;</code>
+         * <code>optional string lastCrawled = 17;</code>
+         */
+        public com.google.protobuf.ByteString
+            getLastCrawledBytes() {
+          java.lang.Object ref = lastCrawled_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            lastCrawled_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string lastCrawled = 17;</code>
          */
         public Builder setLastCrawled(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -3424,26 +2934,17 @@ public final class SpeciesListOuterClass {
           onChanged();
           return this;
         }
-
         /**
-         * <code>required string lastCrawled = 17;</code>
+         * <code>optional string lastCrawled = 17;</code>
          */
-        public com.google.protobuf.ByteString
-            getLastCrawledBytes() {
-          Object ref = lastCrawled_;
-          if (ref instanceof String) {
-            com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
-            lastCrawled_ = b;
-            return b;
-          } else {
-            return (com.google.protobuf.ByteString) ref;
-          }
+        public Builder clearLastCrawled() {
+          bitField0_ = (bitField0_ & ~0x00010000);
+          lastCrawled_ = getDefaultInstance().getLastCrawled();
+          onChanged();
+          return this;
         }
-
         /**
-         * <code>required string lastCrawled = 17;</code>
+         * <code>optional string lastCrawled = 17;</code>
          */
         public Builder setLastCrawledBytes(
             com.google.protobuf.ByteString value) {
@@ -3456,65 +2957,198 @@ public final class SpeciesListOuterClass {
           return this;
         }
 
-        /**
-         * <code>required string lastCrawled = 17;</code>
-         */
-        public Builder clearLastCrawled() {
-          bitField0_ = (bitField0_ & ~0x00010000);
-          lastCrawled_ = getDefaultInstance().getLastCrawled();
-          onChanged();
-          return this;
-        }
-
         // @@protoc_insertion_point(builder_scope:benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species)
+      }
+
+      static {
+        defaultInstance = new Species(true);
+        defaultInstance.initFields();
       }
 
       // @@protoc_insertion_point(class_scope:benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species)
     }
 
+    public static final int SPECIESLIST_FIELD_NUMBER = 1;
+    private java.util.List<com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species> speciesList_;
+    /**
+     * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
+     */
+    public java.util.List<com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species> getSpeciesListList() {
+      return speciesList_;
+    }
+    /**
+     * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
+     */
+    public java.util.List<? extends com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.SpeciesOrBuilder> 
+        getSpeciesListOrBuilderList() {
+      return speciesList_;
+    }
+    /**
+     * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
+     */
+    public int getSpeciesListCount() {
+      return speciesList_.size();
+    }
+    /**
+     * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
+     */
+    public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species getSpeciesList(int index) {
+      return speciesList_.get(index);
+    }
+    /**
+     * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
+     */
+    public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.SpeciesOrBuilder getSpeciesListOrBuilder(
+        int index) {
+      return speciesList_.get(index);
+    }
+
+    private void initFields() {
+      speciesList_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < speciesList_.size(); i++) {
+        output.writeMessage(1, speciesList_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < speciesList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, speciesList_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
     /**
      * Protobuf type {@code benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList)
-        SpeciesListOrBuilder {
-      private int bitField0_;
-      private java.util.List<Species> speciesList_ =
-        java.util.Collections.emptyList();
-      private com.google.protobuf.RepeatedFieldBuilder<
-          Species, Species.Builder, SpeciesOrBuilder> speciesListBuilder_;
+        com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesListOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.class, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Builder.class);
+      }
 
       // Construct using com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
+
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
-
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor;
-      }
-
-      private static Builder create() {
-        return new Builder();
-      }
-
-      protected FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                SpeciesList.class, Builder.class);
-      }
-
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
           getSpeciesListFieldBuilder();
         }
+      }
+      private static Builder create() {
+        return new Builder();
       }
 
       public Builder clear() {
@@ -3534,23 +3168,23 @@ public final class SpeciesListOuterClass {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor;
+        return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor;
       }
 
-      public SpeciesList getDefaultInstanceForType() {
-        return SpeciesList.getDefaultInstance();
+      public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList getDefaultInstanceForType() {
+        return com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.getDefaultInstance();
       }
 
-      public SpeciesList build() {
-        SpeciesList result = buildPartial();
+      public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList build() {
+        com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public SpeciesList buildPartial() {
-        SpeciesList result = new SpeciesList(this);
+      public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList buildPartial() {
+        com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList result = new com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList(this);
         int from_bitField0_ = bitField0_;
         if (speciesListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3566,16 +3200,16 @@ public final class SpeciesListOuterClass {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof SpeciesList) {
-          return mergeFrom((SpeciesList)other);
+        if (other instanceof com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList) {
+          return mergeFrom((com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(SpeciesList other) {
-        if (other == SpeciesList.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList other) {
+        if (other == com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.getDefaultInstance()) return this;
         if (speciesListBuilder_ == null) {
           if (!other.speciesList_.isEmpty()) {
             if (speciesList_.isEmpty()) {
@@ -3594,7 +3228,7 @@ public final class SpeciesListOuterClass {
               speciesListBuilder_ = null;
               speciesList_ = other.speciesList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              speciesListBuilder_ =
+              speciesListBuilder_ = 
                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
                    getSpeciesListFieldBuilder() : null;
             } else {
@@ -3607,12 +3241,6 @@ public final class SpeciesListOuterClass {
       }
 
       public final boolean isInitialized() {
-        for (int i = 0; i < getSpeciesListCount(); i++) {
-          if (!getSpeciesList(i).isInitialized()) {
-
-            return false;
-          }
-        }
         return true;
       }
 
@@ -3620,11 +3248,11 @@ public final class SpeciesListOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        SpeciesList parsedMessage = null;
+        com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (SpeciesList) e.getUnfinishedMessage();
+          parsedMessage = (com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -3633,18 +3261,24 @@ public final class SpeciesListOuterClass {
         }
         return this;
       }
+      private int bitField0_;
 
+      private java.util.List<com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species> speciesList_ =
+        java.util.Collections.emptyList();
       private void ensureSpeciesListIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          speciesList_ = new java.util.ArrayList<Species>(speciesList_);
+          speciesList_ = new java.util.ArrayList<com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species>(speciesList_);
           bitField0_ |= 0x00000001;
          }
       }
 
+      private com.google.protobuf.RepeatedFieldBuilder<
+          com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.SpeciesOrBuilder> speciesListBuilder_;
+
       /**
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
-      public java.util.List<Species> getSpeciesListList() {
+      public java.util.List<com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species> getSpeciesListList() {
         if (speciesListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(speciesList_);
         } else {
@@ -3664,7 +3298,7 @@ public final class SpeciesListOuterClass {
       /**
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
-      public Species getSpeciesList(int index) {
+      public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species getSpeciesList(int index) {
         if (speciesListBuilder_ == null) {
           return speciesList_.get(index);
         } else {
@@ -3675,7 +3309,7 @@ public final class SpeciesListOuterClass {
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
       public Builder setSpeciesList(
-          int index, Species value) {
+          int index, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species value) {
         if (speciesListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3692,7 +3326,7 @@ public final class SpeciesListOuterClass {
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
       public Builder setSpeciesList(
-          int index, Species.Builder builderForValue) {
+          int index, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder builderForValue) {
         if (speciesListBuilder_ == null) {
           ensureSpeciesListIsMutable();
           speciesList_.set(index, builderForValue.build());
@@ -3705,7 +3339,7 @@ public final class SpeciesListOuterClass {
       /**
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
-      public Builder addSpeciesList(Species value) {
+      public Builder addSpeciesList(com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species value) {
         if (speciesListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3722,7 +3356,7 @@ public final class SpeciesListOuterClass {
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
       public Builder addSpeciesList(
-          int index, Species value) {
+          int index, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species value) {
         if (speciesListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3739,7 +3373,7 @@ public final class SpeciesListOuterClass {
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
       public Builder addSpeciesList(
-          Species.Builder builderForValue) {
+          com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder builderForValue) {
         if (speciesListBuilder_ == null) {
           ensureSpeciesListIsMutable();
           speciesList_.add(builderForValue.build());
@@ -3753,7 +3387,7 @@ public final class SpeciesListOuterClass {
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
       public Builder addSpeciesList(
-          int index, Species.Builder builderForValue) {
+          int index, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder builderForValue) {
         if (speciesListBuilder_ == null) {
           ensureSpeciesListIsMutable();
           speciesList_.add(index, builderForValue.build());
@@ -3767,7 +3401,7 @@ public final class SpeciesListOuterClass {
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
       public Builder addAllSpeciesList(
-          Iterable<? extends Species> values) {
+          java.lang.Iterable<? extends com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species> values) {
         if (speciesListBuilder_ == null) {
           ensureSpeciesListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3807,14 +3441,14 @@ public final class SpeciesListOuterClass {
       /**
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
-      public Species.Builder getSpeciesListBuilder(
+      public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder getSpeciesListBuilder(
           int index) {
         return getSpeciesListFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
-      public SpeciesOrBuilder getSpeciesListOrBuilder(
+      public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.SpeciesOrBuilder getSpeciesListOrBuilder(
           int index) {
         if (speciesListBuilder_ == null) {
           return speciesList_.get(index);  } else {
@@ -3824,7 +3458,7 @@ public final class SpeciesListOuterClass {
       /**
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
-      public java.util.List<? extends SpeciesOrBuilder>
+      public java.util.List<? extends com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.SpeciesOrBuilder> 
            getSpeciesListOrBuilderList() {
         if (speciesListBuilder_ != null) {
           return speciesListBuilder_.getMessageOrBuilderList();
@@ -3835,31 +3469,31 @@ public final class SpeciesListOuterClass {
       /**
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
-      public Species.Builder addSpeciesListBuilder() {
+      public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder addSpeciesListBuilder() {
         return getSpeciesListFieldBuilder().addBuilder(
-            Species.getDefaultInstance());
+            com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.getDefaultInstance());
       }
       /**
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
-      public Species.Builder addSpeciesListBuilder(
+      public com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder addSpeciesListBuilder(
           int index) {
         return getSpeciesListFieldBuilder().addBuilder(
-            index, Species.getDefaultInstance());
+            index, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.getDefaultInstance());
       }
       /**
        * <code>repeated .benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList.Species speciesList = 1;</code>
        */
-      public java.util.List<Species.Builder>
+      public java.util.List<com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder> 
            getSpeciesListBuilderList() {
         return getSpeciesListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          Species, Species.Builder, SpeciesOrBuilder>
+          com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.SpeciesOrBuilder> 
           getSpeciesListFieldBuilder() {
         if (speciesListBuilder_ == null) {
           speciesListBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              Species, Species.Builder, SpeciesOrBuilder>(
+              com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.Species.Builder, com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass.SpeciesList.SpeciesOrBuilder>(
                   speciesList_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -3872,7 +3506,74 @@ public final class SpeciesListOuterClass {
       // @@protoc_insertion_point(builder_scope:benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList)
     }
 
+    static {
+      defaultInstance = new SpeciesList(true);
+      defaultInstance.initFields();
+    }
+
     // @@protoc_insertion_point(class_scope:benjaminwicks.structureddatademo.model.protobuf.google.SpeciesList)
+  }
+
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_fieldAccessorTable;
+
+  public static com.google.protobuf.Descriptors.FileDescriptor
+      getDescriptor() {
+    return descriptor;
+  }
+  private static com.google.protobuf.Descriptors.FileDescriptor
+      descriptor;
+  static {
+    java.lang.String[] descriptorData = {
+      "\nHbenjaminwicks/structureddatademo/model" +
+      "/protobuf/google/SpeciesList.proto\0226benj" +
+      "aminwicks.structureddatademo.model.proto" +
+      "buf.google\"\274\003\n\013SpeciesList\022`\n\013speciesLis" +
+      "t\030\001 \003(\0132K.benjaminwicks.structureddatade" +
+      "mo.model.protobuf.google.SpeciesList.Spe" +
+      "cies\032\312\002\n\007Species\022\017\n\007kingdom\030\001 \001(\t\022\016\n\006par" +
+      "ent\030\002 \001(\t\022\016\n\006family\030\003 \001(\t\022\020\n\010imageURL\030\004 " +
+      "\001(\t\022\027\n\017lastInterpreted\030\005 \001(\t\022\023\n\013accordin" +
+      "gTo\030\006 \001(\t\022\022\n\nspeciesKey\030\007 \001(\005\022\025\n\rcanonic",
+      "alName\030\010 \001(\t\022\020\n\010theClass\030\t \001(\t\022\r\n\005order\030" +
+      "\n \001(\t\022\016\n\006phylum\030\013 \001(\t\022\026\n\016scientificName\030" +
+      "\014 \001(\t\022\022\n\nauthorship\030\r \001(\t\022\r\n\005genus\030\016 \001(\t" +
+      "\022\021\n\tparentKey\030\017 \001(\005\022\017\n\007species\030\020 \001(\t\022\023\n\013" +
+      "lastCrawled\030\021 \001(\tB<\n:com.benjaminwicks.s" +
+      "tructureddatademo.model.protobuf.google"
+    };
+    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
+    com.google.protobuf.Descriptors.FileDescriptor
+      .internalBuildGeneratedFileFrom(descriptorData,
+        new com.google.protobuf.Descriptors.FileDescriptor[] {
+        }, assigner);
+    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor,
+        new java.lang.String[] { "SpeciesList", });
+    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor =
+      internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_descriptor.getNestedTypes().get(0);
+    internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_benjaminwicks_structureddatademo_model_protobuf_google_SpeciesList_Species_descriptor,
+        new java.lang.String[] { "Kingdom", "Parent", "Family", "ImageURL", "LastInterpreted", "AccordingTo", "SpeciesKey", "CanonicalName", "TheClass", "Order", "Phylum", "ScientificName", "Authorship", "Genus", "ParentKey", "Species", "LastCrawled", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
