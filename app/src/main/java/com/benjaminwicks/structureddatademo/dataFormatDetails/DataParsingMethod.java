@@ -21,13 +21,13 @@ import java.io.IOException;
 import java.util.List;
 
 public enum DataParsingMethod {
-    SAX_XML_PARSER("SAX (javax.xml.parsers.SAXParser)", DataFormat.XML, XmlSaxParser.class),
-    XML_PULL_PARSER("Pull (org.xmlpull.v1.XmlPullParser)", DataFormat.XML, PullParser.class),
-    MOSHI_JSON_PARSER("Square Moshi", DataFormat.JSON, MoshiParser.class),
-    JACKSON_JSON_PARSER("FasterXML Jackson", DataFormat.JSON, JacksonParser.class),
-    GSON_JSON_PARSER("Google Gson", DataFormat.JSON, GsonParser.class),
-    GOOGLE_PROTOBUF_PARSER("Google Protobuf", DataFormat.PROTOBUF, ProtobufParser.class),
-    SQUARE_WIRE_PROTOBUF_PARSER("Square Wire", DataFormat.PROTOBUF, WireParser.class);
+    SAX_XML_PARSER("SAXParser", DataFormat.XML, XmlSaxParser.class), // 3.15 MB Decode, no Encode
+    XML_PULL_PARSER("XmlPullParser", DataFormat.XML, PullParser.class), // 2.53 MB Decode, 18.55 MB Encode
+    MOSHI_JSON_PARSER("Square Moshi", DataFormat.JSON, MoshiParser.class), // 2.45 MB Decode, 32.49 MB Encode
+    JACKSON_JSON_PARSER("FasterXML Jackson", DataFormat.JSON, JacksonParser.class), // 1.98 MB Decode, 13.88 MB Encode
+    GSON_JSON_PARSER("Google Gson", DataFormat.JSON, GsonParser.class), // 1.58 MB Decode, 26.88 MB Encode
+    GOOGLE_PROTOBUF_PARSER("Google Protobuf", DataFormat.PROTOBUF, ProtobufParser.class), // 3.00 MB Decode, 8.20 MB Encode
+    SQUARE_WIRE_PROTOBUF_PARSER("Square Wire", DataFormat.PROTOBUF, WireParser.class); // 1.62 MB Decode, 10.69 MB Decode
 
     public static final long NO_TIME_RECORDED = -1;
 
@@ -131,6 +131,8 @@ public enum DataParsingMethod {
     public boolean deleteStats(Context context) {
         File decodeStatsFile = context.getFileStreamPath(name() + DECODE_FILE_SUFFIX);
         File encodeStatsFile = context.getFileStreamPath(name() + ENCODE_FILE_SUFFIX);
-        return (decodeStatsFile.exists() && decodeStatsFile.delete()) || (encodeStatsFile.exists() && encodeStatsFile.delete());
+        boolean didDeleteDecodeStats = decodeStatsFile.exists() && decodeStatsFile.delete();
+        boolean didDeleteEncodeStats = encodeStatsFile.exists() && encodeStatsFile.delete();
+        return didDeleteDecodeStats || didDeleteEncodeStats;
     }
 }

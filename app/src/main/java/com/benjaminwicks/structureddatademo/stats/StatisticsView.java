@@ -47,8 +47,8 @@ final class StatisticsView extends LinearLayout {
                 return true;
             }
         });
-        statsLayout.addView(new AverageTimesGraphView(getContext()), 1);
-        statsLayout.addView(new FileSizesGraphView(getContext()), 4);
+        statsLayout.addView(new AverageTimesView(getContext()), 1);
+        statsLayout.addView(new FileSizesView(getContext()), 4);
         statsLayout.invalidate();
     }
 

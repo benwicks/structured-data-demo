@@ -113,7 +113,7 @@ public final class DataFormatDetailsView extends LinearLayout {
             stateHolder.setLastDecodeTimeText(getContext().getString(R.string.decode_failed));
             stateHolder.setLastEmptyText(getContext().getString(R.string.empty_list));
             Log.e("Decode exception", exception.getClass().toString());
-            Toast.makeText(getContext(), "Decode not enabled for " + dataParsingMethod.name + " yet.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Decode disabled for " + dataParsingMethod.name, Toast.LENGTH_SHORT).show();
         }
         setIsCurrentlyTranscoding(false);
     }
@@ -125,7 +125,7 @@ public final class DataFormatDetailsView extends LinearLayout {
 
     public void onEncodePostExecute(long startTime, Exception exception, Byte[] bytes) {
         setIsCurrentlyTranscoding(false);
-        if (exception == null) {
+        if (exception == null && bytes.length > 0) {
             long milliseconds = TimeUnit.MILLISECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
             Toast.makeText(getContext(), "Encoded to " + BytesFormatHelper.formatBytes(bytes.length), Toast.LENGTH_SHORT).show();
             dataParsingMethod.recordEncodeTime(getContext(), milliseconds);
@@ -135,8 +135,10 @@ public final class DataFormatDetailsView extends LinearLayout {
             stateHolder.setLastEncodeTimeText(TimeFormatHelper.formatMilliseconds(milliseconds));
         } else {
             stateHolder.setLastEncodeTimeText(getContext().getString(R.string.encode_failed));
-            Log.e("Encode exception", exception.getClass().toString());
-            Toast.makeText(getContext(), "Encode not enabled for " + dataParsingMethod.name + " yet.", Toast.LENGTH_SHORT).show();
+            if (exception != null) {
+                Log.e("Encode exception", exception.getClass().toString());
+            }
+            Toast.makeText(getContext(), "Encode disabled for " + dataParsingMethod.name, Toast.LENGTH_SHORT).show();
         }
     }
 

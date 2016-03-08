@@ -25,6 +25,15 @@
     <string name="no_stats_yet">No stats yet. Run some decodes/encodes to view stats.</string>
     <string name="average_times_graph">Decode/Encode Average Times</string>
     <string name="file_sizes_graph">File Sizes</string>
+    <string name="average_decode_times">Average Decode Times</string>
+    <string name="average_encode_times">Average Encode Times</string>
+    <string name="uncompressed">Uncompressed Sizes</string>
+    <string name="compressed">G-zipped Sizes</string>
+    <string name="scientific_name_label">Scientific Name:</string>
+    <string name="according_to_label">According to:</string>
+    <string name="last_interpreted_label">Last Interpreted:</string>
+    <string name="last_crawled_label">Last Crawled:</string>
+    <string name="link_format">http://www.gbif.org/species/%1$d</string>
     <plurals name="num_deleted_format">
         <item quantity="one">Deleted stats for %1$d parsing method.</item>
         <item quantity="other">Deleted stats for %1$d parsing methods.</item>
