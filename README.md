@@ -20,5 +20,7 @@ An Android application that demonstrates decoding/encoding data with XML, JSON, 
 - Download the latest source from [Google's download page](https://developers.google.com/protocol-buffers/docs/downloads)
 - Unzip and look at the README. Follow the steps to install protoc
 - Run `protoc --java_out=app/out_google -I=app/src/main/proto app/src/main/proto/benjaminwicks/structureddatademo/model/protobuf/google/SpeciesList.proto` to generate a Java class from the .proto file (Resulting class was 3581 lines)
+  - See the output [here](https://github.com/benwicks/structured-data-demo/blob/f3ba90727562194e3f364e876568b4c55ef132a1/app/out_google/com/benjaminwicks/structureddatademo/model/protobuf/google/SpeciesListOuterClass.java)
 - Or, follow [Google's Protobuf guidelines for Android](http://developer.android.com/training/articles/memory.html#NanoProto) and use the protoc gradle plugin to generate a "Nano" Java class (Resulting class was 442 lines)
+  - See the output [here](https://github.com/benwicks/structured-data-demo/blob/master/app/src/main/java/com/benjaminwicks/structureddatademo/model/protobuf/google/nano/OuterGoogleSpeciesList.java)
 - Copy the generated Java class from the out_google directory to the matching directory within the project's java directory
