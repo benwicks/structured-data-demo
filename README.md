@@ -5,7 +5,17 @@ An Android application that demonstrates decoding/encoding data with XML, JSON, 
 - Go [here](https://play.google.com/store/apps/details?id=com.benjaminwicks.structureddatademo) to download the demo app
 
 # Presentation references
+- [All about Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview)
 - Did you know that, [according to Google](https://developers.google.com/protocol-buffers/docs/overview#whynotxml), you can decrease the amount of data you send by 3-10x and increase parsing speeds by 20-100x, simply by changing the data format your app uses to transfer data?
+- ["Extending a Protocol Buffer"](https://developers.google.com/protocol-buffers/docs/cpptutorial#extending-a-protocol-buffer)
+- [proto2 Language Guide](https://developers.google.com/protocol-buffers/docs/proto)
+- [Encoding implementation details](https://developers.google.com/protocol-buffers/docs/encoding#structure)
+- [Android's XML recommendation](http://developer.android.com/training/basics/network-ops/xml.html)
+- [Square's Wire blog post](https://corner.squareup.com/2013/08/introducing-wire.html)
+
+# For further reference
+- [FlatBuffers](https://code.facebook.com/posts/872547912839369/improving-facebook-s-performance-on-android-with-flatbuffers/), another format [developed by Google](https://google.github.io/flatbuffers/) similar to protobufs that is intended for game development
+- [Performance Patterns video](https://www.youtube.com/watch?v=IwxIIUypnTE) about protocol buffers on Android
 
 # How-to generate protobuf model from .proto message
 ## Using Square's Wire library

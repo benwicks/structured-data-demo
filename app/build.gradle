@@ -58,8 +58,6 @@ dependencies {
     compile 'com.squareup.moshi:moshi:1.1.0'
     compile 'com.squareup.dagger:dagger:1.2.2'
     apt 'com.squareup.dagger:dagger-compiler:1.2.2'
-    compile 'com.squareup.retrofit2:converter-wire:2.0.0-beta4'
-    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
     compile 'com.squareup.wire:wire-runtime:2.1.1'
     compile files('libs/protobuf-java-2.3.0-nano.jar')
 }
