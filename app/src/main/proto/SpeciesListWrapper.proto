@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option java_outer_classname = "OuterSpeciesList";
+option java_package = "com.benjaminwicks.structureddatademo.model.protobuf.google.nano";
+
+message SpeciesListWrapper {
+
+    repeated Species list = 1;
+
+    message Species {
+        string kingdom = 1;
+        string parent = 2;
+        string family = 3;
+        string imageURL = 4;
+        string lastInterpreted = 5;
+        string accordingTo = 6;
+        int32 speciesKey = 7;
+        string canonicalName = 8;
+        string theClass = 9;
+        string order = 10;
+        string phylum = 11;
+        string scientificName = 12;
+        string authorship = 13;
+        string genus = 14;
+        int32 parentKey = 15;
+        string species = 16;
+        string lastCrawled = 17;
+    }
+}

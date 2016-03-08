@@ -1,6 +1,6 @@
 package com.benjaminwicks.structureddatademo.model;
 
-import com.benjaminwicks.structureddatademo.model.protobuf.google.SpeciesListOuterClass;
+import com.benjaminwicks.structureddatademo.model.protobuf.google.OuterGoogleSpeciesList;
 import com.benjaminwicks.structureddatademo.model.protobuf.wire.SpeciesList;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -117,25 +117,25 @@ public final class Species {
         );
     }
 
-    public static Species fromGoogleSpecies(SpeciesListOuterClass.SpeciesList.Species s) throws ParseException {
+    public static Species fromGoogleSpecies(OuterGoogleSpeciesList.SpeciesList.Species s) throws ParseException {
         return new Species(
-                s.getKingdom(),
-                s.getParent(),
-                s.getFamily(),
-                s.getImageURL(),
-                DATE_FORMAT.parse(s.getLastInterpreted()),
-                s.getAccordingTo(),
-                s.getSpeciesKey(),
-                s.getCanonicalName(),
-                s.getTheClass(),
-                s.getOrder(),
-                s.getPhylum(),
-                s.getScientificName(),
-                s.getAuthorship(),
-                s.getGenus(),
-                s.getParentKey(),
-                s.getSpecies(),
-                DATE_FORMAT.parse(s.getLastCrawled())
+                s.kingdom,
+                s.parent,
+                s.family,
+                s.imageURL,
+                DATE_FORMAT.parse(s.lastInterpreted),
+                s.accordingTo,
+                s.speciesKey,
+                s.canonicalName,
+                s.theClass,
+                s.order,
+                s.phylum,
+                s.scientificName,
+                s.authorship,
+                s.genus,
+                s.parentKey,
+                s.species,
+                DATE_FORMAT.parse(s.lastCrawled)
         );
     }
 
@@ -161,26 +161,26 @@ public final class Species {
                 .build();
     }
 
-    public SpeciesListOuterClass.SpeciesList.Species toGoogleSpecies() {
-        return SpeciesListOuterClass.SpeciesList.Species.newBuilder()
-                                                        .setKingdom(kingdom)
-                                                        .setParent(parent)
-                                                        .setFamily(family)
-                                                        .setImageURL(imageUrl)
-                                                        .setLastInterpreted(DATE_FORMAT.format(lastInterpreted))
-                                                        .setAccordingTo(accordingTo)
-                                                        .setSpeciesKey(speciesKey)
-                                                        .setCanonicalName(canonicalName)
-                                                        .setTheClass(theClass)
-                                                        .setOrder(order)
-                                                        .setPhylum(phylum)
-                                                        .setScientificName(scientificName)
-                                                        .setAuthorship(authorship)
-                                                        .setGenus(genus)
-                                                        .setParentKey(parentKey)
-                                                        .setSpecies(species)
-                                                        .setLastCrawled(DATE_FORMAT.format(lastCrawled))
-                                                        .build();
+    public OuterGoogleSpeciesList.SpeciesList.Species toGoogleSpecies() {
+        OuterGoogleSpeciesList.SpeciesList.Species species = new OuterGoogleSpeciesList.SpeciesList.Species();
+        species.kingdom = kingdom;
+        species.parent = parent;
+        species.family = family;
+        species.imageURL = imageUrl;
+        species.lastInterpreted = DATE_FORMAT.format(lastInterpreted);
+        species.accordingTo = accordingTo;
+        species.speciesKey = speciesKey;
+        species.canonicalName = canonicalName;
+        species.theClass = theClass;
+        species.order = order;
+        species.phylum = phylum;
+        species.scientificName = scientificName;
+        species.authorship = authorship;
+        species.genus = genus;
+        species.parentKey = parentKey;
+        species.species = this.species;
+        species.lastCrawled = DATE_FORMAT.format(lastCrawled);
+        return species;
     }
 
     public static final class Builder {

@@ -2,6 +2,7 @@ syntax = "proto2";
 
 package benjaminwicks.structureddatademo.model.protobuf.google;
 
+option java_outer_classname = "OuterGoogleSpeciesList";
 option java_package = "com.benjaminwicks.structureddatademo.model.protobuf.google";
 
 message SpeciesList {

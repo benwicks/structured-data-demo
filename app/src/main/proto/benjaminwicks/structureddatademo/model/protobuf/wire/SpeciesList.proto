@@ -2,6 +2,7 @@ syntax = "proto2";
 
 package benjaminwicks.structureddatademo.model.protobuf.wire;
 
+option java_outer_classname = "OuterWireSpeciesList";
 option java_package = "com.benjaminwicks.structureddatademo.model.protobuf.wire";
 
 message SpeciesList {
