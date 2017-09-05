@@ -1,6 +1,8 @@
 # structured-data-demo
 An Android application that demonstrates decoding/encoding data with XML, JSON, and protocol buffers.
 
+I gave [a talk](https://docs.google.com/presentation/d/11c32YxERf5Dw4co_ViD1KQ3Ezyjt9Kr3UMKLRhZycX8/edit?usp=sharing) at the Omaha Google Developers' Group on "Decoding/Encoding Structured Data with Android"
+
 # Download the sample Android app .apk
 - Go [here](https://play.google.com/store/apps/details?id=com.benjaminwicks.structureddatademo) to download the demo app
 
